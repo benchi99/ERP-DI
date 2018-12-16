@@ -108,6 +108,7 @@
             this.dataGridViewTextBoxColumn45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ordersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.volverMenuPrincTile = new MetroFramework.Controls.MetroTile();
             this.tabContrlDatGest.SuspendLayout();
             this.ClienteDat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.customersDataGridView)).BeginInit();
@@ -136,6 +137,7 @@
             // 
             // modificarTile
             // 
+            this.modificarTile.ActiveControl = null;
             this.modificarTile.Location = new System.Drawing.Point(32, 94);
             this.modificarTile.Name = "modificarTile";
             this.modificarTile.Size = new System.Drawing.Size(100, 100);
@@ -145,11 +147,13 @@
             this.modificarTile.Theme = MetroFramework.MetroThemeStyle.Light;
             this.modificarTile.TileImage = global::ERP.Properties.Resources.modif;
             this.modificarTile.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.modificarTile.UseSelectable = true;
             this.modificarTile.UseTileImage = true;
             this.modificarTile.Click += new System.EventHandler(this.modificarTile_Click);
             // 
             // eliminarTile
             // 
+            this.eliminarTile.ActiveControl = null;
             this.eliminarTile.Location = new System.Drawing.Point(138, 94);
             this.eliminarTile.Name = "eliminarTile";
             this.eliminarTile.Size = new System.Drawing.Size(100, 100);
@@ -159,11 +163,13 @@
             this.eliminarTile.Theme = MetroFramework.MetroThemeStyle.Light;
             this.eliminarTile.TileImage = global::ERP.Properties.Resources.del;
             this.eliminarTile.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.eliminarTile.UseSelectable = true;
             this.eliminarTile.UseTileImage = true;
             this.eliminarTile.Click += new System.EventHandler(this.eliminarTile_Click);
             // 
             // volverTile
             // 
+            this.volverTile.ActiveControl = null;
             this.volverTile.Location = new System.Drawing.Point(32, 94);
             this.volverTile.Name = "volverTile";
             this.volverTile.Size = new System.Drawing.Size(100, 100);
@@ -173,11 +179,13 @@
             this.volverTile.Theme = MetroFramework.MetroThemeStyle.Light;
             this.volverTile.TileImage = global::ERP.Properties.Resources.back;
             this.volverTile.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.volverTile.UseSelectable = true;
             this.volverTile.UseTileImage = true;
             this.volverTile.Click += new System.EventHandler(this.volverTile_Click);
             // 
             // datosTile
             // 
+            this.datosTile.ActiveControl = null;
             this.datosTile.Location = new System.Drawing.Point(138, 94);
             this.datosTile.Name = "datosTile";
             this.datosTile.Size = new System.Drawing.Size(100, 100);
@@ -187,11 +195,13 @@
             this.datosTile.Theme = MetroFramework.MetroThemeStyle.Light;
             this.datosTile.TileImage = global::ERP.Properties.Resources.data;
             this.datosTile.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.datosTile.UseSelectable = true;
             this.datosTile.UseTileImage = true;
             this.datosTile.Click += new System.EventHandler(this.datosTile_Click);
             // 
             // tramiteTile
             // 
+            this.tramiteTile.ActiveControl = null;
             this.tramiteTile.Location = new System.Drawing.Point(244, 94);
             this.tramiteTile.Name = "tramiteTile";
             this.tramiteTile.Size = new System.Drawing.Size(100, 100);
@@ -201,6 +211,7 @@
             this.tramiteTile.Theme = MetroFramework.MetroThemeStyle.Light;
             this.tramiteTile.TileImage = global::ERP.Properties.Resources.tramite;
             this.tramiteTile.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tramiteTile.UseSelectable = true;
             this.tramiteTile.UseTileImage = true;
             this.tramiteTile.Click += new System.EventHandler(this.tramiteTile_Click);
             // 
@@ -211,21 +222,26 @@
             this.tabContrlDatGest.Controls.Add(this.metroTabPage3);
             this.tabContrlDatGest.Location = new System.Drawing.Point(23, 200);
             this.tabContrlDatGest.Name = "tabContrlDatGest";
-            this.tabContrlDatGest.SelectedIndex = 0;
+            this.tabContrlDatGest.SelectedIndex = 2;
             this.tabContrlDatGest.Size = new System.Drawing.Size(970, 366);
             this.tabContrlDatGest.TabIndex = 6;
+            this.tabContrlDatGest.UseSelectable = true;
             // 
             // ClienteDat
             // 
             this.ClienteDat.Controls.Add(this.btCli);
             this.ClienteDat.Controls.Add(this.customersDataGridView);
             this.ClienteDat.HorizontalScrollbarBarColor = true;
-            this.ClienteDat.Location = new System.Drawing.Point(4, 35);
+            this.ClienteDat.HorizontalScrollbarHighlightOnWheel = false;
+            this.ClienteDat.HorizontalScrollbarSize = 10;
+            this.ClienteDat.Location = new System.Drawing.Point(4, 38);
             this.ClienteDat.Name = "ClienteDat";
-            this.ClienteDat.Size = new System.Drawing.Size(962, 327);
+            this.ClienteDat.Size = new System.Drawing.Size(962, 324);
             this.ClienteDat.TabIndex = 0;
             this.ClienteDat.Text = "Cliente";
             this.ClienteDat.VerticalScrollbarBarColor = true;
+            this.ClienteDat.VerticalScrollbarHighlightOnWheel = false;
+            this.ClienteDat.VerticalScrollbarSize = 10;
             // 
             // btCli
             // 
@@ -233,6 +249,7 @@
             this.btCli.Name = "btCli";
             this.btCli.Size = new System.Drawing.Size(75, 23);
             this.btCli.TabIndex = 3;
+            this.btCli.UseSelectable = true;
             // 
             // customersDataGridView
             // 
@@ -339,13 +356,17 @@
             this.metroTabPage2.Controls.Add(this.suppliersDataGridView);
             this.metroTabPage2.HorizontalScrollbar = true;
             this.metroTabPage2.HorizontalScrollbarBarColor = true;
-            this.metroTabPage2.Location = new System.Drawing.Point(4, 35);
+            this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage2.HorizontalScrollbarSize = 10;
+            this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage2.Name = "metroTabPage2";
-            this.metroTabPage2.Size = new System.Drawing.Size(962, 327);
+            this.metroTabPage2.Size = new System.Drawing.Size(962, 324);
             this.metroTabPage2.TabIndex = 1;
             this.metroTabPage2.Text = "Proveedor";
             this.metroTabPage2.VerticalScrollbar = true;
             this.metroTabPage2.VerticalScrollbarBarColor = true;
+            this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage2.VerticalScrollbarSize = 10;
             // 
             // btProv
             // 
@@ -353,6 +374,7 @@
             this.btProv.Name = "btProv";
             this.btProv.Size = new System.Drawing.Size(75, 23);
             this.btProv.TabIndex = 4;
+            this.btProv.UseSelectable = true;
             // 
             // suppliersDataGridView
             // 
@@ -462,13 +484,17 @@
             this.metroTabPage3.Controls.Add(this.productsDataGridView);
             this.metroTabPage3.HorizontalScrollbar = true;
             this.metroTabPage3.HorizontalScrollbarBarColor = true;
-            this.metroTabPage3.Location = new System.Drawing.Point(4, 35);
+            this.metroTabPage3.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage3.HorizontalScrollbarSize = 10;
+            this.metroTabPage3.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage3.Name = "metroTabPage3";
-            this.metroTabPage3.Size = new System.Drawing.Size(962, 327);
+            this.metroTabPage3.Size = new System.Drawing.Size(962, 324);
             this.metroTabPage3.TabIndex = 2;
             this.metroTabPage3.Text = "Articulo";
             this.metroTabPage3.VerticalScrollbar = true;
             this.metroTabPage3.VerticalScrollbarBarColor = true;
+            this.metroTabPage3.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage3.VerticalScrollbarSize = 10;
             // 
             // btArt
             // 
@@ -476,6 +502,7 @@
             this.btArt.Name = "btArt";
             this.btArt.Size = new System.Drawing.Size(75, 23);
             this.btArt.TabIndex = 4;
+            this.btArt.UseSelectable = true;
             // 
             // productsDataGridView
             // 
@@ -606,6 +633,7 @@
             this.tabTram.SelectedIndex = 0;
             this.tabTram.Size = new System.Drawing.Size(970, 366);
             this.tabTram.TabIndex = 7;
+            this.tabTram.UseSelectable = true;
             // 
             // metroTabPage1
             // 
@@ -613,12 +641,16 @@
             this.metroTabPage1.Controls.Add(this.btPed);
             this.metroTabPage1.Controls.Add(this.ordersDataGridView);
             this.metroTabPage1.HorizontalScrollbarBarColor = true;
-            this.metroTabPage1.Location = new System.Drawing.Point(4, 35);
+            this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage1.HorizontalScrollbarSize = 10;
+            this.metroTabPage1.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage1.Name = "metroTabPage1";
-            this.metroTabPage1.Size = new System.Drawing.Size(962, 327);
+            this.metroTabPage1.Size = new System.Drawing.Size(962, 324);
             this.metroTabPage1.TabIndex = 0;
             this.metroTabPage1.Text = "Pedidos";
             this.metroTabPage1.VerticalScrollbarBarColor = true;
+            this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage1.VerticalScrollbarSize = 10;
             // 
             // metroCheckBox1
             // 
@@ -628,7 +660,7 @@
             this.metroCheckBox1.Size = new System.Drawing.Size(162, 15);
             this.metroCheckBox1.TabIndex = 4;
             this.metroCheckBox1.Text = "Mostrar solo presupuestos";
-            this.metroCheckBox1.UseVisualStyleBackColor = true;
+            this.metroCheckBox1.UseSelectable = true;
             // 
             // btPed
             // 
@@ -636,6 +668,7 @@
             this.btPed.Name = "btPed";
             this.btPed.Size = new System.Drawing.Size(75, 23);
             this.btPed.TabIndex = 3;
+            this.btPed.UseSelectable = true;
             // 
             // ordersDataGridView
             // 
@@ -752,23 +785,41 @@
             this.ordersBindingSource.DataMember = "Orders";
             this.ordersBindingSource.DataSource = this.northwindDataSet;
             // 
+            // volverMenuPrincTile
+            // 
+            this.volverMenuPrincTile.ActiveControl = null;
+            this.volverMenuPrincTile.Location = new System.Drawing.Point(893, 94);
+            this.volverMenuPrincTile.Name = "volverMenuPrincTile";
+            this.volverMenuPrincTile.Size = new System.Drawing.Size(100, 100);
+            this.volverMenuPrincTile.TabIndex = 8;
+            this.volverMenuPrincTile.Text = "Volver...";
+            this.volverMenuPrincTile.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.volverMenuPrincTile.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.volverMenuPrincTile.TileImage = global::ERP.Properties.Resources.back;
+            this.volverMenuPrincTile.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.volverMenuPrincTile.UseSelectable = true;
+            this.volverMenuPrincTile.UseTileImage = true;
+            this.volverMenuPrincTile.Click += new System.EventHandler(this.volverMenuPrincTile_Click);
+            // 
             // manageWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1016, 589);
+            this.Controls.Add(this.volverMenuPrincTile);
             this.Controls.Add(this.labelGest);
             this.Controls.Add(this.tramiteTile);
             this.Controls.Add(this.tabContrlDatGest);
             this.Controls.Add(this.eliminarTile);
-            this.Controls.Add(this.modificarTile);
             this.Controls.Add(this.tabTram);
             this.Controls.Add(this.datosTile);
             this.Controls.Add(this.volverTile);
+            this.Controls.Add(this.modificarTile);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "manageWindow";
             this.Text = "Gestionar";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.manageWindow_FormClosing);
             this.Load += new System.EventHandler(this.manageWindow_Load);
             this.tabContrlDatGest.ResumeLayout(false);
             this.ClienteDat.ResumeLayout(false);
@@ -871,5 +922,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn46;
         private MetroFramework.Controls.MetroCheckBox metroCheckBox1;
         private MetroFramework.Controls.MetroButton btPed;
+        private MetroFramework.Controls.MetroTile volverMenuPrincTile;
     }
 }

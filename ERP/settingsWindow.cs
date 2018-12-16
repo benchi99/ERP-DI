@@ -22,7 +22,6 @@ namespace ERP
             AboutPanel.Hide();
             licensePanel.Hide();
             panelOpts.Hide();
-            
         }
 
         private void metroToggle1_CheckedChanged(object sender, EventArgs e)

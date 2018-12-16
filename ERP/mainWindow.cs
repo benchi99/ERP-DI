@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MetroFramework;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,9 @@ namespace ERP
 {
     public partial class mainWindow : MetroFramework.Forms.MetroForm
     {
+
+        bool loggedIn = false;
+
         public mainWindow()
         {
             InitializeComponent();
@@ -19,7 +23,22 @@ namespace ERP
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            if (!loggedIn)
+            {
+                tileNew.Enabled = false;
+                tileGestionar.Enabled = false;
+                tileOpen.Enabled = false;
+                tileOptions.Enabled = false;
 
+                tileLogOff.Text = "Nuevo usuario...";
+                tileLogOff.TileImage = ERP.Properties.Resources.newUser;
+
+                userWelcome.Text = "Bienvenido!";
+            }
+            else
+            {
+
+            }
         }
 
         private void tileNew_Click(object sender, EventArgs e)
@@ -53,7 +72,19 @@ namespace ERP
 
         private void tileLogOff_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (loggedIn)
+            {
+                if (MetroMessageBox.Show(this, "Está a punto de cerrar sesión. ¿Desea continuar?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {
+                    Application.Exit();
+                }
+            }
+            else
+            {
+                newUserWindow nUs = new newUserWindow();
+                nUs.ShowDialog();
+                Show();
+            }
         }
     }
 }

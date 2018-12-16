@@ -30,9 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Label customerIDLabel;
-            System.Windows.Forms.Label companyNameLabel;
             System.Windows.Forms.Label contactNameLabel;
-            System.Windows.Forms.Label contactTitleLabel;
             System.Windows.Forms.Label addressLabel;
             System.Windows.Forms.Label cityLabel;
             System.Windows.Forms.Label regionLabel;
@@ -43,25 +41,18 @@
             System.Windows.Forms.Label supplierIDLabel;
             System.Windows.Forms.Label companyNameLabel1;
             System.Windows.Forms.Label contactNameLabel1;
-            System.Windows.Forms.Label contactTitleLabel1;
             System.Windows.Forms.Label addressLabel1;
             System.Windows.Forms.Label cityLabel1;
             System.Windows.Forms.Label regionLabel1;
             System.Windows.Forms.Label postalCodeLabel1;
             System.Windows.Forms.Label countryLabel1;
             System.Windows.Forms.Label phoneLabel1;
-            System.Windows.Forms.Label faxLabel1;
-            System.Windows.Forms.Label homePageLabel;
             System.Windows.Forms.Label productIDLabel;
             System.Windows.Forms.Label productNameLabel;
             System.Windows.Forms.Label supplierIDLabel1;
             System.Windows.Forms.Label categoryIDLabel;
             System.Windows.Forms.Label quantityPerUnitLabel;
             System.Windows.Forms.Label unitPriceLabel;
-            System.Windows.Forms.Label unitsInStockLabel;
-            System.Windows.Forms.Label unitsOnOrderLabel;
-            System.Windows.Forms.Label reorderLevelLabel;
-            System.Windows.Forms.Label discontinuedLabel;
             System.Windows.Forms.Label orderIDLabel;
             System.Windows.Forms.Label customerIDLabel1;
             System.Windows.Forms.Label employeeIDLabel;
@@ -85,9 +76,7 @@
             this.customerIDTextBox = new System.Windows.Forms.TextBox();
             this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.northwindDataSet = new ERP.NorthwindDataSet();
-            this.companyNameTextBox = new System.Windows.Forms.TextBox();
             this.contactNameTextBox = new System.Windows.Forms.TextBox();
-            this.contactTitleTextBox = new System.Windows.Forms.TextBox();
             this.addressTextBox = new System.Windows.Forms.TextBox();
             this.cityTextBox = new System.Windows.Forms.TextBox();
             this.regionTextBox = new System.Windows.Forms.TextBox();
@@ -98,24 +87,21 @@
             this.Proveedor = new MetroFramework.Controls.MetroTabPage();
             this.metroButton4 = new MetroFramework.Controls.MetroButton();
             this.metroButton5 = new MetroFramework.Controls.MetroButton();
-            this.metroButton6 = new MetroFramework.Controls.MetroButton();
+            this.cancelProvBt = new MetroFramework.Controls.MetroButton();
             this.supplierIDTextBox = new System.Windows.Forms.TextBox();
             this.suppliersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.companyNameTextBox1 = new System.Windows.Forms.TextBox();
             this.contactNameTextBox1 = new System.Windows.Forms.TextBox();
-            this.contactTitleTextBox1 = new System.Windows.Forms.TextBox();
             this.addressTextBox1 = new System.Windows.Forms.TextBox();
             this.cityTextBox1 = new System.Windows.Forms.TextBox();
             this.regionTextBox1 = new System.Windows.Forms.TextBox();
             this.postalCodeTextBox1 = new System.Windows.Forms.TextBox();
             this.countryTextBox1 = new System.Windows.Forms.TextBox();
             this.phoneTextBox1 = new System.Windows.Forms.TextBox();
-            this.faxTextBox1 = new System.Windows.Forms.TextBox();
-            this.homePageTextBox = new System.Windows.Forms.TextBox();
             this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
             this.metroButton7 = new MetroFramework.Controls.MetroButton();
             this.metroButton8 = new MetroFramework.Controls.MetroButton();
-            this.metroButton9 = new MetroFramework.Controls.MetroButton();
+            this.cancelArtDat = new MetroFramework.Controls.MetroButton();
             this.productIDTextBox = new System.Windows.Forms.TextBox();
             this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.productNameTextBox = new System.Windows.Forms.TextBox();
@@ -123,10 +109,6 @@
             this.categoryIDTextBox = new System.Windows.Forms.TextBox();
             this.quantityPerUnitTextBox = new System.Windows.Forms.TextBox();
             this.unitPriceTextBox = new System.Windows.Forms.TextBox();
-            this.unitsInStockTextBox = new System.Windows.Forms.TextBox();
-            this.unitsOnOrderTextBox = new System.Windows.Forms.TextBox();
-            this.reorderLevelTextBox = new System.Windows.Forms.TextBox();
-            this.discontinuedCheckBox = new System.Windows.Forms.CheckBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.tramiteTile = new MetroFramework.Controls.MetroTile();
             this.customersTableAdapter = new ERP.NorthwindDataSetTableAdapters.CustomersTableAdapter();
@@ -172,9 +154,7 @@
             this.ordersTableAdapter = new ERP.NorthwindDataSetTableAdapters.OrdersTableAdapter();
             this.tileAñadDatos = new MetroFramework.Controls.MetroTile();
             customerIDLabel = new System.Windows.Forms.Label();
-            companyNameLabel = new System.Windows.Forms.Label();
             contactNameLabel = new System.Windows.Forms.Label();
-            contactTitleLabel = new System.Windows.Forms.Label();
             addressLabel = new System.Windows.Forms.Label();
             cityLabel = new System.Windows.Forms.Label();
             regionLabel = new System.Windows.Forms.Label();
@@ -185,25 +165,18 @@
             supplierIDLabel = new System.Windows.Forms.Label();
             companyNameLabel1 = new System.Windows.Forms.Label();
             contactNameLabel1 = new System.Windows.Forms.Label();
-            contactTitleLabel1 = new System.Windows.Forms.Label();
             addressLabel1 = new System.Windows.Forms.Label();
             cityLabel1 = new System.Windows.Forms.Label();
             regionLabel1 = new System.Windows.Forms.Label();
             postalCodeLabel1 = new System.Windows.Forms.Label();
             countryLabel1 = new System.Windows.Forms.Label();
             phoneLabel1 = new System.Windows.Forms.Label();
-            faxLabel1 = new System.Windows.Forms.Label();
-            homePageLabel = new System.Windows.Forms.Label();
             productIDLabel = new System.Windows.Forms.Label();
             productNameLabel = new System.Windows.Forms.Label();
             supplierIDLabel1 = new System.Windows.Forms.Label();
             categoryIDLabel = new System.Windows.Forms.Label();
             quantityPerUnitLabel = new System.Windows.Forms.Label();
             unitPriceLabel = new System.Windows.Forms.Label();
-            unitsInStockLabel = new System.Windows.Forms.Label();
-            unitsOnOrderLabel = new System.Windows.Forms.Label();
-            reorderLevelLabel = new System.Windows.Forms.Label();
-            discontinuedLabel = new System.Windows.Forms.Label();
             orderIDLabel = new System.Windows.Forms.Label();
             customerIDLabel1 = new System.Windows.Forms.Label();
             employeeIDLabel = new System.Windows.Forms.Label();
@@ -235,309 +208,248 @@
             // customerIDLabel
             // 
             customerIDLabel.AutoSize = true;
-            customerIDLabel.Location = new System.Drawing.Point(3, 8);
+            customerIDLabel.Font = new System.Drawing.Font("Calibri", 9F);
+            customerIDLabel.Location = new System.Drawing.Point(3, 14);
             customerIDLabel.Name = "customerIDLabel";
-            customerIDLabel.Size = new System.Drawing.Size(68, 13);
+            customerIDLabel.Size = new System.Drawing.Size(85, 14);
             customerIDLabel.TabIndex = 2;
-            customerIDLabel.Text = "Customer ID:";
-            // 
-            // companyNameLabel
-            // 
-            companyNameLabel.AutoSize = true;
-            companyNameLabel.Location = new System.Drawing.Point(3, 34);
-            companyNameLabel.Name = "companyNameLabel";
-            companyNameLabel.Size = new System.Drawing.Size(85, 13);
-            companyNameLabel.TabIndex = 4;
-            companyNameLabel.Text = "Company Name:";
+            customerIDLabel.Text = "ID del Cliente:";
             // 
             // contactNameLabel
             // 
             contactNameLabel.AutoSize = true;
-            contactNameLabel.Location = new System.Drawing.Point(200, 5);
+            contactNameLabel.Font = new System.Drawing.Font("Calibri", 9F);
+            contactNameLabel.Location = new System.Drawing.Point(3, 40);
             contactNameLabel.Name = "contactNameLabel";
-            contactNameLabel.Size = new System.Drawing.Size(78, 13);
+            contactNameLabel.Size = new System.Drawing.Size(53, 14);
             contactNameLabel.TabIndex = 6;
-            contactNameLabel.Text = "Contact Name:";
-            // 
-            // contactTitleLabel
-            // 
-            contactTitleLabel.AutoSize = true;
-            contactTitleLabel.Location = new System.Drawing.Point(200, 31);
-            contactTitleLabel.Name = "contactTitleLabel";
-            contactTitleLabel.Size = new System.Drawing.Size(70, 13);
-            contactTitleLabel.TabIndex = 8;
-            contactTitleLabel.Text = "Contact Title:";
+            contactNameLabel.Text = "Nombre:";
             // 
             // addressLabel
             // 
             addressLabel.AutoSize = true;
-            addressLabel.Location = new System.Drawing.Point(397, 5);
+            addressLabel.Font = new System.Drawing.Font("Calibri", 9F);
+            addressLabel.Location = new System.Drawing.Point(3, 66);
             addressLabel.Name = "addressLabel";
-            addressLabel.Size = new System.Drawing.Size(48, 13);
+            addressLabel.Size = new System.Drawing.Size(61, 14);
             addressLabel.TabIndex = 10;
-            addressLabel.Text = "Address:";
+            addressLabel.Text = "Dirección:";
             // 
             // cityLabel
             // 
             cityLabel.AutoSize = true;
-            cityLabel.Location = new System.Drawing.Point(397, 31);
+            cityLabel.Font = new System.Drawing.Font("Calibri", 9F);
+            cityLabel.Location = new System.Drawing.Point(3, 92);
             cityLabel.Name = "cityLabel";
-            cityLabel.Size = new System.Drawing.Size(27, 13);
+            cityLabel.Size = new System.Drawing.Size(48, 14);
             cityLabel.TabIndex = 12;
-            cityLabel.Text = "City:";
+            cityLabel.Text = "Ciudad:";
             // 
             // regionLabel
             // 
             regionLabel.AutoSize = true;
-            regionLabel.Location = new System.Drawing.Point(594, 5);
+            regionLabel.Font = new System.Drawing.Font("Calibri", 9F);
+            regionLabel.Location = new System.Drawing.Point(403, 14);
             regionLabel.Name = "regionLabel";
-            regionLabel.Size = new System.Drawing.Size(44, 13);
+            regionLabel.Size = new System.Drawing.Size(48, 14);
             regionLabel.TabIndex = 14;
-            regionLabel.Text = "Region:";
+            regionLabel.Text = "Región:";
             // 
             // postalCodeLabel
             // 
             postalCodeLabel.AutoSize = true;
-            postalCodeLabel.Location = new System.Drawing.Point(594, 31);
+            postalCodeLabel.Font = new System.Drawing.Font("Calibri", 9F);
+            postalCodeLabel.Location = new System.Drawing.Point(403, 40);
             postalCodeLabel.Name = "postalCodeLabel";
-            postalCodeLabel.Size = new System.Drawing.Size(67, 13);
+            postalCodeLabel.Size = new System.Drawing.Size(84, 14);
             postalCodeLabel.TabIndex = 16;
-            postalCodeLabel.Text = "Postal Code:";
+            postalCodeLabel.Text = "Código Postal:";
             // 
             // countryLabel
             // 
             countryLabel.AutoSize = true;
-            countryLabel.Location = new System.Drawing.Point(3, 60);
+            countryLabel.Font = new System.Drawing.Font("Calibri", 9F);
+            countryLabel.Location = new System.Drawing.Point(403, 66);
             countryLabel.Name = "countryLabel";
-            countryLabel.Size = new System.Drawing.Size(46, 13);
+            countryLabel.Size = new System.Drawing.Size(32, 14);
             countryLabel.TabIndex = 18;
-            countryLabel.Text = "Country:";
+            countryLabel.Text = "País:";
             // 
             // phoneLabel
             // 
             phoneLabel.AutoSize = true;
-            phoneLabel.Location = new System.Drawing.Point(3, 86);
+            phoneLabel.Font = new System.Drawing.Font("Calibri", 9F);
+            phoneLabel.Location = new System.Drawing.Point(403, 92);
             phoneLabel.Name = "phoneLabel";
-            phoneLabel.Size = new System.Drawing.Size(41, 13);
+            phoneLabel.Size = new System.Drawing.Size(58, 14);
             phoneLabel.TabIndex = 20;
-            phoneLabel.Text = "Phone:";
+            phoneLabel.Text = "Teléfono:";
             // 
             // faxLabel
             // 
             faxLabel.AutoSize = true;
-            faxLabel.Location = new System.Drawing.Point(200, 57);
+            faxLabel.Font = new System.Drawing.Font("Calibri", 9F);
+            faxLabel.Location = new System.Drawing.Point(697, 92);
             faxLabel.Name = "faxLabel";
-            faxLabel.Size = new System.Drawing.Size(27, 13);
+            faxLabel.Size = new System.Drawing.Size(28, 14);
             faxLabel.TabIndex = 22;
             faxLabel.Text = "Fax:";
             // 
             // supplierIDLabel
             // 
             supplierIDLabel.AutoSize = true;
+            supplierIDLabel.Font = new System.Drawing.Font("Calibri", 9F);
             supplierIDLabel.Location = new System.Drawing.Point(3, 8);
             supplierIDLabel.Name = "supplierIDLabel";
-            supplierIDLabel.Size = new System.Drawing.Size(62, 13);
+            supplierIDLabel.Size = new System.Drawing.Size(79, 14);
             supplierIDLabel.TabIndex = 2;
-            supplierIDLabel.Text = "Supplier ID:";
+            supplierIDLabel.Text = "ID Proveedor:";
             // 
             // companyNameLabel1
             // 
             companyNameLabel1.AutoSize = true;
-            companyNameLabel1.Location = new System.Drawing.Point(3, 34);
+            companyNameLabel1.Font = new System.Drawing.Font("Calibri", 9F);
+            companyNameLabel1.Location = new System.Drawing.Point(3, 60);
             companyNameLabel1.Name = "companyNameLabel1";
-            companyNameLabel1.Size = new System.Drawing.Size(85, 13);
+            companyNameLabel1.Size = new System.Drawing.Size(53, 14);
             companyNameLabel1.TabIndex = 4;
-            companyNameLabel1.Text = "Company Name:";
+            companyNameLabel1.Text = "Nombre:";
             // 
             // contactNameLabel1
             // 
             contactNameLabel1.AutoSize = true;
-            contactNameLabel1.Location = new System.Drawing.Point(200, 8);
+            contactNameLabel1.Font = new System.Drawing.Font("Calibri", 9F);
+            contactNameLabel1.Location = new System.Drawing.Point(3, 34);
             contactNameLabel1.Name = "contactNameLabel1";
-            contactNameLabel1.Size = new System.Drawing.Size(78, 13);
+            contactNameLabel1.Size = new System.Drawing.Size(57, 14);
             contactNameLabel1.TabIndex = 6;
-            contactNameLabel1.Text = "Contact Name:";
-            // 
-            // contactTitleLabel1
-            // 
-            contactTitleLabel1.AutoSize = true;
-            contactTitleLabel1.Location = new System.Drawing.Point(200, 34);
-            contactTitleLabel1.Name = "contactTitleLabel1";
-            contactTitleLabel1.Size = new System.Drawing.Size(70, 13);
-            contactTitleLabel1.TabIndex = 8;
-            contactTitleLabel1.Text = "Contact Title:";
+            contactNameLabel1.Text = "Contacto:";
             // 
             // addressLabel1
             // 
             addressLabel1.AutoSize = true;
-            addressLabel1.Location = new System.Drawing.Point(397, 8);
+            addressLabel1.Font = new System.Drawing.Font("Calibri", 9F);
+            addressLabel1.Location = new System.Drawing.Point(314, 8);
             addressLabel1.Name = "addressLabel1";
-            addressLabel1.Size = new System.Drawing.Size(48, 13);
+            addressLabel1.Size = new System.Drawing.Size(61, 14);
             addressLabel1.TabIndex = 10;
-            addressLabel1.Text = "Address:";
+            addressLabel1.Text = "Dirección:";
             // 
             // cityLabel1
             // 
             cityLabel1.AutoSize = true;
-            cityLabel1.Location = new System.Drawing.Point(397, 34);
+            cityLabel1.Font = new System.Drawing.Font("Calibri", 9F);
+            cityLabel1.Location = new System.Drawing.Point(314, 34);
             cityLabel1.Name = "cityLabel1";
-            cityLabel1.Size = new System.Drawing.Size(27, 13);
+            cityLabel1.Size = new System.Drawing.Size(48, 14);
             cityLabel1.TabIndex = 12;
-            cityLabel1.Text = "City:";
+            cityLabel1.Text = "Ciudad:";
             // 
             // regionLabel1
             // 
             regionLabel1.AutoSize = true;
-            regionLabel1.Location = new System.Drawing.Point(594, 8);
+            regionLabel1.Font = new System.Drawing.Font("Calibri", 9F);
+            regionLabel1.Location = new System.Drawing.Point(314, 60);
             regionLabel1.Name = "regionLabel1";
-            regionLabel1.Size = new System.Drawing.Size(44, 13);
+            regionLabel1.Size = new System.Drawing.Size(48, 14);
             regionLabel1.TabIndex = 14;
             regionLabel1.Text = "Region:";
             // 
             // postalCodeLabel1
             // 
             postalCodeLabel1.AutoSize = true;
-            postalCodeLabel1.Location = new System.Drawing.Point(594, 34);
+            postalCodeLabel1.Font = new System.Drawing.Font("Calibri", 9F);
+            postalCodeLabel1.Location = new System.Drawing.Point(625, 8);
             postalCodeLabel1.Name = "postalCodeLabel1";
-            postalCodeLabel1.Size = new System.Drawing.Size(67, 13);
+            postalCodeLabel1.Size = new System.Drawing.Size(84, 14);
             postalCodeLabel1.TabIndex = 16;
-            postalCodeLabel1.Text = "Postal Code:";
+            postalCodeLabel1.Text = "Codigo Postal:";
             // 
             // countryLabel1
             // 
             countryLabel1.AutoSize = true;
-            countryLabel1.Location = new System.Drawing.Point(3, 60);
+            countryLabel1.Font = new System.Drawing.Font("Calibri", 9F);
+            countryLabel1.Location = new System.Drawing.Point(625, 34);
             countryLabel1.Name = "countryLabel1";
-            countryLabel1.Size = new System.Drawing.Size(46, 13);
+            countryLabel1.Size = new System.Drawing.Size(32, 14);
             countryLabel1.TabIndex = 18;
-            countryLabel1.Text = "Country:";
+            countryLabel1.Text = "País:";
             // 
             // phoneLabel1
             // 
             phoneLabel1.AutoSize = true;
-            phoneLabel1.Location = new System.Drawing.Point(397, 60);
+            phoneLabel1.Font = new System.Drawing.Font("Calibri", 9F);
+            phoneLabel1.Location = new System.Drawing.Point(625, 60);
             phoneLabel1.Name = "phoneLabel1";
-            phoneLabel1.Size = new System.Drawing.Size(41, 13);
+            phoneLabel1.Size = new System.Drawing.Size(58, 14);
             phoneLabel1.TabIndex = 20;
-            phoneLabel1.Text = "Phone:";
-            // 
-            // faxLabel1
-            // 
-            faxLabel1.AutoSize = true;
-            faxLabel1.Location = new System.Drawing.Point(200, 60);
-            faxLabel1.Name = "faxLabel1";
-            faxLabel1.Size = new System.Drawing.Size(27, 13);
-            faxLabel1.TabIndex = 22;
-            faxLabel1.Text = "Fax:";
-            // 
-            // homePageLabel
-            // 
-            homePageLabel.AutoSize = true;
-            homePageLabel.Location = new System.Drawing.Point(594, 60);
-            homePageLabel.Name = "homePageLabel";
-            homePageLabel.Size = new System.Drawing.Size(66, 13);
-            homePageLabel.TabIndex = 24;
-            homePageLabel.Text = "Home Page:";
+            phoneLabel1.Text = "Teléfono:";
             // 
             // productIDLabel
             // 
             productIDLabel.AutoSize = true;
             productIDLabel.BackColor = System.Drawing.SystemColors.Window;
+            productIDLabel.Font = new System.Drawing.Font("Calibri", 9F);
             productIDLabel.Location = new System.Drawing.Point(3, 15);
             productIDLabel.Name = "productIDLabel";
-            productIDLabel.Size = new System.Drawing.Size(61, 13);
+            productIDLabel.Size = new System.Drawing.Size(72, 14);
             productIDLabel.TabIndex = 2;
-            productIDLabel.Text = "Product ID:";
+            productIDLabel.Text = "ID Producto:";
             // 
             // productNameLabel
             // 
             productNameLabel.AutoSize = true;
             productNameLabel.BackColor = System.Drawing.SystemColors.Window;
+            productNameLabel.Font = new System.Drawing.Font("Calibri", 9F);
             productNameLabel.Location = new System.Drawing.Point(3, 41);
             productNameLabel.Name = "productNameLabel";
-            productNameLabel.Size = new System.Drawing.Size(78, 13);
+            productNameLabel.Size = new System.Drawing.Size(53, 14);
             productNameLabel.TabIndex = 4;
-            productNameLabel.Text = "Product Name:";
+            productNameLabel.Text = "Nombre:";
             // 
             // supplierIDLabel1
             // 
             supplierIDLabel1.AutoSize = true;
             supplierIDLabel1.BackColor = System.Drawing.SystemColors.Window;
-            supplierIDLabel1.Location = new System.Drawing.Point(209, 15);
+            supplierIDLabel1.Font = new System.Drawing.Font("Calibri", 9F);
+            supplierIDLabel1.Location = new System.Drawing.Point(3, 67);
             supplierIDLabel1.Name = "supplierIDLabel1";
-            supplierIDLabel1.Size = new System.Drawing.Size(62, 13);
+            supplierIDLabel1.Size = new System.Drawing.Size(79, 14);
             supplierIDLabel1.TabIndex = 6;
-            supplierIDLabel1.Text = "Supplier ID:";
+            supplierIDLabel1.Text = "ID Proveedor:";
             // 
             // categoryIDLabel
             // 
             categoryIDLabel.AutoSize = true;
             categoryIDLabel.BackColor = System.Drawing.SystemColors.Window;
-            categoryIDLabel.Location = new System.Drawing.Point(209, 41);
+            categoryIDLabel.Font = new System.Drawing.Font("Calibri", 9F);
+            categoryIDLabel.Location = new System.Drawing.Point(488, 15);
             categoryIDLabel.Name = "categoryIDLabel";
-            categoryIDLabel.Size = new System.Drawing.Size(66, 13);
+            categoryIDLabel.Size = new System.Drawing.Size(76, 14);
             categoryIDLabel.TabIndex = 8;
-            categoryIDLabel.Text = "Category ID:";
+            categoryIDLabel.Text = "ID Categoría:";
             // 
             // quantityPerUnitLabel
             // 
             quantityPerUnitLabel.AutoSize = true;
             quantityPerUnitLabel.BackColor = System.Drawing.SystemColors.Window;
-            quantityPerUnitLabel.Location = new System.Drawing.Point(415, 15);
+            quantityPerUnitLabel.Font = new System.Drawing.Font("Calibri", 9F);
+            quantityPerUnitLabel.Location = new System.Drawing.Point(488, 41);
             quantityPerUnitLabel.Name = "quantityPerUnitLabel";
-            quantityPerUnitLabel.Size = new System.Drawing.Size(90, 13);
+            quantityPerUnitLabel.Size = new System.Drawing.Size(58, 14);
             quantityPerUnitLabel.TabIndex = 10;
-            quantityPerUnitLabel.Text = "Quantity Per Unit:";
+            quantityPerUnitLabel.Text = "Cantidad:";
             // 
             // unitPriceLabel
             // 
             unitPriceLabel.AutoSize = true;
             unitPriceLabel.BackColor = System.Drawing.SystemColors.Window;
-            unitPriceLabel.Location = new System.Drawing.Point(415, 41);
+            unitPriceLabel.Font = new System.Drawing.Font("Calibri", 9F);
+            unitPriceLabel.Location = new System.Drawing.Point(488, 67);
             unitPriceLabel.Name = "unitPriceLabel";
-            unitPriceLabel.Size = new System.Drawing.Size(56, 13);
+            unitPriceLabel.Size = new System.Drawing.Size(86, 14);
             unitPriceLabel.TabIndex = 12;
-            unitPriceLabel.Text = "Unit Price:";
-            // 
-            // unitsInStockLabel
-            // 
-            unitsInStockLabel.AutoSize = true;
-            unitsInStockLabel.BackColor = System.Drawing.SystemColors.Window;
-            unitsInStockLabel.Location = new System.Drawing.Point(621, 15);
-            unitsInStockLabel.Name = "unitsInStockLabel";
-            unitsInStockLabel.Size = new System.Drawing.Size(77, 13);
-            unitsInStockLabel.TabIndex = 14;
-            unitsInStockLabel.Text = "Units In Stock:";
-            // 
-            // unitsOnOrderLabel
-            // 
-            unitsOnOrderLabel.AutoSize = true;
-            unitsOnOrderLabel.BackColor = System.Drawing.SystemColors.Window;
-            unitsOnOrderLabel.Location = new System.Drawing.Point(621, 41);
-            unitsOnOrderLabel.Name = "unitsOnOrderLabel";
-            unitsOnOrderLabel.Size = new System.Drawing.Size(80, 13);
-            unitsOnOrderLabel.TabIndex = 16;
-            unitsOnOrderLabel.Text = "Units On Order:";
-            // 
-            // reorderLevelLabel
-            // 
-            reorderLevelLabel.AutoSize = true;
-            reorderLevelLabel.BackColor = System.Drawing.SystemColors.Window;
-            reorderLevelLabel.Location = new System.Drawing.Point(3, 67);
-            reorderLevelLabel.Name = "reorderLevelLabel";
-            reorderLevelLabel.Size = new System.Drawing.Size(77, 13);
-            reorderLevelLabel.TabIndex = 18;
-            reorderLevelLabel.Text = "Reorder Level:";
-            // 
-            // discontinuedLabel
-            // 
-            discontinuedLabel.AutoSize = true;
-            discontinuedLabel.BackColor = System.Drawing.SystemColors.Window;
-            discontinuedLabel.Location = new System.Drawing.Point(209, 67);
-            discontinuedLabel.Name = "discontinuedLabel";
-            discontinuedLabel.Size = new System.Drawing.Size(72, 13);
-            discontinuedLabel.TabIndex = 20;
-            discontinuedLabel.Text = "Discontinued:";
+            unitPriceLabel.Text = "Precio Unidad:";
             // 
             // orderIDLabel
             // 
@@ -672,9 +584,10 @@
             this.dataTabCtrl.Controls.Add(this.metroTabPage3);
             this.dataTabCtrl.Location = new System.Drawing.Point(23, 188);
             this.dataTabCtrl.Name = "dataTabCtrl";
-            this.dataTabCtrl.SelectedIndex = 0;
+            this.dataTabCtrl.SelectedIndex = 2;
             this.dataTabCtrl.Size = new System.Drawing.Size(970, 378);
             this.dataTabCtrl.TabIndex = 0;
+            this.dataTabCtrl.UseSelectable = true;
             // 
             // metroTabPage1
             // 
@@ -685,12 +598,8 @@
             this.metroTabPage1.Controls.Add(this.cancelarBtDat);
             this.metroTabPage1.Controls.Add(customerIDLabel);
             this.metroTabPage1.Controls.Add(this.customerIDTextBox);
-            this.metroTabPage1.Controls.Add(companyNameLabel);
-            this.metroTabPage1.Controls.Add(this.companyNameTextBox);
             this.metroTabPage1.Controls.Add(contactNameLabel);
             this.metroTabPage1.Controls.Add(this.contactNameTextBox);
-            this.metroTabPage1.Controls.Add(contactTitleLabel);
-            this.metroTabPage1.Controls.Add(this.contactTitleTextBox);
             this.metroTabPage1.Controls.Add(addressLabel);
             this.metroTabPage1.Controls.Add(this.addressTextBox);
             this.metroTabPage1.Controls.Add(cityLabel);
@@ -707,13 +616,17 @@
             this.metroTabPage1.Controls.Add(this.faxTextBox);
             this.metroTabPage1.HorizontalScrollbar = true;
             this.metroTabPage1.HorizontalScrollbarBarColor = true;
-            this.metroTabPage1.Location = new System.Drawing.Point(4, 35);
+            this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage1.HorizontalScrollbarSize = 10;
+            this.metroTabPage1.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage1.Name = "metroTabPage1";
-            this.metroTabPage1.Size = new System.Drawing.Size(962, 339);
+            this.metroTabPage1.Size = new System.Drawing.Size(962, 336);
             this.metroTabPage1.TabIndex = 0;
             this.metroTabPage1.Text = "Cliente";
             this.metroTabPage1.VerticalScrollbar = true;
             this.metroTabPage1.VerticalScrollbarBarColor = true;
+            this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage1.VerticalScrollbarSize = 10;
             // 
             // reestablBtDat
             // 
@@ -722,6 +635,7 @@
             this.reestablBtDat.Size = new System.Drawing.Size(75, 23);
             this.reestablBtDat.TabIndex = 26;
             this.reestablBtDat.Text = "Reestablecer";
+            this.reestablBtDat.UseSelectable = true;
             // 
             // añadirBtDat
             // 
@@ -730,6 +644,7 @@
             this.añadirBtDat.Size = new System.Drawing.Size(75, 23);
             this.añadirBtDat.TabIndex = 25;
             this.añadirBtDat.Text = "Añadir";
+            this.añadirBtDat.UseSelectable = true;
             // 
             // cancelarBtDat
             // 
@@ -738,14 +653,15 @@
             this.cancelarBtDat.Size = new System.Drawing.Size(75, 23);
             this.cancelarBtDat.TabIndex = 24;
             this.cancelarBtDat.Text = "Cancelar";
+            this.cancelarBtDat.UseSelectable = true;
             this.cancelarBtDat.Click += new System.EventHandler(this.cancelarBtDat_Click);
             // 
             // customerIDTextBox
             // 
             this.customerIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "CustomerID", true));
-            this.customerIDTextBox.Location = new System.Drawing.Point(94, 5);
+            this.customerIDTextBox.Location = new System.Drawing.Point(94, 11);
             this.customerIDTextBox.Name = "customerIDTextBox";
-            this.customerIDTextBox.Size = new System.Drawing.Size(100, 20);
+            this.customerIDTextBox.Size = new System.Drawing.Size(303, 20);
             this.customerIDTextBox.TabIndex = 3;
             // 
             // customersBindingSource
@@ -758,84 +674,68 @@
             this.northwindDataSet.DataSetName = "NorthwindDataSet";
             this.northwindDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // companyNameTextBox
-            // 
-            this.companyNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "CompanyName", true));
-            this.companyNameTextBox.Location = new System.Drawing.Point(94, 31);
-            this.companyNameTextBox.Name = "companyNameTextBox";
-            this.companyNameTextBox.Size = new System.Drawing.Size(100, 20);
-            this.companyNameTextBox.TabIndex = 5;
-            // 
             // contactNameTextBox
             // 
             this.contactNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "ContactName", true));
-            this.contactNameTextBox.Location = new System.Drawing.Point(291, 2);
+            this.contactNameTextBox.Location = new System.Drawing.Point(94, 37);
             this.contactNameTextBox.Name = "contactNameTextBox";
-            this.contactNameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.contactNameTextBox.Size = new System.Drawing.Size(303, 20);
             this.contactNameTextBox.TabIndex = 7;
-            // 
-            // contactTitleTextBox
-            // 
-            this.contactTitleTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "ContactTitle", true));
-            this.contactTitleTextBox.Location = new System.Drawing.Point(291, 28);
-            this.contactTitleTextBox.Name = "contactTitleTextBox";
-            this.contactTitleTextBox.Size = new System.Drawing.Size(100, 20);
-            this.contactTitleTextBox.TabIndex = 9;
             // 
             // addressTextBox
             // 
             this.addressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "Address", true));
-            this.addressTextBox.Location = new System.Drawing.Point(488, 2);
+            this.addressTextBox.Location = new System.Drawing.Point(94, 63);
             this.addressTextBox.Name = "addressTextBox";
-            this.addressTextBox.Size = new System.Drawing.Size(100, 20);
+            this.addressTextBox.Size = new System.Drawing.Size(303, 20);
             this.addressTextBox.TabIndex = 11;
             // 
             // cityTextBox
             // 
             this.cityTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "City", true));
-            this.cityTextBox.Location = new System.Drawing.Point(488, 28);
+            this.cityTextBox.Location = new System.Drawing.Point(94, 89);
             this.cityTextBox.Name = "cityTextBox";
-            this.cityTextBox.Size = new System.Drawing.Size(100, 20);
+            this.cityTextBox.Size = new System.Drawing.Size(303, 20);
             this.cityTextBox.TabIndex = 13;
             // 
             // regionTextBox
             // 
             this.regionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "Region", true));
-            this.regionTextBox.Location = new System.Drawing.Point(685, 2);
+            this.regionTextBox.Location = new System.Drawing.Point(494, 11);
             this.regionTextBox.Name = "regionTextBox";
-            this.regionTextBox.Size = new System.Drawing.Size(100, 20);
+            this.regionTextBox.Size = new System.Drawing.Size(465, 20);
             this.regionTextBox.TabIndex = 15;
             // 
             // postalCodeTextBox
             // 
             this.postalCodeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "PostalCode", true));
-            this.postalCodeTextBox.Location = new System.Drawing.Point(685, 28);
+            this.postalCodeTextBox.Location = new System.Drawing.Point(494, 37);
             this.postalCodeTextBox.Name = "postalCodeTextBox";
-            this.postalCodeTextBox.Size = new System.Drawing.Size(100, 20);
+            this.postalCodeTextBox.Size = new System.Drawing.Size(465, 20);
             this.postalCodeTextBox.TabIndex = 17;
             // 
             // countryTextBox
             // 
             this.countryTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "Country", true));
-            this.countryTextBox.Location = new System.Drawing.Point(94, 57);
+            this.countryTextBox.Location = new System.Drawing.Point(494, 63);
             this.countryTextBox.Name = "countryTextBox";
-            this.countryTextBox.Size = new System.Drawing.Size(100, 20);
+            this.countryTextBox.Size = new System.Drawing.Size(465, 20);
             this.countryTextBox.TabIndex = 19;
             // 
             // phoneTextBox
             // 
             this.phoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "Phone", true));
-            this.phoneTextBox.Location = new System.Drawing.Point(94, 83);
+            this.phoneTextBox.Location = new System.Drawing.Point(494, 89);
             this.phoneTextBox.Name = "phoneTextBox";
-            this.phoneTextBox.Size = new System.Drawing.Size(100, 20);
+            this.phoneTextBox.Size = new System.Drawing.Size(197, 20);
             this.phoneTextBox.TabIndex = 21;
             // 
             // faxTextBox
             // 
             this.faxTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "Fax", true));
-            this.faxTextBox.Location = new System.Drawing.Point(291, 54);
+            this.faxTextBox.Location = new System.Drawing.Point(788, 89);
             this.faxTextBox.Name = "faxTextBox";
-            this.faxTextBox.Size = new System.Drawing.Size(100, 20);
+            this.faxTextBox.Size = new System.Drawing.Size(171, 20);
             this.faxTextBox.TabIndex = 23;
             // 
             // Proveedor
@@ -844,15 +744,13 @@
             this.Proveedor.BackColor = System.Drawing.SystemColors.Window;
             this.Proveedor.Controls.Add(this.metroButton4);
             this.Proveedor.Controls.Add(this.metroButton5);
-            this.Proveedor.Controls.Add(this.metroButton6);
+            this.Proveedor.Controls.Add(this.cancelProvBt);
             this.Proveedor.Controls.Add(supplierIDLabel);
             this.Proveedor.Controls.Add(this.supplierIDTextBox);
             this.Proveedor.Controls.Add(companyNameLabel1);
             this.Proveedor.Controls.Add(this.companyNameTextBox1);
             this.Proveedor.Controls.Add(contactNameLabel1);
             this.Proveedor.Controls.Add(this.contactNameTextBox1);
-            this.Proveedor.Controls.Add(contactTitleLabel1);
-            this.Proveedor.Controls.Add(this.contactTitleTextBox1);
             this.Proveedor.Controls.Add(addressLabel1);
             this.Proveedor.Controls.Add(this.addressTextBox1);
             this.Proveedor.Controls.Add(cityLabel1);
@@ -865,19 +763,19 @@
             this.Proveedor.Controls.Add(this.countryTextBox1);
             this.Proveedor.Controls.Add(phoneLabel1);
             this.Proveedor.Controls.Add(this.phoneTextBox1);
-            this.Proveedor.Controls.Add(faxLabel1);
-            this.Proveedor.Controls.Add(this.faxTextBox1);
-            this.Proveedor.Controls.Add(homePageLabel);
-            this.Proveedor.Controls.Add(this.homePageTextBox);
             this.Proveedor.HorizontalScrollbar = true;
             this.Proveedor.HorizontalScrollbarBarColor = true;
-            this.Proveedor.Location = new System.Drawing.Point(4, 35);
+            this.Proveedor.HorizontalScrollbarHighlightOnWheel = false;
+            this.Proveedor.HorizontalScrollbarSize = 10;
+            this.Proveedor.Location = new System.Drawing.Point(4, 38);
             this.Proveedor.Name = "Proveedor";
-            this.Proveedor.Size = new System.Drawing.Size(962, 339);
+            this.Proveedor.Size = new System.Drawing.Size(962, 336);
             this.Proveedor.TabIndex = 1;
             this.Proveedor.Text = "Proveedor";
             this.Proveedor.VerticalScrollbar = true;
             this.Proveedor.VerticalScrollbarBarColor = true;
+            this.Proveedor.VerticalScrollbarHighlightOnWheel = false;
+            this.Proveedor.VerticalScrollbarSize = 10;
             // 
             // metroButton4
             // 
@@ -885,7 +783,8 @@
             this.metroButton4.Name = "metroButton4";
             this.metroButton4.Size = new System.Drawing.Size(75, 23);
             this.metroButton4.TabIndex = 29;
-            this.metroButton4.Text = "Reestablecer";
+            this.metroButton4.Text = "Limpiar";
+            this.metroButton4.UseSelectable = true;
             // 
             // metroButton5
             // 
@@ -894,21 +793,24 @@
             this.metroButton5.Size = new System.Drawing.Size(75, 23);
             this.metroButton5.TabIndex = 28;
             this.metroButton5.Text = "Añadir";
+            this.metroButton5.UseSelectable = true;
             // 
-            // metroButton6
+            // cancelProvBt
             // 
-            this.metroButton6.Location = new System.Drawing.Point(884, 313);
-            this.metroButton6.Name = "metroButton6";
-            this.metroButton6.Size = new System.Drawing.Size(75, 23);
-            this.metroButton6.TabIndex = 27;
-            this.metroButton6.Text = "Cancelar";
+            this.cancelProvBt.Location = new System.Drawing.Point(884, 313);
+            this.cancelProvBt.Name = "cancelProvBt";
+            this.cancelProvBt.Size = new System.Drawing.Size(75, 23);
+            this.cancelProvBt.TabIndex = 27;
+            this.cancelProvBt.Text = "Cancelar";
+            this.cancelProvBt.UseSelectable = true;
+            this.cancelProvBt.Click += new System.EventHandler(this.cancelProvBt_Click);
             // 
             // supplierIDTextBox
             // 
             this.supplierIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.suppliersBindingSource, "SupplierID", true));
             this.supplierIDTextBox.Location = new System.Drawing.Point(94, 5);
             this.supplierIDTextBox.Name = "supplierIDTextBox";
-            this.supplierIDTextBox.Size = new System.Drawing.Size(100, 20);
+            this.supplierIDTextBox.Size = new System.Drawing.Size(214, 20);
             this.supplierIDTextBox.TabIndex = 3;
             // 
             // suppliersBindingSource
@@ -919,97 +821,73 @@
             // companyNameTextBox1
             // 
             this.companyNameTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.suppliersBindingSource, "CompanyName", true));
-            this.companyNameTextBox1.Location = new System.Drawing.Point(94, 31);
+            this.companyNameTextBox1.Location = new System.Drawing.Point(94, 57);
             this.companyNameTextBox1.Name = "companyNameTextBox1";
-            this.companyNameTextBox1.Size = new System.Drawing.Size(100, 20);
+            this.companyNameTextBox1.Size = new System.Drawing.Size(214, 20);
             this.companyNameTextBox1.TabIndex = 5;
             // 
             // contactNameTextBox1
             // 
             this.contactNameTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.suppliersBindingSource, "ContactName", true));
-            this.contactNameTextBox1.Location = new System.Drawing.Point(291, 5);
+            this.contactNameTextBox1.Location = new System.Drawing.Point(94, 31);
             this.contactNameTextBox1.Name = "contactNameTextBox1";
-            this.contactNameTextBox1.Size = new System.Drawing.Size(100, 20);
+            this.contactNameTextBox1.Size = new System.Drawing.Size(214, 20);
             this.contactNameTextBox1.TabIndex = 7;
-            // 
-            // contactTitleTextBox1
-            // 
-            this.contactTitleTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.suppliersBindingSource, "ContactTitle", true));
-            this.contactTitleTextBox1.Location = new System.Drawing.Point(291, 31);
-            this.contactTitleTextBox1.Name = "contactTitleTextBox1";
-            this.contactTitleTextBox1.Size = new System.Drawing.Size(100, 20);
-            this.contactTitleTextBox1.TabIndex = 9;
             // 
             // addressTextBox1
             // 
             this.addressTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.suppliersBindingSource, "Address", true));
-            this.addressTextBox1.Location = new System.Drawing.Point(488, 5);
+            this.addressTextBox1.Location = new System.Drawing.Point(405, 5);
             this.addressTextBox1.Name = "addressTextBox1";
-            this.addressTextBox1.Size = new System.Drawing.Size(100, 20);
+            this.addressTextBox1.Size = new System.Drawing.Size(214, 20);
             this.addressTextBox1.TabIndex = 11;
             // 
             // cityTextBox1
             // 
             this.cityTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.suppliersBindingSource, "City", true));
-            this.cityTextBox1.Location = new System.Drawing.Point(488, 31);
+            this.cityTextBox1.Location = new System.Drawing.Point(405, 31);
             this.cityTextBox1.Name = "cityTextBox1";
-            this.cityTextBox1.Size = new System.Drawing.Size(100, 20);
+            this.cityTextBox1.Size = new System.Drawing.Size(214, 20);
             this.cityTextBox1.TabIndex = 13;
             // 
             // regionTextBox1
             // 
             this.regionTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.suppliersBindingSource, "Region", true));
-            this.regionTextBox1.Location = new System.Drawing.Point(685, 5);
+            this.regionTextBox1.Location = new System.Drawing.Point(405, 57);
             this.regionTextBox1.Name = "regionTextBox1";
-            this.regionTextBox1.Size = new System.Drawing.Size(100, 20);
+            this.regionTextBox1.Size = new System.Drawing.Size(214, 20);
             this.regionTextBox1.TabIndex = 15;
             // 
             // postalCodeTextBox1
             // 
             this.postalCodeTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.suppliersBindingSource, "PostalCode", true));
-            this.postalCodeTextBox1.Location = new System.Drawing.Point(685, 31);
+            this.postalCodeTextBox1.Location = new System.Drawing.Point(716, 5);
             this.postalCodeTextBox1.Name = "postalCodeTextBox1";
-            this.postalCodeTextBox1.Size = new System.Drawing.Size(100, 20);
+            this.postalCodeTextBox1.Size = new System.Drawing.Size(214, 20);
             this.postalCodeTextBox1.TabIndex = 17;
             // 
             // countryTextBox1
             // 
             this.countryTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.suppliersBindingSource, "Country", true));
-            this.countryTextBox1.Location = new System.Drawing.Point(94, 57);
+            this.countryTextBox1.Location = new System.Drawing.Point(716, 31);
             this.countryTextBox1.Name = "countryTextBox1";
-            this.countryTextBox1.Size = new System.Drawing.Size(100, 20);
+            this.countryTextBox1.Size = new System.Drawing.Size(214, 20);
             this.countryTextBox1.TabIndex = 19;
             // 
             // phoneTextBox1
             // 
             this.phoneTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.suppliersBindingSource, "Phone", true));
-            this.phoneTextBox1.Location = new System.Drawing.Point(488, 57);
+            this.phoneTextBox1.Location = new System.Drawing.Point(716, 57);
             this.phoneTextBox1.Name = "phoneTextBox1";
-            this.phoneTextBox1.Size = new System.Drawing.Size(100, 20);
+            this.phoneTextBox1.Size = new System.Drawing.Size(214, 20);
             this.phoneTextBox1.TabIndex = 21;
-            // 
-            // faxTextBox1
-            // 
-            this.faxTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.suppliersBindingSource, "Fax", true));
-            this.faxTextBox1.Location = new System.Drawing.Point(291, 57);
-            this.faxTextBox1.Name = "faxTextBox1";
-            this.faxTextBox1.Size = new System.Drawing.Size(100, 20);
-            this.faxTextBox1.TabIndex = 23;
-            // 
-            // homePageTextBox
-            // 
-            this.homePageTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.suppliersBindingSource, "HomePage", true));
-            this.homePageTextBox.Location = new System.Drawing.Point(685, 57);
-            this.homePageTextBox.Name = "homePageTextBox";
-            this.homePageTextBox.Size = new System.Drawing.Size(100, 20);
-            this.homePageTextBox.TabIndex = 25;
             // 
             // metroTabPage3
             // 
             this.metroTabPage3.AutoScroll = true;
             this.metroTabPage3.Controls.Add(this.metroButton7);
             this.metroTabPage3.Controls.Add(this.metroButton8);
-            this.metroTabPage3.Controls.Add(this.metroButton9);
+            this.metroTabPage3.Controls.Add(this.cancelArtDat);
             this.metroTabPage3.Controls.Add(productIDLabel);
             this.metroTabPage3.Controls.Add(this.productIDTextBox);
             this.metroTabPage3.Controls.Add(productNameLabel);
@@ -1022,23 +900,19 @@
             this.metroTabPage3.Controls.Add(this.quantityPerUnitTextBox);
             this.metroTabPage3.Controls.Add(unitPriceLabel);
             this.metroTabPage3.Controls.Add(this.unitPriceTextBox);
-            this.metroTabPage3.Controls.Add(unitsInStockLabel);
-            this.metroTabPage3.Controls.Add(this.unitsInStockTextBox);
-            this.metroTabPage3.Controls.Add(unitsOnOrderLabel);
-            this.metroTabPage3.Controls.Add(this.unitsOnOrderTextBox);
-            this.metroTabPage3.Controls.Add(reorderLevelLabel);
-            this.metroTabPage3.Controls.Add(this.reorderLevelTextBox);
-            this.metroTabPage3.Controls.Add(discontinuedLabel);
-            this.metroTabPage3.Controls.Add(this.discontinuedCheckBox);
             this.metroTabPage3.HorizontalScrollbar = true;
             this.metroTabPage3.HorizontalScrollbarBarColor = true;
-            this.metroTabPage3.Location = new System.Drawing.Point(4, 35);
+            this.metroTabPage3.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage3.HorizontalScrollbarSize = 10;
+            this.metroTabPage3.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage3.Name = "metroTabPage3";
-            this.metroTabPage3.Size = new System.Drawing.Size(962, 339);
+            this.metroTabPage3.Size = new System.Drawing.Size(962, 336);
             this.metroTabPage3.TabIndex = 2;
-            this.metroTabPage3.Text = "Artículo";
+            this.metroTabPage3.Text = "Articulos";
             this.metroTabPage3.VerticalScrollbar = true;
             this.metroTabPage3.VerticalScrollbarBarColor = true;
+            this.metroTabPage3.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage3.VerticalScrollbarSize = 10;
             // 
             // metroButton7
             // 
@@ -1047,6 +921,7 @@
             this.metroButton7.Size = new System.Drawing.Size(75, 23);
             this.metroButton7.TabIndex = 29;
             this.metroButton7.Text = "Reestablecer";
+            this.metroButton7.UseSelectable = true;
             // 
             // metroButton8
             // 
@@ -1055,14 +930,17 @@
             this.metroButton8.Size = new System.Drawing.Size(75, 23);
             this.metroButton8.TabIndex = 28;
             this.metroButton8.Text = "Añadir";
+            this.metroButton8.UseSelectable = true;
             // 
-            // metroButton9
+            // cancelArtDat
             // 
-            this.metroButton9.Location = new System.Drawing.Point(884, 313);
-            this.metroButton9.Name = "metroButton9";
-            this.metroButton9.Size = new System.Drawing.Size(75, 23);
-            this.metroButton9.TabIndex = 27;
-            this.metroButton9.Text = "Cancelar";
+            this.cancelArtDat.Location = new System.Drawing.Point(884, 313);
+            this.cancelArtDat.Name = "cancelArtDat";
+            this.cancelArtDat.Size = new System.Drawing.Size(75, 23);
+            this.cancelArtDat.TabIndex = 27;
+            this.cancelArtDat.Text = "Cancelar";
+            this.cancelArtDat.UseSelectable = true;
+            this.cancelArtDat.Click += new System.EventHandler(this.cancelArtDat_Click);
             // 
             // productIDTextBox
             // 
@@ -1070,7 +948,7 @@
             this.productIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productsBindingSource, "ProductID", true));
             this.productIDTextBox.Location = new System.Drawing.Point(99, 12);
             this.productIDTextBox.Name = "productIDTextBox";
-            this.productIDTextBox.Size = new System.Drawing.Size(104, 20);
+            this.productIDTextBox.Size = new System.Drawing.Size(383, 20);
             this.productIDTextBox.TabIndex = 3;
             // 
             // productsBindingSource
@@ -1084,83 +962,44 @@
             this.productNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productsBindingSource, "ProductName", true));
             this.productNameTextBox.Location = new System.Drawing.Point(99, 38);
             this.productNameTextBox.Name = "productNameTextBox";
-            this.productNameTextBox.Size = new System.Drawing.Size(104, 20);
+            this.productNameTextBox.Size = new System.Drawing.Size(383, 20);
             this.productNameTextBox.TabIndex = 5;
             // 
             // supplierIDTextBox1
             // 
             this.supplierIDTextBox1.BackColor = System.Drawing.SystemColors.Window;
             this.supplierIDTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productsBindingSource, "SupplierID", true));
-            this.supplierIDTextBox1.Location = new System.Drawing.Point(305, 12);
+            this.supplierIDTextBox1.Location = new System.Drawing.Point(99, 64);
             this.supplierIDTextBox1.Name = "supplierIDTextBox1";
-            this.supplierIDTextBox1.Size = new System.Drawing.Size(104, 20);
+            this.supplierIDTextBox1.Size = new System.Drawing.Size(383, 20);
             this.supplierIDTextBox1.TabIndex = 7;
             // 
             // categoryIDTextBox
             // 
             this.categoryIDTextBox.BackColor = System.Drawing.SystemColors.Window;
             this.categoryIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productsBindingSource, "CategoryID", true));
-            this.categoryIDTextBox.Location = new System.Drawing.Point(305, 38);
+            this.categoryIDTextBox.Location = new System.Drawing.Point(584, 12);
             this.categoryIDTextBox.Name = "categoryIDTextBox";
-            this.categoryIDTextBox.Size = new System.Drawing.Size(104, 20);
+            this.categoryIDTextBox.Size = new System.Drawing.Size(375, 20);
             this.categoryIDTextBox.TabIndex = 9;
             // 
             // quantityPerUnitTextBox
             // 
             this.quantityPerUnitTextBox.BackColor = System.Drawing.SystemColors.Window;
             this.quantityPerUnitTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productsBindingSource, "QuantityPerUnit", true));
-            this.quantityPerUnitTextBox.Location = new System.Drawing.Point(511, 12);
+            this.quantityPerUnitTextBox.Location = new System.Drawing.Point(584, 38);
             this.quantityPerUnitTextBox.Name = "quantityPerUnitTextBox";
-            this.quantityPerUnitTextBox.Size = new System.Drawing.Size(104, 20);
+            this.quantityPerUnitTextBox.Size = new System.Drawing.Size(375, 20);
             this.quantityPerUnitTextBox.TabIndex = 11;
             // 
             // unitPriceTextBox
             // 
             this.unitPriceTextBox.BackColor = System.Drawing.SystemColors.Window;
             this.unitPriceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productsBindingSource, "UnitPrice", true));
-            this.unitPriceTextBox.Location = new System.Drawing.Point(511, 38);
+            this.unitPriceTextBox.Location = new System.Drawing.Point(584, 64);
             this.unitPriceTextBox.Name = "unitPriceTextBox";
-            this.unitPriceTextBox.Size = new System.Drawing.Size(104, 20);
+            this.unitPriceTextBox.Size = new System.Drawing.Size(375, 20);
             this.unitPriceTextBox.TabIndex = 13;
-            // 
-            // unitsInStockTextBox
-            // 
-            this.unitsInStockTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.unitsInStockTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productsBindingSource, "UnitsInStock", true));
-            this.unitsInStockTextBox.Location = new System.Drawing.Point(717, 12);
-            this.unitsInStockTextBox.Name = "unitsInStockTextBox";
-            this.unitsInStockTextBox.Size = new System.Drawing.Size(104, 20);
-            this.unitsInStockTextBox.TabIndex = 15;
-            // 
-            // unitsOnOrderTextBox
-            // 
-            this.unitsOnOrderTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.unitsOnOrderTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productsBindingSource, "UnitsOnOrder", true));
-            this.unitsOnOrderTextBox.Location = new System.Drawing.Point(717, 38);
-            this.unitsOnOrderTextBox.Name = "unitsOnOrderTextBox";
-            this.unitsOnOrderTextBox.Size = new System.Drawing.Size(104, 20);
-            this.unitsOnOrderTextBox.TabIndex = 17;
-            // 
-            // reorderLevelTextBox
-            // 
-            this.reorderLevelTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.reorderLevelTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productsBindingSource, "ReorderLevel", true));
-            this.reorderLevelTextBox.Location = new System.Drawing.Point(99, 64);
-            this.reorderLevelTextBox.Name = "reorderLevelTextBox";
-            this.reorderLevelTextBox.Size = new System.Drawing.Size(104, 20);
-            this.reorderLevelTextBox.TabIndex = 19;
-            // 
-            // discontinuedCheckBox
-            // 
-            this.discontinuedCheckBox.BackColor = System.Drawing.SystemColors.Window;
-            this.discontinuedCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.discontinuedCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.productsBindingSource, "Discontinued", true));
-            this.discontinuedCheckBox.Location = new System.Drawing.Point(305, 67);
-            this.discontinuedCheckBox.Name = "discontinuedCheckBox";
-            this.discontinuedCheckBox.Size = new System.Drawing.Size(104, 24);
-            this.discontinuedCheckBox.TabIndex = 21;
-            this.discontinuedCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.discontinuedCheckBox.UseVisualStyleBackColor = false;
             // 
             // metroLabel1
             // 
@@ -1173,6 +1012,7 @@
             // 
             // tramiteTile
             // 
+            this.tramiteTile.ActiveControl = null;
             this.tramiteTile.Location = new System.Drawing.Point(129, 82);
             this.tramiteTile.Name = "tramiteTile";
             this.tramiteTile.Size = new System.Drawing.Size(100, 100);
@@ -1183,6 +1023,7 @@
             this.tramiteTile.TileImage = global::ERP.Properties.Resources.tramite;
             this.tramiteTile.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.tramiteTile.TileTextFontSize = MetroFramework.MetroTileTextSize.Small;
+            this.tramiteTile.UseSelectable = true;
             this.tramiteTile.UseTileImage = true;
             this.tramiteTile.Click += new System.EventHandler(this.tramiteTile_Click);
             // 
@@ -1218,6 +1059,7 @@
             // 
             // volverTile
             // 
+            this.volverTile.ActiveControl = null;
             this.volverTile.Location = new System.Drawing.Point(893, 82);
             this.volverTile.Name = "volverTile";
             this.volverTile.Size = new System.Drawing.Size(100, 100);
@@ -1228,6 +1070,7 @@
             this.volverTile.TileImage = global::ERP.Properties.Resources.back;
             this.volverTile.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.volverTile.TileTextFontSize = MetroFramework.MetroTileTextSize.Small;
+            this.volverTile.UseSelectable = true;
             this.volverTile.UseTileImage = true;
             this.volverTile.Click += new System.EventHandler(this.volverTile_Click);
             // 
@@ -1239,6 +1082,7 @@
             this.tramiteCtrl.SelectedIndex = 0;
             this.tramiteCtrl.Size = new System.Drawing.Size(970, 378);
             this.tramiteCtrl.TabIndex = 4;
+            this.tramiteCtrl.UseSelectable = true;
             // 
             // orderTab
             // 
@@ -1282,13 +1126,17 @@
             this.orderTab.Controls.Add(this.shipCountryTextBox);
             this.orderTab.HorizontalScrollbar = true;
             this.orderTab.HorizontalScrollbarBarColor = true;
-            this.orderTab.Location = new System.Drawing.Point(4, 35);
+            this.orderTab.HorizontalScrollbarHighlightOnWheel = false;
+            this.orderTab.HorizontalScrollbarSize = 10;
+            this.orderTab.Location = new System.Drawing.Point(4, 38);
             this.orderTab.Name = "orderTab";
-            this.orderTab.Size = new System.Drawing.Size(962, 339);
+            this.orderTab.Size = new System.Drawing.Size(962, 336);
             this.orderTab.TabIndex = 0;
             this.orderTab.Text = "Pedidos";
             this.orderTab.VerticalScrollbar = true;
             this.orderTab.VerticalScrollbarBarColor = true;
+            this.orderTab.VerticalScrollbarHighlightOnWheel = false;
+            this.orderTab.VerticalScrollbarSize = 10;
             // 
             // Presupuesto
             // 
@@ -1298,7 +1146,7 @@
             this.Presupuesto.Size = new System.Drawing.Size(98, 15);
             this.Presupuesto.TabIndex = 37;
             this.Presupuesto.Text = "¿Presupuesto?";
-            this.Presupuesto.UseVisualStyleBackColor = true;
+            this.Presupuesto.UseSelectable = true;
             // 
             // totalLabel
             // 
@@ -1311,11 +1159,35 @@
             // 
             // totalPrecio
             // 
+            // 
+            // 
+            // 
+            this.totalPrecio.CustomButton.Image = null;
+            this.totalPrecio.CustomButton.Location = new System.Drawing.Point(93, 1);
+            this.totalPrecio.CustomButton.Name = "";
+            this.totalPrecio.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.totalPrecio.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.totalPrecio.CustomButton.TabIndex = 1;
+            this.totalPrecio.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.totalPrecio.CustomButton.UseSelectable = true;
+            this.totalPrecio.CustomButton.Visible = false;
+            this.totalPrecio.Lines = new string[] {
+        "0"};
             this.totalPrecio.Location = new System.Drawing.Point(488, 240);
+            this.totalPrecio.MaxLength = 32767;
             this.totalPrecio.Name = "totalPrecio";
+            this.totalPrecio.PasswordChar = '\0';
+            this.totalPrecio.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.totalPrecio.SelectedText = "";
+            this.totalPrecio.SelectionLength = 0;
+            this.totalPrecio.SelectionStart = 0;
+            this.totalPrecio.ShortcutsEnabled = true;
             this.totalPrecio.Size = new System.Drawing.Size(115, 23);
             this.totalPrecio.TabIndex = 35;
             this.totalPrecio.Text = "0";
+            this.totalPrecio.UseSelectable = true;
+            this.totalPrecio.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.totalPrecio.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // btCancelTram
             // 
@@ -1324,6 +1196,7 @@
             this.btCancelTram.Size = new System.Drawing.Size(75, 23);
             this.btCancelTram.TabIndex = 34;
             this.btCancelTram.Text = "Cancelar";
+            this.btCancelTram.UseSelectable = true;
             this.btCancelTram.Click += new System.EventHandler(this.btCancelTram_Click);
             // 
             // btAceptTram
@@ -1333,6 +1206,7 @@
             this.btAceptTram.Size = new System.Drawing.Size(75, 23);
             this.btAceptTram.TabIndex = 33;
             this.btAceptTram.Text = "Aceptar";
+            this.btAceptTram.UseSelectable = true;
             // 
             // btElimTram
             // 
@@ -1341,6 +1215,7 @@
             this.btElimTram.Size = new System.Drawing.Size(75, 23);
             this.btElimTram.TabIndex = 32;
             this.btElimTram.Text = "Eliminar...";
+            this.btElimTram.UseSelectable = true;
             // 
             // btAñadProd
             // 
@@ -1349,6 +1224,7 @@
             this.btAñadProd.Size = new System.Drawing.Size(75, 23);
             this.btAñadProd.TabIndex = 31;
             this.btAñadProd.Text = "Añadir...";
+            this.btAñadProd.UseSelectable = true;
             // 
             // productsDataGridView
             // 
@@ -1555,6 +1431,7 @@
             // 
             // tileAñadDatos
             // 
+            this.tileAñadDatos.ActiveControl = null;
             this.tileAñadDatos.Location = new System.Drawing.Point(23, 82);
             this.tileAñadDatos.Name = "tileAñadDatos";
             this.tileAñadDatos.Size = new System.Drawing.Size(100, 100);
@@ -1565,6 +1442,7 @@
             this.tileAñadDatos.TileImage = global::ERP.Properties.Resources.data;
             this.tileAñadDatos.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.tileAñadDatos.TileTextFontSize = MetroFramework.MetroTileTextSize.Small;
+            this.tileAñadDatos.UseSelectable = true;
             this.tileAñadDatos.UseTileImage = true;
             this.tileAñadDatos.Click += new System.EventHandler(this.tileAñadDatos_Click);
             // 
@@ -1583,7 +1461,7 @@
             this.MaximizeBox = false;
             this.Name = "newWindow";
             this.Text = "Nuevo...";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.newWindow_FormClosed);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.newWindow_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.dataTabCtrl.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
@@ -1619,9 +1497,7 @@
         private NorthwindDataSetTableAdapters.CustomersTableAdapter customersTableAdapter;
         private NorthwindDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.TextBox customerIDTextBox;
-        private System.Windows.Forms.TextBox companyNameTextBox;
         private System.Windows.Forms.TextBox contactNameTextBox;
-        private System.Windows.Forms.TextBox contactTitleTextBox;
         private System.Windows.Forms.TextBox addressTextBox;
         private System.Windows.Forms.TextBox cityTextBox;
         private System.Windows.Forms.TextBox regionTextBox;
@@ -1634,15 +1510,12 @@
         private System.Windows.Forms.TextBox supplierIDTextBox;
         private System.Windows.Forms.TextBox companyNameTextBox1;
         private System.Windows.Forms.TextBox contactNameTextBox1;
-        private System.Windows.Forms.TextBox contactTitleTextBox1;
         private System.Windows.Forms.TextBox addressTextBox1;
         private System.Windows.Forms.TextBox cityTextBox1;
         private System.Windows.Forms.TextBox regionTextBox1;
         private System.Windows.Forms.TextBox postalCodeTextBox1;
         private System.Windows.Forms.TextBox countryTextBox1;
         private System.Windows.Forms.TextBox phoneTextBox1;
-        private System.Windows.Forms.TextBox faxTextBox1;
-        private System.Windows.Forms.TextBox homePageTextBox;
         private System.Windows.Forms.BindingSource productsBindingSource;
         private NorthwindDataSetTableAdapters.ProductsTableAdapter productsTableAdapter;
         private MetroFramework.Controls.MetroButton reestablBtDat;
@@ -1650,21 +1523,17 @@
         private MetroFramework.Controls.MetroButton cancelarBtDat;
         private MetroFramework.Controls.MetroButton metroButton4;
         private MetroFramework.Controls.MetroButton metroButton5;
-        private MetroFramework.Controls.MetroButton metroButton6;
+        private MetroFramework.Controls.MetroButton cancelProvBt;
         private MetroFramework.Controls.MetroTabPage metroTabPage3;
         private MetroFramework.Controls.MetroButton metroButton7;
         private MetroFramework.Controls.MetroButton metroButton8;
-        private MetroFramework.Controls.MetroButton metroButton9;
+        private MetroFramework.Controls.MetroButton cancelArtDat;
         private System.Windows.Forms.TextBox productIDTextBox;
         private System.Windows.Forms.TextBox productNameTextBox;
         private System.Windows.Forms.TextBox supplierIDTextBox1;
         private System.Windows.Forms.TextBox categoryIDTextBox;
         private System.Windows.Forms.TextBox quantityPerUnitTextBox;
         private System.Windows.Forms.TextBox unitPriceTextBox;
-        private System.Windows.Forms.TextBox unitsInStockTextBox;
-        private System.Windows.Forms.TextBox unitsOnOrderTextBox;
-        private System.Windows.Forms.TextBox reorderLevelTextBox;
-        private System.Windows.Forms.CheckBox discontinuedCheckBox;
         private MetroFramework.Controls.MetroTile volverTile;
         private MetroFramework.Controls.MetroTabControl tramiteCtrl;
         private MetroFramework.Controls.MetroTabPage orderTab;

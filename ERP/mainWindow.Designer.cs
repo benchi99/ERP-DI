@@ -35,7 +35,6 @@
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.ventanaAbrir = new System.Windows.Forms.OpenFileDialog();
             this.userWelcome = new MetroFramework.Controls.MetroLabel();
-            this.metroTile1 = new MetroFramework.Controls.MetroTile();
             this.tileGestionar = new MetroFramework.Controls.MetroTile();
             this.tileLogOff = new MetroFramework.Controls.MetroTile();
             this.tileOptions = new MetroFramework.Controls.MetroTile();
@@ -81,22 +80,15 @@
             // userWelcome
             // 
             this.userWelcome.AutoSize = true;
-            this.userWelcome.Location = new System.Drawing.Point(633, 28);
+            this.userWelcome.Location = new System.Drawing.Point(633, 25);
             this.userWelcome.Name = "userWelcome";
             this.userWelcome.Size = new System.Drawing.Size(144, 19);
             this.userWelcome.TabIndex = 12;
             this.userWelcome.Text = "Bienvenido, <usuario>!";
             // 
-            // metroTile1
-            // 
-            this.metroTile1.Location = new System.Drawing.Point(291, 86);
-            this.metroTile1.Name = "metroTile1";
-            this.metroTile1.Size = new System.Drawing.Size(486, 54);
-            this.metroTile1.TabIndex = 13;
-            this.metroTile1.Text = "Aquí aparecerían archivos abiertos recientemente...";
-            // 
             // tileGestionar
             // 
+            this.tileGestionar.ActiveControl = null;
             this.tileGestionar.Location = new System.Drawing.Point(23, 301);
             this.tileGestionar.Name = "tileGestionar";
             this.tileGestionar.Size = new System.Drawing.Size(100, 100);
@@ -106,11 +98,13 @@
             this.tileGestionar.Theme = MetroFramework.MetroThemeStyle.Light;
             this.tileGestionar.TileImage = global::ERP.Properties.Resources.gest;
             this.tileGestionar.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tileGestionar.UseSelectable = true;
             this.tileGestionar.UseTileImage = true;
             this.tileGestionar.Click += new System.EventHandler(this.tileGestionar_Click);
             // 
             // tileLogOff
             // 
+            this.tileLogOff.ActiveControl = null;
             this.tileLogOff.Location = new System.Drawing.Point(148, 195);
             this.tileLogOff.Name = "tileLogOff";
             this.tileLogOff.Size = new System.Drawing.Size(100, 100);
@@ -121,11 +115,13 @@
             this.tileLogOff.TileImage = global::ERP.Properties.Resources.logoff;
             this.tileLogOff.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.tileLogOff.TileTextFontSize = MetroFramework.MetroTileTextSize.Small;
+            this.tileLogOff.UseSelectable = true;
             this.tileLogOff.UseTileImage = true;
             this.tileLogOff.Click += new System.EventHandler(this.tileLogOff_Click);
             // 
             // tileOptions
             // 
+            this.tileOptions.ActiveControl = null;
             this.tileOptions.Location = new System.Drawing.Point(148, 89);
             this.tileOptions.Name = "tileOptions";
             this.tileOptions.Size = new System.Drawing.Size(100, 100);
@@ -135,11 +131,13 @@
             this.tileOptions.Theme = MetroFramework.MetroThemeStyle.Light;
             this.tileOptions.TileImage = global::ERP.Properties.Resources.settings;
             this.tileOptions.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tileOptions.UseSelectable = true;
             this.tileOptions.UseTileImage = true;
             this.tileOptions.Click += new System.EventHandler(this.tileOptions_Click);
             // 
             // tileOpen
             // 
+            this.tileOpen.ActiveControl = null;
             this.tileOpen.Location = new System.Drawing.Point(23, 195);
             this.tileOpen.Name = "tileOpen";
             this.tileOpen.Size = new System.Drawing.Size(100, 100);
@@ -149,11 +147,13 @@
             this.tileOpen.Theme = MetroFramework.MetroThemeStyle.Light;
             this.tileOpen.TileImage = global::ERP.Properties.Resources.open;
             this.tileOpen.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tileOpen.UseSelectable = true;
             this.tileOpen.UseTileImage = true;
             this.tileOpen.Click += new System.EventHandler(this.tileOpen_Click);
             // 
             // tileNew
             // 
+            this.tileNew.ActiveControl = null;
             this.tileNew.Location = new System.Drawing.Point(23, 89);
             this.tileNew.Name = "tileNew";
             this.tileNew.Size = new System.Drawing.Size(100, 100);
@@ -163,6 +163,7 @@
             this.tileNew.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.tileNew.TileImage = global::ERP.Properties.Resources.plus;
             this.tileNew.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tileNew.UseSelectable = true;
             this.tileNew.UseTileImage = true;
             this.tileNew.Click += new System.EventHandler(this.tileNew_Click);
             // 
@@ -171,7 +172,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.metroTile1);
             this.Controls.Add(this.userWelcome);
             this.Controls.Add(this.metroLabel4);
             this.Controls.Add(this.metroLabel3);
@@ -205,7 +205,6 @@
         private MetroFramework.Controls.MetroLabel metroLabel4;
         private System.Windows.Forms.OpenFileDialog ventanaAbrir;
         private MetroFramework.Controls.MetroLabel userWelcome;
-        private MetroFramework.Controls.MetroTile metroTile1;
     }
 }
 

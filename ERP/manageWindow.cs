@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MetroFramework;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,6 +24,8 @@ namespace ERP
         bool modif = false;
         bool elimin = false;
 
+        bool modifOEliminOn = false;
+
         public manageWindow()
         {
             InitializeComponent();
@@ -30,6 +33,10 @@ namespace ERP
 
         private void manageWindow_Load(object sender, EventArgs e)
         {
+
+            /*
+             * SI LA BASE DE DATOS NO ESTÁ INSTALADA CRASHEARÁ EL PROGRAMA.
+             * 
             // TODO: esta línea de código carga datos en la tabla 'northwindDataSet.Orders' Puede moverla o quitarla según sea necesario.
             this.ordersTableAdapter.Fill(this.northwindDataSet.Orders);
             // TODO: esta línea de código carga datos en la tabla 'northwindDataSet.Products' Puede moverla o quitarla según sea necesario.
@@ -38,6 +45,7 @@ namespace ERP
             this.suppliersTableAdapter.Fill(this.northwindDataSet.Suppliers);
             // TODO: esta línea de código carga datos en la tabla 'northwindDataSet.Customers' Puede moverla o quitarla según sea necesario.
             this.customersTableAdapter.Fill(this.northwindDataSet.Customers);
+            */
             modificarTile.Show();
             eliminarTile.Show();
             volverTile.Hide();
@@ -54,6 +62,7 @@ namespace ERP
             modif = true;
             muestraQueDatos();
             labelGest.Text = HEADMOD;
+            volverMenuPrincTile.Hide();
         }
 
         private void eliminarTile_Click(object sender, EventArgs e)
@@ -61,6 +70,7 @@ namespace ERP
             elimin = true;
             muestraQueDatos();
             labelGest.Text = HEADDEL;
+            volverMenuPrincTile.Hide();
         }
 
         private void muestraQueDatos()
@@ -75,6 +85,8 @@ namespace ERP
 
         private void volverTile_Click(object sender, EventArgs e)
         {
+            modif = false;
+            elimin = false;
             modificarTile.Show();
             eliminarTile.Show();
             volverTile.Hide();
@@ -83,6 +95,8 @@ namespace ERP
             labelGest.Text = HEADDEF;
             tabTram.Hide();
             tabContrlDatGest.Hide();
+            modifOEliminOn = false;
+            volverMenuPrincTile.Show();
         }
 
         private void customersBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -115,6 +129,7 @@ namespace ERP
             txtBts();
             tabContrlDatGest.Show();
             tabTram.Hide();
+            modifOEliminOn = true;
         }
 
         private void tramiteTile_Click(object sender, EventArgs e)
@@ -122,6 +137,23 @@ namespace ERP
             txtBts();
             tabContrlDatGest.Hide();
             tabTram.Show();
+            modifOEliminOn = true;
+        }
+
+        private void manageWindow_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (modifOEliminOn)
+            {
+                if (MetroMessageBox.Show(this, "Hay datos sin guardar. ¿Estás seguro de cerrar la ventana?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.No)
+                {
+                    e.Cancel = true;
+                }
+            }
+        }
+
+        private void volverMenuPrincTile_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }
