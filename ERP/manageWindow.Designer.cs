@@ -222,7 +222,7 @@
             this.tabContrlDatGest.Controls.Add(this.metroTabPage3);
             this.tabContrlDatGest.Location = new System.Drawing.Point(23, 200);
             this.tabContrlDatGest.Name = "tabContrlDatGest";
-            this.tabContrlDatGest.SelectedIndex = 2;
+            this.tabContrlDatGest.SelectedIndex = 0;
             this.tabContrlDatGest.Size = new System.Drawing.Size(970, 366);
             this.tabContrlDatGest.TabIndex = 6;
             this.tabContrlDatGest.UseSelectable = true;
