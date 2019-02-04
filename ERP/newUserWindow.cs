@@ -65,7 +65,6 @@ namespace ERP
             nombreUs.Text = "";
             docType.Text = "";
             document.Text = "";
-            sexoCb.Text = "";
             fijo.Text = "";
             movil.Text = "";
             fechanac.Text = "";
@@ -90,7 +89,6 @@ namespace ERP
         private void nombretb_TextChanged(object sender, EventArgs e)
         {
             id++;
-            idGener.Text = id.ToString();
         }
 
         private void okUser_Click(object sender, EventArgs e)
@@ -100,7 +98,6 @@ namespace ERP
             nombre = nombretb.Text;
             apellidos = apellidostb.Text;
             doc = int.Parse(document.Text);
-            sexo = sexoCb.Text;
             telefonoFijo = int.Parse(fijo.Text);
             telefonoMovil = int.Parse(movil.Text);
             fechaNac = new DateTime(int.Parse(fechanac.Value.ToString("yyyy")), int.Parse(fechanac.Value.ToString("MM")), int.Parse(fechanac.Value.ToString("dd")));

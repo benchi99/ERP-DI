@@ -38,8 +38,6 @@
             this.calAlarma1 = new Control_Calendario.CalAlarma();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.bton = new MetroFramework.Controls.MetroButton();
-            this.tboxSaveDir = new MetroFramework.Controls.MetroTextBox();
-            this.saveLabel = new MetroFramework.Controls.MetroLabel();
             this.itemsCBox = new MetroFramework.Controls.MetroComboBox();
             this.labelInf1 = new MetroFramework.Controls.MetroLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -134,85 +132,43 @@
             // 
             this.groupBox3.Controls.Add(this.calAlarma1);
             this.groupBox3.Font = new System.Drawing.Font("Calibri Light", 12F);
-            this.groupBox3.Location = new System.Drawing.Point(3, 204);
+            this.groupBox3.Location = new System.Drawing.Point(3, 153);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(597, 378);
+            this.groupBox3.Size = new System.Drawing.Size(597, 286);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Alarmas y Calendario";
             // 
             // calAlarma1
             // 
-            this.calAlarma1.Location = new System.Drawing.Point(64, 27);
+            this.calAlarma1.FormatoHora = "dd-MM-yyyy HH:mm";
+            this.calAlarma1.Location = new System.Drawing.Point(57, 27);
             this.calAlarma1.Margin = new System.Windows.Forms.Padding(4);
             this.calAlarma1.Name = "calAlarma1";
-            this.calAlarma1.Size = new System.Drawing.Size(484, 344);
+            this.calAlarma1.Size = new System.Drawing.Size(498, 257);
             this.calAlarma1.TabIndex = 0;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.bton);
-            this.groupBox2.Controls.Add(this.tboxSaveDir);
-            this.groupBox2.Controls.Add(this.saveLabel);
             this.groupBox2.Controls.Add(this.itemsCBox);
             this.groupBox2.Controls.Add(this.labelInf1);
             this.groupBox2.Font = new System.Drawing.Font("Calibri Light", 12F);
             this.groupBox2.Location = new System.Drawing.Point(3, 85);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(597, 113);
+            this.groupBox2.Size = new System.Drawing.Size(597, 62);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Informes";
             // 
             // bton
             // 
-            this.bton.Location = new System.Drawing.Point(516, 23);
+            this.bton.Location = new System.Drawing.Point(516, 21);
             this.bton.Name = "bton";
-            this.bton.Size = new System.Drawing.Size(75, 23);
+            this.bton.Size = new System.Drawing.Size(75, 29);
             this.bton.TabIndex = 4;
             this.bton.Text = "Generar";
             this.bton.UseSelectable = true;
-            // 
-            // tboxSaveDir
-            // 
-            // 
-            // 
-            // 
-            this.tboxSaveDir.CustomButton.Image = null;
-            this.tboxSaveDir.CustomButton.Location = new System.Drawing.Point(413, 1);
-            this.tboxSaveDir.CustomButton.Name = "";
-            this.tboxSaveDir.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.tboxSaveDir.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.tboxSaveDir.CustomButton.TabIndex = 1;
-            this.tboxSaveDir.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.tboxSaveDir.CustomButton.UseSelectable = true;
-            this.tboxSaveDir.CustomButton.Visible = false;
-            this.tboxSaveDir.Lines = new string[] {
-        "C:\\"};
-            this.tboxSaveDir.Location = new System.Drawing.Point(156, 71);
-            this.tboxSaveDir.MaxLength = 32767;
-            this.tboxSaveDir.Name = "tboxSaveDir";
-            this.tboxSaveDir.PasswordChar = '\0';
-            this.tboxSaveDir.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.tboxSaveDir.SelectedText = "";
-            this.tboxSaveDir.SelectionLength = 0;
-            this.tboxSaveDir.SelectionStart = 0;
-            this.tboxSaveDir.ShortcutsEnabled = true;
-            this.tboxSaveDir.Size = new System.Drawing.Size(435, 23);
-            this.tboxSaveDir.TabIndex = 3;
-            this.tboxSaveDir.Text = "C:\\";
-            this.tboxSaveDir.UseSelectable = true;
-            this.tboxSaveDir.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.tboxSaveDir.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // saveLabel
-            // 
-            this.saveLabel.AutoSize = true;
-            this.saveLabel.Location = new System.Drawing.Point(6, 71);
-            this.saveLabel.Name = "saveLabel";
-            this.saveLabel.Size = new System.Drawing.Size(144, 19);
-            this.saveLabel.TabIndex = 2;
-            this.saveLabel.Text = "Dirección de guardado";
             // 
             // itemsCBox
             // 
@@ -223,7 +179,7 @@
             "Articulos",
             "Proveedores",
             "Pedidos"});
-            this.itemsCBox.Location = new System.Drawing.Point(142, 17);
+            this.itemsCBox.Location = new System.Drawing.Point(142, 21);
             this.itemsCBox.Name = "itemsCBox";
             this.itemsCBox.Size = new System.Drawing.Size(368, 29);
             this.itemsCBox.TabIndex = 1;
@@ -232,7 +188,7 @@
             // labelInf1
             // 
             this.labelInf1.AutoSize = true;
-            this.labelInf1.Location = new System.Drawing.Point(6, 27);
+            this.labelInf1.Location = new System.Drawing.Point(6, 26);
             this.labelInf1.Name = "labelInf1";
             this.labelInf1.Size = new System.Drawing.Size(130, 19);
             this.labelInf1.TabIndex = 0;
@@ -418,8 +374,6 @@
         private MetroFramework.Controls.MetroToggle metroToggle1;
         private System.Windows.Forms.GroupBox groupBox2;
         private MetroFramework.Controls.MetroButton bton;
-        private MetroFramework.Controls.MetroTextBox tboxSaveDir;
-        private MetroFramework.Controls.MetroLabel saveLabel;
         private MetroFramework.Controls.MetroComboBox itemsCBox;
         private MetroFramework.Controls.MetroLabel labelInf1;
         private MetroFramework.Controls.MetroPanel licensePanel;

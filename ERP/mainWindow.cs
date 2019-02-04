@@ -37,7 +37,10 @@ namespace ERP
             }
             else
             {
-
+                tileNew.Enabled = true;
+                tileGestionar.Enabled = true;
+                tileOpen.Enabled = true;
+                tileOptions.Enabled = true;
             }
         }
 
