@@ -14,7 +14,7 @@ namespace ERP
     public partial class mainWindow : MetroFramework.Forms.MetroForm
     {
 
-        bool loggedIn = false;
+        bool loggedIn = true;
 
         public mainWindow()
         {
