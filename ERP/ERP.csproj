@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Compile Include="Informes.cs">
       <DependentUpon>Informes.xsd</DependentUpon>
     </Compile>
@@ -67,6 +68,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Informes.xsd</DependentUpon>
     </Compile>
+=======
+>>>>>>> parent of 0e128e7... Visor de Informes añadido, informe de facturas implementado.
 =======
 >>>>>>> parent of 0e128e7... Visor de Informes añadido, informe de facturas implementado.
     <Compile Include="newUserWindow.cs">
@@ -132,6 +135,7 @@
       <DependentUpon>settingsWindow.cs</DependentUpon>
     </EmbeddedResource>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <EmbeddedResource Include="Ventas Totales.rdlc" />
     <EmbeddedResource Include="Visor.resx">
       <DependentUpon>Visor.cs</DependentUpon>
@@ -147,6 +151,8 @@
     <None Include="Informes.xss">
       <DependentUpon>Informes.xsd</DependentUpon>
     </None>
+=======
+>>>>>>> parent of 0e128e7... Visor de Informes añadido, informe de facturas implementado.
 =======
 >>>>>>> parent of 0e128e7... Visor de Informes añadido, informe de facturas implementado.
     <None Include="NorthwindDataSet.xsc">
