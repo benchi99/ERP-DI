@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Reporting.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -41,31 +42,40 @@ namespace ERP
                 ids.Add(Convert.ToInt32(reader[0]));
             }
 
-            idCBX.DataSource = ids;
+            filterCBX.DataSource = ids;
+
+            this.InvoicesTableAdapter.Fill(this.Facturas.Invoices, ids[0]);
+            this.VentasTableAdapter.Fill(this.Facturas.Ventas);
         }
 
         private void Visor_Load(object sender, EventArgs e)
         {
+            this.reportViewer1.Reset();
+            var bind = new BindingSource();
+
+
             if (tipoDoc == "Facturas")
             {
-                filtro.Add("ID de Factura");
-                filtro.Add("Cliente");
-
-
-                this.InvoicesTableAdapter.Fill(this.Facturas.Invoices, ids[0]);
-
-                this.reportViewer1.RefreshReport();
+                bind.DataSource = this.Facturas.Invoices;
+                ReportDataSource rds = new ReportDataSource("Facturas", bind);
+                this.reportViewer1.LocalReport.DataSources.Clear();
+                this.reportViewer1.LocalReport.DataSources.Add(rds);
+                this.reportViewer1.LocalReport.ReportEmbeddedResource = "ERP.Facturas.rdlc";
             }
             else if (tipoDoc == "Ventas Totales")
             {
-
+                bind.DataSource = this.Facturas.Ventas;
+                ReportDataSource rds = new ReportDataSource("Ventas", bind);
+                this.reportViewer1.LocalReport.DataSources.Clear();
+                this.reportViewer1.LocalReport.DataSources.Add(rds);
+                this.reportViewer1.LocalReport.ReportEmbeddedResource = "ERP.Ventas.rdlc";
             }
             else if (tipoDoc == "Facturas (Subinformes)")
             {
 
             }
 
-            reproducirMIDI(Path.Combine(Environment.CurrentDirectory, @"res\sound\", "gth.wav"));
+            this.reportViewer1.RefreshReport();
         }
 
         private void reproducirMIDI(string archivo)

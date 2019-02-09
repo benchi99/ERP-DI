@@ -72,14 +72,6 @@
             this.sideBarPanel.HorizontalScrollbarSize = 12;
             this.sideBarPanel.Location = new System.Drawing.Point(32, 79);
             this.sideBarPanel.Margin = new System.Windows.Forms.Padding(4);
-=======
-            this.sideBarPanel.HorizontalScrollbarSize = 10;
-            this.sideBarPanel.Location = new System.Drawing.Point(24, 64);
->>>>>>> parent of 0e128e7... Visor de Informes añadido, informe de facturas implementado.
-=======
-            this.sideBarPanel.HorizontalScrollbarSize = 10;
-            this.sideBarPanel.Location = new System.Drawing.Point(24, 64);
->>>>>>> parent of 0e128e7... Visor de Informes añadido, informe de facturas implementado.
             this.sideBarPanel.Name = "sideBarPanel";
             this.sideBarPanel.Size = new System.Drawing.Size(293, 585);
             this.sideBarPanel.TabIndex = 0;
@@ -94,12 +86,6 @@
 <<<<<<< HEAD
             this.AcercaTile.Location = new System.Drawing.Point(4, 169);
             this.AcercaTile.Margin = new System.Windows.Forms.Padding(4);
-=======
-            this.AcercaTile.Location = new System.Drawing.Point(3, 137);
->>>>>>> parent of 0e128e7... Visor de Informes añadido, informe de facturas implementado.
-=======
-            this.AcercaTile.Location = new System.Drawing.Point(3, 137);
->>>>>>> parent of 0e128e7... Visor de Informes añadido, informe de facturas implementado.
             this.AcercaTile.Name = "AcercaTile";
             this.AcercaTile.Size = new System.Drawing.Size(287, 61);
             this.AcercaTile.TabIndex = 4;
@@ -115,12 +101,6 @@
 <<<<<<< HEAD
             this.LicenciaTile.Location = new System.Drawing.Point(4, 86);
             this.LicenciaTile.Margin = new System.Windows.Forms.Padding(4);
-=======
-            this.LicenciaTile.Location = new System.Drawing.Point(3, 70);
->>>>>>> parent of 0e128e7... Visor de Informes añadido, informe de facturas implementado.
-=======
-            this.LicenciaTile.Location = new System.Drawing.Point(3, 70);
->>>>>>> parent of 0e128e7... Visor de Informes añadido, informe de facturas implementado.
             this.LicenciaTile.Name = "LicenciaTile";
             this.LicenciaTile.Size = new System.Drawing.Size(287, 61);
             this.LicenciaTile.TabIndex = 3;
@@ -136,12 +116,6 @@
 <<<<<<< HEAD
             this.OpcionesTile.Location = new System.Drawing.Point(4, 4);
             this.OpcionesTile.Margin = new System.Windows.Forms.Padding(4);
-=======
-            this.OpcionesTile.Location = new System.Drawing.Point(3, 3);
->>>>>>> parent of 0e128e7... Visor de Informes añadido, informe de facturas implementado.
-=======
-            this.OpcionesTile.Location = new System.Drawing.Point(3, 3);
->>>>>>> parent of 0e128e7... Visor de Informes añadido, informe de facturas implementado.
             this.OpcionesTile.Name = "OpcionesTile";
             this.OpcionesTile.Size = new System.Drawing.Size(287, 61);
             this.OpcionesTile.TabIndex = 2;
@@ -162,14 +136,6 @@
             this.panelOpts.HorizontalScrollbarSize = 12;
             this.panelOpts.Location = new System.Drawing.Point(431, 79);
             this.panelOpts.Margin = new System.Windows.Forms.Padding(4);
-=======
-            this.panelOpts.HorizontalScrollbarSize = 10;
-            this.panelOpts.Location = new System.Drawing.Point(323, 64);
->>>>>>> parent of 0e128e7... Visor de Informes añadido, informe de facturas implementado.
-=======
-            this.panelOpts.HorizontalScrollbarSize = 10;
-            this.panelOpts.Location = new System.Drawing.Point(323, 64);
->>>>>>> parent of 0e128e7... Visor de Informes añadido, informe de facturas implementado.
             this.panelOpts.Name = "panelOpts";
             this.panelOpts.Size = new System.Drawing.Size(603, 585);
             this.panelOpts.TabIndex = 1;
@@ -209,14 +175,6 @@
 <<<<<<< HEAD
             this.calAlarma1.Location = new System.Drawing.Point(76, 33);
             this.calAlarma1.Margin = new System.Windows.Forms.Padding(5);
-=======
-            this.calAlarma1.Location = new System.Drawing.Point(57, 27);
-            this.calAlarma1.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> parent of 0e128e7... Visor de Informes añadido, informe de facturas implementado.
-=======
-            this.calAlarma1.Location = new System.Drawing.Point(57, 27);
-            this.calAlarma1.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> parent of 0e128e7... Visor de Informes añadido, informe de facturas implementado.
             this.calAlarma1.Name = "calAlarma1";
             this.calAlarma1.Size = new System.Drawing.Size(498, 257);
             this.calAlarma1.TabIndex = 0;
@@ -254,12 +212,6 @@
 <<<<<<< HEAD
             this.bton.Location = new System.Drawing.Point(688, 26);
             this.bton.Margin = new System.Windows.Forms.Padding(4);
-=======
-            this.bton.Location = new System.Drawing.Point(516, 21);
->>>>>>> parent of 0e128e7... Visor de Informes añadido, informe de facturas implementado.
-=======
-            this.bton.Location = new System.Drawing.Point(516, 21);
->>>>>>> parent of 0e128e7... Visor de Informes añadido, informe de facturas implementado.
             this.bton.Name = "bton";
             this.bton.Size = new System.Drawing.Size(75, 29);
             this.bton.TabIndex = 4;
@@ -271,22 +223,12 @@
             this.itemsCBox.FormattingEnabled = true;
             this.itemsCBox.ItemHeight = 23;
             this.itemsCBox.Items.AddRange(new object[] {
-<<<<<<< HEAD
             "Facturas",
             "Ventas Totales",
-            "Facturas (Subinformes)"});
+            "Facturas por Cliente",
+            "Facturas (Subinforme)"});
             this.itemsCBox.Location = new System.Drawing.Point(189, 26);
             this.itemsCBox.Margin = new System.Windows.Forms.Padding(4);
-=======
-            "Clientes",
-            "Articulos",
-            "Proveedores",
-            "Pedidos"});
-            this.itemsCBox.Location = new System.Drawing.Point(142, 21);
-<<<<<<< HEAD
->>>>>>> parent of 0e128e7... Visor de Informes añadido, informe de facturas implementado.
-=======
->>>>>>> parent of 0e128e7... Visor de Informes añadido, informe de facturas implementado.
             this.itemsCBox.Name = "itemsCBox";
             this.itemsCBox.Size = new System.Drawing.Size(368, 29);
             this.itemsCBox.TabIndex = 1;
@@ -343,12 +285,6 @@
 <<<<<<< HEAD
             this.metroToggle1.Location = new System.Drawing.Point(133, 37);
             this.metroToggle1.Margin = new System.Windows.Forms.Padding(4);
-=======
-            this.metroToggle1.Location = new System.Drawing.Point(100, 30);
->>>>>>> parent of 0e128e7... Visor de Informes añadido, informe de facturas implementado.
-=======
-            this.metroToggle1.Location = new System.Drawing.Point(100, 30);
->>>>>>> parent of 0e128e7... Visor de Informes añadido, informe de facturas implementado.
             this.metroToggle1.Name = "metroToggle1";
             this.metroToggle1.Size = new System.Drawing.Size(80, 23);
             this.metroToggle1.TabIndex = 2;
@@ -369,14 +305,6 @@
             this.licensePanel.HorizontalScrollbarSize = 12;
             this.licensePanel.Location = new System.Drawing.Point(431, 75);
             this.licensePanel.Margin = new System.Windows.Forms.Padding(4);
-=======
-            this.licensePanel.HorizontalScrollbarSize = 10;
-            this.licensePanel.Location = new System.Drawing.Point(323, 61);
->>>>>>> parent of 0e128e7... Visor de Informes añadido, informe de facturas implementado.
-=======
-            this.licensePanel.HorizontalScrollbarSize = 10;
-            this.licensePanel.Location = new System.Drawing.Point(323, 61);
->>>>>>> parent of 0e128e7... Visor de Informes añadido, informe de facturas implementado.
             this.licensePanel.Name = "licensePanel";
             this.licensePanel.Size = new System.Drawing.Size(603, 553);
             this.licensePanel.TabIndex = 2;
@@ -390,12 +318,6 @@
 <<<<<<< HEAD
             this.validarCDK.Location = new System.Drawing.Point(692, 41);
             this.validarCDK.Margin = new System.Windows.Forms.Padding(4);
-=======
-            this.validarCDK.Location = new System.Drawing.Point(519, 33);
->>>>>>> parent of 0e128e7... Visor de Informes añadido, informe de facturas implementado.
-=======
-            this.validarCDK.Location = new System.Drawing.Point(519, 33);
->>>>>>> parent of 0e128e7... Visor de Informes añadido, informe de facturas implementado.
             this.validarCDK.Name = "validarCDK";
             this.validarCDK.Size = new System.Drawing.Size(75, 23);
             this.validarCDK.TabIndex = 6;
@@ -408,22 +330,10 @@
             // 
             // 
             this.pdtkey.CustomButton.Image = null;
-<<<<<<< HEAD
-<<<<<<< HEAD
             this.pdtkey.CustomButton.Location = new System.Drawing.Point(426, 2);
             this.pdtkey.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.pdtkey.CustomButton.Name = "";
             this.pdtkey.CustomButton.Size = new System.Drawing.Size(23, 23);
-=======
-            this.pdtkey.CustomButton.Location = new System.Drawing.Point(317, 1);
-            this.pdtkey.CustomButton.Name = "";
-            this.pdtkey.CustomButton.Size = new System.Drawing.Size(21, 21);
->>>>>>> parent of 0e128e7... Visor de Informes añadido, informe de facturas implementado.
-=======
-            this.pdtkey.CustomButton.Location = new System.Drawing.Point(317, 1);
-            this.pdtkey.CustomButton.Name = "";
-            this.pdtkey.CustomButton.Size = new System.Drawing.Size(21, 21);
->>>>>>> parent of 0e128e7... Visor de Informes añadido, informe de facturas implementado.
             this.pdtkey.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.pdtkey.CustomButton.TabIndex = 1;
             this.pdtkey.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -434,12 +344,6 @@
 <<<<<<< HEAD
             this.pdtkey.Location = new System.Drawing.Point(232, 41);
             this.pdtkey.Margin = new System.Windows.Forms.Padding(4);
-=======
-            this.pdtkey.Location = new System.Drawing.Point(174, 33);
->>>>>>> parent of 0e128e7... Visor de Informes añadido, informe de facturas implementado.
-=======
-            this.pdtkey.Location = new System.Drawing.Point(174, 33);
->>>>>>> parent of 0e128e7... Visor de Informes añadido, informe de facturas implementado.
             this.pdtkey.MaxLength = 32767;
             this.pdtkey.Name = "pdtkey";
             this.pdtkey.PasswordChar = '\0';
@@ -483,14 +387,6 @@
             this.AboutPanel.HorizontalScrollbarSize = 12;
             this.AboutPanel.Location = new System.Drawing.Point(427, 71);
             this.AboutPanel.Margin = new System.Windows.Forms.Padding(4);
-=======
-            this.AboutPanel.HorizontalScrollbarSize = 10;
-            this.AboutPanel.Location = new System.Drawing.Point(320, 58);
->>>>>>> parent of 0e128e7... Visor de Informes añadido, informe de facturas implementado.
-=======
-            this.AboutPanel.HorizontalScrollbarSize = 10;
-            this.AboutPanel.Location = new System.Drawing.Point(320, 58);
->>>>>>> parent of 0e128e7... Visor de Informes añadido, informe de facturas implementado.
             this.AboutPanel.Name = "AboutPanel";
             this.AboutPanel.Size = new System.Drawing.Size(603, 553);
             this.AboutPanel.TabIndex = 2;
@@ -526,13 +422,7 @@
             this.Controls.Add(this.AboutPanel);
             this.Controls.Add(this.licensePanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-<<<<<<< HEAD
-<<<<<<< HEAD
             this.Margin = new System.Windows.Forms.Padding(4);
-=======
->>>>>>> parent of 0e128e7... Visor de Informes añadido, informe de facturas implementado.
-=======
->>>>>>> parent of 0e128e7... Visor de Informes añadido, informe de facturas implementado.
             this.MaximizeBox = false;
             this.Name = "settingsWindow";
             this.Text = "Opciones";

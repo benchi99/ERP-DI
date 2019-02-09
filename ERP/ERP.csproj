@@ -134,6 +134,7 @@
     <EmbeddedResource Include="settingsWindow.resx">
       <DependentUpon>settingsWindow.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ventas.rdlc" />
 <<<<<<< HEAD
 <<<<<<< HEAD
     <EmbeddedResource Include="Ventas Totales.rdlc" />
