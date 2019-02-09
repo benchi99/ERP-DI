@@ -50,14 +50,5 @@ namespace ERP
             licensePanel.Hide();
             panelOpts.Hide();
         }
-
-        private void bton_Click(object sender, EventArgs e)
-        {
-            if (itemsCBox.Text.ToString() != "")
-            {
-                Visor vis = new Visor(itemsCBox.Text.ToString());
-                vis.ShowDialog();
-            }
-        }
     }
 }

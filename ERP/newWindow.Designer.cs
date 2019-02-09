@@ -302,7 +302,7 @@
             // 
             supplierIDLabel.AutoSize = true;
             supplierIDLabel.Font = new System.Drawing.Font("Calibri", 9F);
-            supplierIDLabel.Location = new System.Drawing.Point(7, 14);
+            supplierIDLabel.Location = new System.Drawing.Point(3, 8);
             supplierIDLabel.Name = "supplierIDLabel";
             supplierIDLabel.Size = new System.Drawing.Size(79, 14);
             supplierIDLabel.TabIndex = 2;
@@ -312,7 +312,7 @@
             // 
             companyNameLabel1.AutoSize = true;
             companyNameLabel1.Font = new System.Drawing.Font("Calibri", 9F);
-            companyNameLabel1.Location = new System.Drawing.Point(7, 66);
+            companyNameLabel1.Location = new System.Drawing.Point(3, 60);
             companyNameLabel1.Name = "companyNameLabel1";
             companyNameLabel1.Size = new System.Drawing.Size(53, 14);
             companyNameLabel1.TabIndex = 4;
@@ -322,7 +322,7 @@
             // 
             contactNameLabel1.AutoSize = true;
             contactNameLabel1.Font = new System.Drawing.Font("Calibri", 9F);
-            contactNameLabel1.Location = new System.Drawing.Point(7, 40);
+            contactNameLabel1.Location = new System.Drawing.Point(3, 34);
             contactNameLabel1.Name = "contactNameLabel1";
             contactNameLabel1.Size = new System.Drawing.Size(57, 14);
             contactNameLabel1.TabIndex = 6;
@@ -332,7 +332,7 @@
             // 
             addressLabel1.AutoSize = true;
             addressLabel1.Font = new System.Drawing.Font("Calibri", 9F);
-            addressLabel1.Location = new System.Drawing.Point(318, 14);
+            addressLabel1.Location = new System.Drawing.Point(314, 8);
             addressLabel1.Name = "addressLabel1";
             addressLabel1.Size = new System.Drawing.Size(61, 14);
             addressLabel1.TabIndex = 10;
@@ -342,7 +342,7 @@
             // 
             cityLabel1.AutoSize = true;
             cityLabel1.Font = new System.Drawing.Font("Calibri", 9F);
-            cityLabel1.Location = new System.Drawing.Point(318, 40);
+            cityLabel1.Location = new System.Drawing.Point(314, 34);
             cityLabel1.Name = "cityLabel1";
             cityLabel1.Size = new System.Drawing.Size(48, 14);
             cityLabel1.TabIndex = 12;
@@ -352,7 +352,7 @@
             // 
             regionLabel1.AutoSize = true;
             regionLabel1.Font = new System.Drawing.Font("Calibri", 9F);
-            regionLabel1.Location = new System.Drawing.Point(318, 66);
+            regionLabel1.Location = new System.Drawing.Point(314, 60);
             regionLabel1.Name = "regionLabel1";
             regionLabel1.Size = new System.Drawing.Size(48, 14);
             regionLabel1.TabIndex = 14;
@@ -362,7 +362,7 @@
             // 
             postalCodeLabel1.AutoSize = true;
             postalCodeLabel1.Font = new System.Drawing.Font("Calibri", 9F);
-            postalCodeLabel1.Location = new System.Drawing.Point(642, 14);
+            postalCodeLabel1.Location = new System.Drawing.Point(625, 8);
             postalCodeLabel1.Name = "postalCodeLabel1";
             postalCodeLabel1.Size = new System.Drawing.Size(84, 14);
             postalCodeLabel1.TabIndex = 16;
@@ -372,7 +372,7 @@
             // 
             countryLabel1.AutoSize = true;
             countryLabel1.Font = new System.Drawing.Font("Calibri", 9F);
-            countryLabel1.Location = new System.Drawing.Point(642, 40);
+            countryLabel1.Location = new System.Drawing.Point(625, 34);
             countryLabel1.Name = "countryLabel1";
             countryLabel1.Size = new System.Drawing.Size(32, 14);
             countryLabel1.TabIndex = 18;
@@ -382,7 +382,7 @@
             // 
             phoneLabel1.AutoSize = true;
             phoneLabel1.Font = new System.Drawing.Font("Calibri", 9F);
-            phoneLabel1.Location = new System.Drawing.Point(642, 66);
+            phoneLabel1.Location = new System.Drawing.Point(625, 60);
             phoneLabel1.Name = "phoneLabel1";
             phoneLabel1.Size = new System.Drawing.Size(58, 14);
             phoneLabel1.TabIndex = 20;
@@ -426,7 +426,7 @@
             categoryIDLabel.AutoSize = true;
             categoryIDLabel.BackColor = System.Drawing.SystemColors.Window;
             categoryIDLabel.Font = new System.Drawing.Font("Calibri", 9F);
-            categoryIDLabel.Location = new System.Drawing.Point(467, 16);
+            categoryIDLabel.Location = new System.Drawing.Point(488, 15);
             categoryIDLabel.Name = "categoryIDLabel";
             categoryIDLabel.Size = new System.Drawing.Size(76, 14);
             categoryIDLabel.TabIndex = 8;
@@ -437,7 +437,7 @@
             quantityPerUnitLabel.AutoSize = true;
             quantityPerUnitLabel.BackColor = System.Drawing.SystemColors.Window;
             quantityPerUnitLabel.Font = new System.Drawing.Font("Calibri", 9F);
-            quantityPerUnitLabel.Location = new System.Drawing.Point(467, 42);
+            quantityPerUnitLabel.Location = new System.Drawing.Point(488, 41);
             quantityPerUnitLabel.Name = "quantityPerUnitLabel";
             quantityPerUnitLabel.Size = new System.Drawing.Size(58, 14);
             quantityPerUnitLabel.TabIndex = 10;
@@ -448,7 +448,7 @@
             unitPriceLabel.AutoSize = true;
             unitPriceLabel.BackColor = System.Drawing.SystemColors.Window;
             unitPriceLabel.Font = new System.Drawing.Font("Calibri", 9F);
-            unitPriceLabel.Location = new System.Drawing.Point(467, 68);
+            unitPriceLabel.Location = new System.Drawing.Point(488, 67);
             unitPriceLabel.Name = "unitPriceLabel";
             unitPriceLabel.Size = new System.Drawing.Size(86, 14);
             unitPriceLabel.TabIndex = 12;
@@ -597,7 +597,7 @@
             this.dataTabCtrl.Controls.Add(this.metroTabPage3);
             this.dataTabCtrl.Location = new System.Drawing.Point(23, 188);
             this.dataTabCtrl.Name = "dataTabCtrl";
-            this.dataTabCtrl.SelectedIndex = 1;
+            this.dataTabCtrl.SelectedIndex = 0;
             this.dataTabCtrl.Size = new System.Drawing.Size(970, 378);
             this.dataTabCtrl.TabIndex = 0;
             this.dataTabCtrl.UseSelectable = true;
@@ -831,7 +831,7 @@
             // supplierIDTextBox
             // 
             this.supplierIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.suppliersBindingSource, "SupplierID", true));
-            this.supplierIDTextBox.Location = new System.Drawing.Point(98, 11);
+            this.supplierIDTextBox.Location = new System.Drawing.Point(94, 5);
             this.supplierIDTextBox.Name = "supplierIDTextBox";
             this.supplierIDTextBox.Size = new System.Drawing.Size(214, 20);
             this.supplierIDTextBox.TabIndex = 3;
@@ -844,7 +844,7 @@
             // companyNameTextBox1
             // 
             this.companyNameTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.suppliersBindingSource, "CompanyName", true));
-            this.companyNameTextBox1.Location = new System.Drawing.Point(98, 63);
+            this.companyNameTextBox1.Location = new System.Drawing.Point(94, 57);
             this.companyNameTextBox1.Name = "companyNameTextBox1";
             this.companyNameTextBox1.Size = new System.Drawing.Size(214, 20);
             this.companyNameTextBox1.TabIndex = 5;
@@ -852,7 +852,7 @@
             // contactNameTextBox1
             // 
             this.contactNameTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.suppliersBindingSource, "ContactName", true));
-            this.contactNameTextBox1.Location = new System.Drawing.Point(98, 37);
+            this.contactNameTextBox1.Location = new System.Drawing.Point(94, 31);
             this.contactNameTextBox1.Name = "contactNameTextBox1";
             this.contactNameTextBox1.Size = new System.Drawing.Size(214, 20);
             this.contactNameTextBox1.TabIndex = 7;
@@ -860,49 +860,49 @@
             // addressTextBox1
             // 
             this.addressTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.suppliersBindingSource, "Address", true));
-            this.addressTextBox1.Location = new System.Drawing.Point(409, 11);
+            this.addressTextBox1.Location = new System.Drawing.Point(405, 5);
             this.addressTextBox1.Name = "addressTextBox1";
-            this.addressTextBox1.Size = new System.Drawing.Size(225, 20);
+            this.addressTextBox1.Size = new System.Drawing.Size(214, 20);
             this.addressTextBox1.TabIndex = 11;
             // 
             // cityTextBox1
             // 
             this.cityTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.suppliersBindingSource, "City", true));
-            this.cityTextBox1.Location = new System.Drawing.Point(409, 37);
+            this.cityTextBox1.Location = new System.Drawing.Point(405, 31);
             this.cityTextBox1.Name = "cityTextBox1";
-            this.cityTextBox1.Size = new System.Drawing.Size(225, 20);
+            this.cityTextBox1.Size = new System.Drawing.Size(214, 20);
             this.cityTextBox1.TabIndex = 13;
             // 
             // regionTextBox1
             // 
             this.regionTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.suppliersBindingSource, "Region", true));
-            this.regionTextBox1.Location = new System.Drawing.Point(409, 63);
+            this.regionTextBox1.Location = new System.Drawing.Point(405, 57);
             this.regionTextBox1.Name = "regionTextBox1";
-            this.regionTextBox1.Size = new System.Drawing.Size(225, 20);
+            this.regionTextBox1.Size = new System.Drawing.Size(214, 20);
             this.regionTextBox1.TabIndex = 15;
             // 
             // postalCodeTextBox1
             // 
             this.postalCodeTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.suppliersBindingSource, "PostalCode", true));
-            this.postalCodeTextBox1.Location = new System.Drawing.Point(734, 11);
+            this.postalCodeTextBox1.Location = new System.Drawing.Point(716, 5);
             this.postalCodeTextBox1.Name = "postalCodeTextBox1";
-            this.postalCodeTextBox1.Size = new System.Drawing.Size(225, 20);
+            this.postalCodeTextBox1.Size = new System.Drawing.Size(214, 20);
             this.postalCodeTextBox1.TabIndex = 17;
             // 
             // countryTextBox1
             // 
             this.countryTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.suppliersBindingSource, "Country", true));
-            this.countryTextBox1.Location = new System.Drawing.Point(734, 37);
+            this.countryTextBox1.Location = new System.Drawing.Point(716, 31);
             this.countryTextBox1.Name = "countryTextBox1";
-            this.countryTextBox1.Size = new System.Drawing.Size(225, 20);
+            this.countryTextBox1.Size = new System.Drawing.Size(214, 20);
             this.countryTextBox1.TabIndex = 19;
             // 
             // phoneTextBox1
             // 
             this.phoneTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.suppliersBindingSource, "Phone", true));
-            this.phoneTextBox1.Location = new System.Drawing.Point(734, 63);
+            this.phoneTextBox1.Location = new System.Drawing.Point(716, 57);
             this.phoneTextBox1.Name = "phoneTextBox1";
-            this.phoneTextBox1.Size = new System.Drawing.Size(225, 20);
+            this.phoneTextBox1.Size = new System.Drawing.Size(214, 20);
             this.phoneTextBox1.TabIndex = 21;
             // 
             // metroTabPage3
@@ -971,7 +971,7 @@
             this.productIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productsBindingSource, "ProductID", true));
             this.productIDTextBox.Location = new System.Drawing.Point(99, 12);
             this.productIDTextBox.Name = "productIDTextBox";
-            this.productIDTextBox.Size = new System.Drawing.Size(356, 20);
+            this.productIDTextBox.Size = new System.Drawing.Size(383, 20);
             this.productIDTextBox.TabIndex = 3;
             // 
             // productsBindingSource
@@ -985,7 +985,7 @@
             this.productNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productsBindingSource, "ProductName", true));
             this.productNameTextBox.Location = new System.Drawing.Point(99, 38);
             this.productNameTextBox.Name = "productNameTextBox";
-            this.productNameTextBox.Size = new System.Drawing.Size(356, 20);
+            this.productNameTextBox.Size = new System.Drawing.Size(383, 20);
             this.productNameTextBox.TabIndex = 5;
             // 
             // supplierIDTextBox1
@@ -994,34 +994,34 @@
             this.supplierIDTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productsBindingSource, "SupplierID", true));
             this.supplierIDTextBox1.Location = new System.Drawing.Point(99, 64);
             this.supplierIDTextBox1.Name = "supplierIDTextBox1";
-            this.supplierIDTextBox1.Size = new System.Drawing.Size(356, 20);
+            this.supplierIDTextBox1.Size = new System.Drawing.Size(383, 20);
             this.supplierIDTextBox1.TabIndex = 7;
             // 
             // categoryIDTextBox
             // 
             this.categoryIDTextBox.BackColor = System.Drawing.SystemColors.Window;
             this.categoryIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productsBindingSource, "CategoryID", true));
-            this.categoryIDTextBox.Location = new System.Drawing.Point(563, 13);
+            this.categoryIDTextBox.Location = new System.Drawing.Point(584, 12);
             this.categoryIDTextBox.Name = "categoryIDTextBox";
-            this.categoryIDTextBox.Size = new System.Drawing.Size(396, 20);
+            this.categoryIDTextBox.Size = new System.Drawing.Size(375, 20);
             this.categoryIDTextBox.TabIndex = 9;
             // 
             // quantityPerUnitTextBox
             // 
             this.quantityPerUnitTextBox.BackColor = System.Drawing.SystemColors.Window;
             this.quantityPerUnitTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productsBindingSource, "QuantityPerUnit", true));
-            this.quantityPerUnitTextBox.Location = new System.Drawing.Point(563, 39);
+            this.quantityPerUnitTextBox.Location = new System.Drawing.Point(584, 38);
             this.quantityPerUnitTextBox.Name = "quantityPerUnitTextBox";
-            this.quantityPerUnitTextBox.Size = new System.Drawing.Size(396, 20);
+            this.quantityPerUnitTextBox.Size = new System.Drawing.Size(375, 20);
             this.quantityPerUnitTextBox.TabIndex = 11;
             // 
             // unitPriceTextBox
             // 
             this.unitPriceTextBox.BackColor = System.Drawing.SystemColors.Window;
             this.unitPriceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productsBindingSource, "UnitPrice", true));
-            this.unitPriceTextBox.Location = new System.Drawing.Point(563, 65);
+            this.unitPriceTextBox.Location = new System.Drawing.Point(584, 64);
             this.unitPriceTextBox.Name = "unitPriceTextBox";
-            this.unitPriceTextBox.Size = new System.Drawing.Size(396, 20);
+            this.unitPriceTextBox.Size = new System.Drawing.Size(375, 20);
             this.unitPriceTextBox.TabIndex = 13;
             // 
             // metroLabel1
@@ -1186,9 +1186,9 @@
             // 
             // 
             this.totalPrecio.CustomButton.Image = null;
-            this.totalPrecio.CustomButton.Location = new System.Drawing.Point(93, 1);
+            this.totalPrecio.CustomButton.Location = new System.Drawing.Point(70, 1);
             this.totalPrecio.CustomButton.Name = "";
-            this.totalPrecio.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.totalPrecio.CustomButton.Size = new System.Drawing.Size(16, 17);
             this.totalPrecio.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.totalPrecio.CustomButton.TabIndex = 1;
             this.totalPrecio.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -1478,8 +1478,8 @@
             this.Controls.Add(this.tramiteTile);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.tileAñadDatos);
-            this.Controls.Add(this.dataTabCtrl);
             this.Controls.Add(this.tramiteCtrl);
+            this.Controls.Add(this.dataTabCtrl);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "newWindow";
