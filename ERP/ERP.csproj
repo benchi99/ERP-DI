@@ -129,6 +129,7 @@
       <DependentUpon>Visor.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Facturas.rdlc" />
+    <EmbeddedResource Include="FacturaSubinf.rdlc" />
     <EmbeddedResource Include="manageWindow.resx">
       <DependentUpon>manageWindow.cs</DependentUpon>
     </EmbeddedResource>
@@ -154,6 +155,7 @@
     <EmbeddedResource Include="settingsWindow.resx">
       <DependentUpon>settingsWindow.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SubinfFact.rdlc" />
     <EmbeddedResource Include="Ventas.rdlc" />
     <EmbeddedResource Include="Visor.resx">
       <DependentUpon>Visor.cs</DependentUpon>
