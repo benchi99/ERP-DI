@@ -154,6 +154,7 @@
     <EmbeddedResource Include="settingsWindow.resx">
       <DependentUpon>settingsWindow.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ventas.rdlc" />
     <EmbeddedResource Include="Visor.resx">
       <DependentUpon>Visor.cs</DependentUpon>
     </EmbeddedResource>
