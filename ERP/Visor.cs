@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
+using System.IO;
 
 namespace ERP
 {
@@ -15,10 +17,13 @@ namespace ERP
     {
         private string tipoDoc;
         private List<int> ids = new List<int>();
+        private List<string> filtro = new List<string>();
+        SoundPlayer midi;
 
         public Visor()
         {
             InitializeComponent();
+            Text = "Visor de Informes";
         }
 
         public Visor(string tipoDoc)
@@ -36,13 +41,17 @@ namespace ERP
                 ids.Add(Convert.ToInt32(reader[0]));
             }
 
-            filterCBX.DataSource = ids;
+            idCBX.DataSource = ids;
         }
 
         private void Visor_Load(object sender, EventArgs e)
         {
             if (tipoDoc == "Facturas")
             {
+                filtro.Add("ID de Factura");
+                filtro.Add("Cliente");
+
+
                 this.InvoicesTableAdapter.Fill(this.Facturas.Invoices, ids[0]);
 
                 this.reportViewer1.RefreshReport();
@@ -55,11 +64,31 @@ namespace ERP
             {
 
             }
+
+            reproducirMIDI(Path.Combine(Environment.CurrentDirectory, @"res\sound\", "gth.wav"));
+        }
+
+        private void reproducirMIDI(string archivo)
+        {
+            midi = new SoundPlayer();
+            midi.SoundLocation = archivo;
+            midi.Load();
+            midi.PlayLooping();
         }
 
         private void filterCBX_SelectedIndexChanged(object sender, EventArgs e)
         {
-            this.InvoicesTableAdapter.Fill(this.Facturas.Invoices, Int32.Parse(filterCBX.Text.ToString()));
+
+        }
+
+        private void Visor_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            midi.Stop();
+        }
+
+        private void idCBX_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.InvoicesTableAdapter.Fill(this.Informes.Invoices, Int32.Parse(idCBX.Text.ToString()));
 
             this.reportViewer1.RefreshReport();
         }

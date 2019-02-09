@@ -69,7 +69,7 @@
             this.sideBarPanel.HorizontalScrollbarHighlightOnWheel = false;
             this.sideBarPanel.HorizontalScrollbarSize = 12;
             this.sideBarPanel.Location = new System.Drawing.Point(32, 79);
-            this.sideBarPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sideBarPanel.Margin = new System.Windows.Forms.Padding(4);
             this.sideBarPanel.Name = "sideBarPanel";
             this.sideBarPanel.Size = new System.Drawing.Size(391, 720);
             this.sideBarPanel.TabIndex = 0;
@@ -81,7 +81,7 @@
             // 
             this.AcercaTile.ActiveControl = null;
             this.AcercaTile.Location = new System.Drawing.Point(4, 169);
-            this.AcercaTile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AcercaTile.Margin = new System.Windows.Forms.Padding(4);
             this.AcercaTile.Name = "AcercaTile";
             this.AcercaTile.Size = new System.Drawing.Size(383, 75);
             this.AcercaTile.TabIndex = 4;
@@ -94,7 +94,7 @@
             // 
             this.LicenciaTile.ActiveControl = null;
             this.LicenciaTile.Location = new System.Drawing.Point(4, 86);
-            this.LicenciaTile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LicenciaTile.Margin = new System.Windows.Forms.Padding(4);
             this.LicenciaTile.Name = "LicenciaTile";
             this.LicenciaTile.Size = new System.Drawing.Size(383, 75);
             this.LicenciaTile.TabIndex = 3;
@@ -107,7 +107,7 @@
             // 
             this.OpcionesTile.ActiveControl = null;
             this.OpcionesTile.Location = new System.Drawing.Point(4, 4);
-            this.OpcionesTile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.OpcionesTile.Margin = new System.Windows.Forms.Padding(4);
             this.OpcionesTile.Name = "OpcionesTile";
             this.OpcionesTile.Size = new System.Drawing.Size(383, 75);
             this.OpcionesTile.TabIndex = 2;
@@ -125,7 +125,7 @@
             this.panelOpts.HorizontalScrollbarHighlightOnWheel = false;
             this.panelOpts.HorizontalScrollbarSize = 12;
             this.panelOpts.Location = new System.Drawing.Point(431, 79);
-            this.panelOpts.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelOpts.Margin = new System.Windows.Forms.Padding(4);
             this.panelOpts.Name = "panelOpts";
             this.panelOpts.Size = new System.Drawing.Size(804, 720);
             this.panelOpts.TabIndex = 1;
@@ -138,9 +138,9 @@
             this.groupBox3.Controls.Add(this.calAlarma1);
             this.groupBox3.Font = new System.Drawing.Font("Calibri Light", 12F);
             this.groupBox3.Location = new System.Drawing.Point(4, 188);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(796, 352);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
@@ -150,7 +150,7 @@
             // 
             this.calAlarma1.FormatoHora = "dd-MM-yyyy HH:mm";
             this.calAlarma1.Location = new System.Drawing.Point(76, 33);
-            this.calAlarma1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.calAlarma1.Margin = new System.Windows.Forms.Padding(5);
             this.calAlarma1.Name = "calAlarma1";
             this.calAlarma1.Size = new System.Drawing.Size(664, 316);
             this.calAlarma1.TabIndex = 0;
@@ -162,9 +162,9 @@
             this.groupBox2.Controls.Add(this.labelInf1);
             this.groupBox2.Font = new System.Drawing.Font("Calibri Light", 12F);
             this.groupBox2.Location = new System.Drawing.Point(4, 105);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(796, 76);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
@@ -173,7 +173,7 @@
             // bton
             // 
             this.bton.Location = new System.Drawing.Point(688, 26);
-            this.bton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bton.Margin = new System.Windows.Forms.Padding(4);
             this.bton.Name = "bton";
             this.bton.Size = new System.Drawing.Size(100, 36);
             this.bton.TabIndex = 4;
@@ -186,14 +186,11 @@
             this.itemsCBox.FormattingEnabled = true;
             this.itemsCBox.ItemHeight = 24;
             this.itemsCBox.Items.AddRange(new object[] {
-            "Clientes",
-            "Articulos",
-            "Proveedores",
-            "Pedidos",
             "Facturas",
-            "Ventas"});
+            "Ventas Totales",
+            "Facturas (Subinformes)"});
             this.itemsCBox.Location = new System.Drawing.Point(189, 26);
-            this.itemsCBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.itemsCBox.Margin = new System.Windows.Forms.Padding(4);
             this.itemsCBox.Name = "itemsCBox";
             this.itemsCBox.Size = new System.Drawing.Size(489, 30);
             this.itemsCBox.TabIndex = 1;
@@ -215,9 +212,9 @@
             this.groupBox1.Controls.Add(this.metroToggle1);
             this.groupBox1.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(4, 4);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(796, 94);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
@@ -237,7 +234,7 @@
             // 
             this.metroToggle1.AutoSize = true;
             this.metroToggle1.Location = new System.Drawing.Point(133, 37);
-            this.metroToggle1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroToggle1.Margin = new System.Windows.Forms.Padding(4);
             this.metroToggle1.Name = "metroToggle1";
             this.metroToggle1.Size = new System.Drawing.Size(80, 28);
             this.metroToggle1.TabIndex = 2;
@@ -255,7 +252,7 @@
             this.licensePanel.HorizontalScrollbarHighlightOnWheel = false;
             this.licensePanel.HorizontalScrollbarSize = 12;
             this.licensePanel.Location = new System.Drawing.Point(431, 75);
-            this.licensePanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.licensePanel.Margin = new System.Windows.Forms.Padding(4);
             this.licensePanel.Name = "licensePanel";
             this.licensePanel.Size = new System.Drawing.Size(804, 681);
             this.licensePanel.TabIndex = 2;
@@ -266,7 +263,7 @@
             // validarCDK
             // 
             this.validarCDK.Location = new System.Drawing.Point(692, 41);
-            this.validarCDK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.validarCDK.Margin = new System.Windows.Forms.Padding(4);
             this.validarCDK.Name = "validarCDK";
             this.validarCDK.Size = new System.Drawing.Size(100, 28);
             this.validarCDK.TabIndex = 6;
@@ -279,10 +276,10 @@
             // 
             // 
             this.pdtkey.CustomButton.Image = null;
-            this.pdtkey.CustomButton.Location = new System.Drawing.Point(568, 2);
-            this.pdtkey.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pdtkey.CustomButton.Location = new System.Drawing.Point(426, 2);
+            this.pdtkey.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.pdtkey.CustomButton.Name = "";
-            this.pdtkey.CustomButton.Size = new System.Drawing.Size(31, 28);
+            this.pdtkey.CustomButton.Size = new System.Drawing.Size(23, 23);
             this.pdtkey.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.pdtkey.CustomButton.TabIndex = 1;
             this.pdtkey.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -290,7 +287,7 @@
             this.pdtkey.CustomButton.Visible = false;
             this.pdtkey.Lines = new string[0];
             this.pdtkey.Location = new System.Drawing.Point(232, 41);
-            this.pdtkey.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pdtkey.Margin = new System.Windows.Forms.Padding(4);
             this.pdtkey.MaxLength = 32767;
             this.pdtkey.Name = "pdtkey";
             this.pdtkey.PasswordChar = '\0';
@@ -333,7 +330,7 @@
             this.AboutPanel.HorizontalScrollbarHighlightOnWheel = false;
             this.AboutPanel.HorizontalScrollbarSize = 12;
             this.AboutPanel.Location = new System.Drawing.Point(427, 71);
-            this.AboutPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AboutPanel.Margin = new System.Windows.Forms.Padding(4);
             this.AboutPanel.Name = "AboutPanel";
             this.AboutPanel.Size = new System.Drawing.Size(804, 681);
             this.AboutPanel.TabIndex = 2;
@@ -371,7 +368,7 @@
             this.Controls.Add(this.AboutPanel);
             this.Controls.Add(this.licensePanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "settingsWindow";
             this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);

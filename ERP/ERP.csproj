@@ -76,13 +76,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Facturas.cs">
-      <DependentUpon>Facturas.xsd</DependentUpon>
+    <Compile Include="Informes.cs">
+      <DependentUpon>Informes.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Facturas.Designer.cs">
+    <Compile Include="Informes.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Facturas.xsd</DependentUpon>
+      <DependentUpon>Informes.xsd</DependentUpon>
     </Compile>
     <Compile Include="newUserWindow.cs">
       <SubType>Form</SubType>
@@ -154,19 +154,20 @@
     <EmbeddedResource Include="settingsWindow.resx">
       <DependentUpon>settingsWindow.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ventas Totales.rdlc" />
     <EmbeddedResource Include="Visor.resx">
       <DependentUpon>Visor.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Facturas.xsc">
-      <DependentUpon>Facturas.xsd</DependentUpon>
+    <None Include="Informes.xsc">
+      <DependentUpon>Informes.xsd</DependentUpon>
     </None>
-    <None Include="Facturas.xsd">
+    <None Include="Informes.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Facturas.Designer.cs</LastGenOutput>
+      <LastGenOutput>Informes.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Facturas.xss">
-      <DependentUpon>Facturas.xsd</DependentUpon>
+    <None Include="Informes.xss">
+      <DependentUpon>Informes.xsd</DependentUpon>
     </None>
     <None Include="NorthwindDataSet.xsc">
       <DependentUpon>NorthwindDataSet.xsd</DependentUpon>
