@@ -46,24 +46,28 @@ namespace ERP
 
             this.InvoicesTableAdapter.Fill(this.Facturas.Invoices, ids[0]);
             this.VentasTableAdapter.Fill(this.Facturas.Ventas);
+   
         }
 
         private void Visor_Load(object sender, EventArgs e)
         {
             this.reportViewer1.Reset();
             var bind = new BindingSource();
-
-
+            
             if (tipoDoc == "Facturas")
             {
+                this.InvoicesBindingSource.DataMember = "Invoices";
+                this.InvoicesBindingSource.DataSource = this.Facturas;
                 bind.DataSource = this.Facturas.Invoices;
                 ReportDataSource rds = new ReportDataSource("Facturas", bind);
+                this.reportViewer1.LocalReport.ReportEmbeddedResource = "ERP.Facturas.rdlc";
                 this.reportViewer1.LocalReport.DataSources.Clear();
                 this.reportViewer1.LocalReport.DataSources.Add(rds);
-                this.reportViewer1.LocalReport.ReportEmbeddedResource = "ERP.Facturas.rdlc";
             }
             else if (tipoDoc == "Ventas Totales")
             {
+                this.InvoicesBindingSource.DataMember = "Ventas";
+                this.InvoicesBindingSource.DataSource = this.Facturas;
                 bind.DataSource = this.Facturas.Ventas;
                 ReportDataSource rds = new ReportDataSource("Ventas", bind);
                 this.reportViewer1.LocalReport.DataSources.Clear();

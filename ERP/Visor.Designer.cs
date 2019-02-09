@@ -48,10 +48,6 @@
             // 
             // reportViewer1
             // 
-            this.reportViewer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.reportViewer1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             reportDataSource2.Name = "Facturas";
             reportDataSource2.Value = this.InvoicesBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
