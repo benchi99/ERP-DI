@@ -48,10 +48,10 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>2.5cm</Width>
+                  <Width>12.65058cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.5cm</Width>
+                  <Width>12.65058cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -67,7 +67,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Product Name</Value>
+                                  <Value>Nombre del Producto</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -97,7 +97,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Product Sales</Value>
+                                  <Value>Unidades vendidas</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -204,21 +204,31 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>Ventas</DataSetName>
-            <Top>0.62653cm</Top>
-            <Left>0.7747cm</Left>
+            <Top>0.49389cm</Top>
+            <Left>0.53658cm</Left>
             <Height>1.2cm</Height>
-            <Width>5cm</Width>
+            <Width>25.30116cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
             </Style>
           </Tablix>
-          <Chart Name="Chart1">
+          <Chart Name="Chart2">
             <ChartCategoryHierarchy>
               <ChartMembers>
                 <ChartMember>
-                  <Label />
+                  <Group Name="Chart2_CategoryGroup">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!ProductName.Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!ProductName.Value</Value>
+                    </SortExpression>
+                  </SortExpressions>
+                  <Label>=Fields!ProductName.Value</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartCategoryHierarchy>
@@ -231,7 +241,7 @@
             </ChartSeriesHierarchy>
             <ChartData>
               <ChartSeriesCollection>
-                <ChartSeries Name="ProductName">
+                <ChartSeries Name="ProductSales">
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
@@ -248,7 +258,6 @@
                     </ChartDataPoint>
                   </ChartDataPoints>
                   <Type>Shape</Type>
-                  <Subtype>Pyramid</Subtype>
                   <Style />
                   <ChartEmptyPoints>
                     <Style />
@@ -494,9 +503,6 @@
                     </ChartAxisScaleBreak>
                   </ChartAxis>
                 </ChartValueAxes>
-                <ChartThreeDProperties>
-                  <Enabled>true</Enabled>
-                </ChartThreeDProperties>
                 <Style>
                   <BackgroundColor>#00ffffff</BackgroundColor>
                   <BackgroundGradientType>None</BackgroundGradientType>
@@ -523,7 +529,7 @@
             </ChartLegends>
             <ChartTitles>
               <ChartTitle Name="Default">
-                <Caption>Título del gráfico</Caption>
+                <Caption>Ventas totales</Caption>
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
                   <FontSize>9pt</FontSize>
@@ -553,10 +559,10 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>Ventas</DataSetName>
-            <Top>0.62653cm</Top>
-            <Left>7.73853cm</Left>
-            <Height>5cm</Height>
-            <Width>7.5cm</Width>
+            <Top>2.18722cm</Top>
+            <Left>0.27199cm</Left>
+            <Height>14.94834cm</Height>
+            <Width>25.56574cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -568,13 +574,13 @@
             </Style>
           </Chart>
         </ReportItems>
-        <Height>2.3735in</Height>
+        <Height>6.89225in</Height>
         <Style />
       </Body>
-      <Width>6.5in</Width>
+      <Width>10.35in</Width>
       <Page>
         <PageHeader>
-          <Height>2.54cm</Height>
+          <Height>2.48708cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -586,17 +592,22 @@
                   <TextRuns>
                     <TextRun>
                       <Value>VENTAS TOTALES</Value>
-                      <Style />
+                      <Style>
+                        <FontStyle>Italic</FontStyle>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>32pt</FontSize>
+                        <FontWeight>Heavy</FontWeight>
+                      </Style>
                     </TextRun>
                   </TextRuns>
                   <Style />
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox7</rd:DefaultName>
-              <Top>0.9017cm</Top>
-              <Left>6.40503cm</Left>
-              <Height>0.6cm</Height>
-              <Width>3.15617cm</Width>
+              <Top>0.45191cm</Top>
+              <Left>8.17774cm</Left>
+              <Height>1.5942cm</Height>
+              <Width>8.60659cm</Width>
               <Style>
                 <Border>
                   <Style>None</Style>
