@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.InvoicesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Facturas = new ERP.Facturas();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
@@ -53,9 +53,9 @@
             // 
             // reportViewer1
             // 
-            reportDataSource1.Name = "Facturas";
-            reportDataSource1.Value = this.InvoicesBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            reportDataSource2.Name = "Facturas";
+            reportDataSource2.Value = this.InvoicesBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "ERP.Facturas.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(24, 121);
             this.reportViewer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);

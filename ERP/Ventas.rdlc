@@ -11,7 +11,7 @@
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DataSet1">
+    <DataSet Name="Ventas">
       <Query>
         <DataSourceName>Facturas</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
@@ -203,7 +203,7 @@
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
-            <DataSetName>DataSet1</DataSetName>
+            <DataSetName>Ventas</DataSetName>
             <Top>0.62653cm</Top>
             <Left>0.7747cm</Left>
             <Height>1.2cm</Height>
@@ -552,7 +552,7 @@
                 <VerticalAlign>Top</VerticalAlign>
               </Style>
             </ChartNoDataMessage>
-            <DataSetName>DataSet1</DataSetName>
+            <DataSetName>Ventas</DataSetName>
             <Top>0.62653cm</Top>
             <Left>7.73853cm</Left>
             <Height>5cm</Height>
