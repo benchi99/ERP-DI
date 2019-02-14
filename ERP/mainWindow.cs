@@ -18,10 +18,13 @@ namespace ERP
     public partial class mainWindow : MetroFramework.Forms.MetroForm
     {
 
+        /// <summary>
+        /// The logged in
+        /// </summary>
         bool loggedIn = true;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="mainWindow"/> class.
+        /// Initializes a new instance of the <see cref="mainWindow" /> class.
         /// </summary>
         public mainWindow()
         {
@@ -32,7 +35,7 @@ namespace ERP
         /// Handles the Load event of the Form1 control.
         /// </summary>
         /// <param name="sender">The source of the event.</param>
-        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void Form1_Load(object sender, EventArgs e)
         {
             if (!loggedIn)
@@ -60,7 +63,7 @@ namespace ERP
         /// Handles the Click event of the tileNew control.
         /// </summary>
         /// <param name="sender">The source of the event.</param>
-        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void tileNew_Click(object sender, EventArgs e)
         {
             Hide();
@@ -73,7 +76,7 @@ namespace ERP
         /// Handles the Click event of the tileOpen control.
         /// </summary>
         /// <param name="sender">The source of the event.</param>
-        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void tileOpen_Click(object sender, EventArgs e)
         {
             ventanaAbrir.ShowDialog();
@@ -83,7 +86,7 @@ namespace ERP
         /// Handles the Click event of the tileGestionar control.
         /// </summary>
         /// <param name="sender">The source of the event.</param>
-        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void tileGestionar_Click(object sender, EventArgs e)
         {
             Hide();
@@ -96,7 +99,7 @@ namespace ERP
         /// Handles the Click event of the tileOptions control.
         /// </summary>
         /// <param name="sender">The source of the event.</param>
-        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void tileOptions_Click(object sender, EventArgs e)
         {
             Hide();
@@ -109,7 +112,7 @@ namespace ERP
         /// Handles the Click event of the tileLogOff control.
         /// </summary>
         /// <param name="sender">The source of the event.</param>
-        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void tileLogOff_Click(object sender, EventArgs e)
         {
             if (loggedIn)

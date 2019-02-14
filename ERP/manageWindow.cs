@@ -18,20 +18,44 @@ namespace ERP
     public partial class manageWindow : MetroFramework.Forms.MetroForm
     {
 
+        /// <summary>
+        /// The headmod
+        /// </summary>
         readonly String HEADMOD = "¿Qué desea modificar?";
+        /// <summary>
+        /// The headdel
+        /// </summary>
         readonly String HEADDEL = "¿Qué desea eliminar?";
+        /// <summary>
+        /// The headdef
+        /// </summary>
         readonly String HEADDEF = "¿Qué desea hacer?";
 
+        /// <summary>
+        /// The modificar
+        /// </summary>
         readonly String MODIFICAR = "Modificar";
+        /// <summary>
+        /// The eliminar
+        /// </summary>
         readonly String ELIMINAR = "Eliminar";
 
+        /// <summary>
+        /// The modif
+        /// </summary>
         bool modif = false;
+        /// <summary>
+        /// The elimin
+        /// </summary>
         bool elimin = false;
 
+        /// <summary>
+        /// The modif o elimin on
+        /// </summary>
         bool modifOEliminOn = false;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="manageWindow"/> class.
+        /// Initializes a new instance of the <see cref="manageWindow" /> class.
         /// </summary>
         public manageWindow()
         {
@@ -42,7 +66,7 @@ namespace ERP
         /// Handles the Load event of the manageWindow control.
         /// </summary>
         /// <param name="sender">The source of the event.</param>
-        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void manageWindow_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'northwindDataSet.Orders' Puede moverla o quitarla según sea necesario.
@@ -69,7 +93,7 @@ namespace ERP
         /// Handles the Click event of the modificarTile control.
         /// </summary>
         /// <param name="sender">The source of the event.</param>
-        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void modificarTile_Click(object sender, EventArgs e)
         {
             modif = true;
@@ -82,7 +106,7 @@ namespace ERP
         /// Handles the Click event of the eliminarTile control.
         /// </summary>
         /// <param name="sender">The source of the event.</param>
-        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void eliminarTile_Click(object sender, EventArgs e)
         {
             elimin = true;
@@ -108,7 +132,7 @@ namespace ERP
         /// Handles the Click event of the volverTile control.
         /// </summary>
         /// <param name="sender">The source of the event.</param>
-        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void volverTile_Click(object sender, EventArgs e)
         {
             modif = false;
@@ -129,7 +153,7 @@ namespace ERP
         /// Handles the Click event of the customersBindingNavigatorSaveItem control.
         /// </summary>
         /// <param name="sender">The source of the event.</param>
-        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void customersBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
@@ -162,7 +186,7 @@ namespace ERP
         /// Handles the Click event of the datosTile control.
         /// </summary>
         /// <param name="sender">The source of the event.</param>
-        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void datosTile_Click(object sender, EventArgs e)
         {
             txtBts();
@@ -175,7 +199,7 @@ namespace ERP
         /// Handles the Click event of the tramiteTile control.
         /// </summary>
         /// <param name="sender">The source of the event.</param>
-        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void tramiteTile_Click(object sender, EventArgs e)
         {
             txtBts();
@@ -188,7 +212,7 @@ namespace ERP
         /// Handles the FormClosing event of the manageWindow control.
         /// </summary>
         /// <param name="sender">The source of the event.</param>
-        /// <param name="e">The <see cref="FormClosingEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="FormClosingEventArgs" /> instance containing the event data.</param>
         private void manageWindow_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (modifOEliminOn)
@@ -204,7 +228,7 @@ namespace ERP
         /// Handles the Click event of the volverMenuPrincTile control.
         /// </summary>
         /// <param name="sender">The source of the event.</param>
-        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void volverMenuPrincTile_Click(object sender, EventArgs e)
         {
             this.Hide();
