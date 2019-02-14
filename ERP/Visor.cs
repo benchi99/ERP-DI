@@ -12,17 +12,37 @@ using System.Windows.Forms;
 
 namespace ERP
 {
+
+    /// <summary>
+    /// Visor de informes.
+    /// </summary>
+    /// <seealso cref="MetroFramework.Forms.MetroForm" />
     public partial class Visor : MetroFramework.Forms.MetroForm
     {
+
+        /// <summary>
+        /// El tipo de documento.
+        /// </summary>
         private string tipoDoc;
+        /// <summary>
+        /// The ids
+        /// </summary>
         private List<int> ids = new List<int>();
         private List<string> nombresCli = new List<string>();
 
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Visor"/> class.
+        /// </summary>
         public Visor()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Inicializa una nueva instancia de la clase <see cref="Visor"/> class.
+        /// </summary>
+        /// <param name="tipoDoc">Èl tipo de formulario que queremos mostrar..</param>
         public Visor(string tipoDoc)
         {
             InitializeComponent();
@@ -63,6 +83,11 @@ namespace ERP
             this.VentasTableAdapter.Fill(this.Facturas.Ventas);            
         }
 
+        /// <summary>
+        /// Handles the Load event of the Visor control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void Visor_Load(object sender, EventArgs e)
         {
             this.reportViewer1.Reset();
@@ -106,6 +131,11 @@ namespace ERP
             this.reportViewer1.RefreshReport();
         }
 
+        /// <summary>
+        /// Handles the SelectedIndexChanged event of the filterCBX control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void filterCBX_SelectedIndexChanged(object sender, EventArgs e)
         {
             this.InvoicesTableAdapter.Fill(this.Facturas.Invoices, Int32.Parse(filterCBX.Text.ToString()));
@@ -113,6 +143,11 @@ namespace ERP
             this.reportViewer1.RefreshReport();
         }
 
+        /// <summary>
+        /// Handles the SelectedIndexChanged event of the filtrCbx control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void filtrCbx_SelectedIndexChanged(object sender, EventArgs e)
         {
             if(filtrCbx.Text.ToString() == "ID")
@@ -132,11 +167,21 @@ namespace ERP
             }
         }
 
+        /// <summary>
+        /// Handles the SelectedIndexChanged event of the cliFiltrCBX control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void cliFiltrCBX_SelectedIndexChanged(object sender, EventArgs e)
         {
             filterCBX.DataSource = devolverFactsCli(cliFiltrCBX.Text.ToString());
         }
 
+        /// <summary>
+        /// Devuelve una lista con los IDs de pedido del cliente especificado si existe.
+        /// </summary>
+        /// <param name="nombre">El nombre del cliente.</param>
+        /// <returns></returns>
         private List<int> devolverFactsCli(string nombre)
         {
             List<int> cliIds = new List<int>();
@@ -155,7 +200,6 @@ namespace ERP
             con.Close();
 
             return cliIds;
-
         }
     }
 }
