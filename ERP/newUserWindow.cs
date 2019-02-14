@@ -10,6 +10,11 @@ using System.Windows.Forms;
 
 namespace ERP
 {
+
+    /// <summary>
+    /// Ventana nuevo usuario
+    /// </summary>
+    /// <seealso cref="MetroFramework.Forms.MetroForm" />
     public partial class newUserWindow : MetroFramework.Forms.MetroForm
     {
 
@@ -29,16 +34,29 @@ namespace ERP
         DateTime fechaHoy;
         DateTime fechaNac;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="newUserWindow"/> class.
+        /// </summary>
         public newUserWindow()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Handles the Load event of the newUserWindow control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void newUserWindow_Load(object sender, EventArgs e)
         {
             fechaHoy = DateTime.Now;
         }
 
+        /// <summary>
+        /// Handles the Click event of the metroButton1 control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void metroButton1_Click(object sender, EventArgs e)
         {
             OpenFileDialog opd = new OpenFileDialog();
@@ -58,6 +76,9 @@ namespace ERP
             }
         }
 
+        /// <summary>
+        /// Vacia el formulario.
+        /// </summary>
         private void vaciar()
         {
             pfp.Load("");
@@ -75,22 +96,42 @@ namespace ERP
 
         }
 
+        /// <summary>
+        /// Handles the Click event of the clearUser control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void clearUser_Click(object sender, EventArgs e)
         {
             vaciar();
         }
 
+        /// <summary>
+        /// Handles the Click event of the cancelUser control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void cancelUser_Click(object sender, EventArgs e)
         {
             vaciar();
             this.Hide();
         }
 
+        /// <summary>
+        /// Handles the TextChanged event of the nombretb control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void nombretb_TextChanged(object sender, EventArgs e)
         {
             id++;
         }
 
+        /// <summary>
+        /// Handles the Click event of the okUser control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void okUser_Click(object sender, EventArgs e)
         {
             bool valido = false;
