@@ -215,6 +215,7 @@
     <None Include="res\img\newUser.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="res\img\help.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
