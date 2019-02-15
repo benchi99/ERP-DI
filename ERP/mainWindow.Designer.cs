@@ -35,11 +35,13 @@
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.ventanaAbrir = new System.Windows.Forms.OpenFileDialog();
             this.userWelcome = new MetroFramework.Controls.MetroLabel();
+            this.helpTile = new MetroFramework.Controls.MetroTile();
             this.tileGestionar = new MetroFramework.Controls.MetroTile();
             this.tileLogOff = new MetroFramework.Controls.MetroTile();
             this.tileOptions = new MetroFramework.Controls.MetroTile();
             this.tileOpen = new MetroFramework.Controls.MetroTile();
             this.tileNew = new MetroFramework.Controls.MetroTile();
+            this.AYUdAAAAaAA = new System.Windows.Forms.HelpProvider();
             this.SuspendLayout();
             // 
             // metroLabel1
@@ -79,12 +81,27 @@
             // 
             // userWelcome
             // 
+            this.userWelcome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.userWelcome.AutoSize = true;
             this.userWelcome.Location = new System.Drawing.Point(633, 25);
             this.userWelcome.Name = "userWelcome";
             this.userWelcome.Size = new System.Drawing.Size(144, 19);
             this.userWelcome.TabIndex = 12;
             this.userWelcome.Text = "Bienvenido, <usuario>!";
+            // 
+            // helpTile
+            // 
+            this.helpTile.ActiveControl = null;
+            this.helpTile.Location = new System.Drawing.Point(148, 195);
+            this.helpTile.Name = "helpTile";
+            this.helpTile.Size = new System.Drawing.Size(100, 100);
+            this.helpTile.TabIndex = 13;
+            this.helpTile.Text = "Ayuda";
+            this.helpTile.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.helpTile.TileImage = global::ERP.Properties.Resources.help;
+            this.helpTile.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.helpTile.UseSelectable = true;
+            this.helpTile.UseTileImage = true;
             // 
             // tileGestionar
             // 
@@ -105,7 +122,7 @@
             // tileLogOff
             // 
             this.tileLogOff.ActiveControl = null;
-            this.tileLogOff.Location = new System.Drawing.Point(148, 195);
+            this.tileLogOff.Location = new System.Drawing.Point(148, 301);
             this.tileLogOff.Name = "tileLogOff";
             this.tileLogOff.Size = new System.Drawing.Size(100, 100);
             this.tileLogOff.TabIndex = 3;
@@ -171,7 +188,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 420);
+            this.Controls.Add(this.helpTile);
             this.Controls.Add(this.userWelcome);
             this.Controls.Add(this.metroLabel4);
             this.Controls.Add(this.metroLabel3);
@@ -182,9 +200,12 @@
             this.Controls.Add(this.tileOptions);
             this.Controls.Add(this.tileOpen);
             this.Controls.Add(this.tileNew);
+            this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(670, 420);
             this.Name = "mainWindow";
+            this.AYUdAAAAaAA.SetShowHelp(this, true);
             this.Text = "Gestión Empresa";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -205,6 +226,8 @@
         private MetroFramework.Controls.MetroLabel metroLabel4;
         private System.Windows.Forms.OpenFileDialog ventanaAbrir;
         private MetroFramework.Controls.MetroLabel userWelcome;
+        private MetroFramework.Controls.MetroTile helpTile;
+        private System.Windows.Forms.HelpProvider AYUdAAAAaAA;
     }
 }
 
