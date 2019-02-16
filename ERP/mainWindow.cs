@@ -129,5 +129,11 @@ namespace ERP
                 Show();
             }
         }
+
+        private void helpTile_Click(object sender, EventArgs e)
+        {          
+            HelpViewer help = new HelpViewer();
+            help.ShowDialog();
+        }
     }
 }

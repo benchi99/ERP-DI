@@ -17,7 +17,7 @@ namespace ERP
     /// New Window.
     /// </summary>
     /// <seealso cref="MetroFramework.Forms.MetroForm" />
-    public partial class newWindow : MetroFramework.Forms.MetroForm
+    public partial class newWindow : Form
     {
 
         bool volverPuls = false;
@@ -102,6 +102,10 @@ namespace ERP
                 {
                     this.Hide();
                 }
+            }
+            else
+            {
+                this.Hide();
             }
         }
 
