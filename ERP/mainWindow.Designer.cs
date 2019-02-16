@@ -102,6 +102,7 @@
             this.helpTile.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.helpTile.UseSelectable = true;
             this.helpTile.UseTileImage = true;
+            this.helpTile.Click += new System.EventHandler(this.helpTile_Click);
             // 
             // tileGestionar
             // 
