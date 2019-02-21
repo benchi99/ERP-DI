@@ -3,7 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -38,6 +40,8 @@ namespace ERP
         /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void Form1_Load(object sender, EventArgs e)
         {
+            helpProvider1.HelpNamespace = Path.GetDirectoryName(Process.GetCurrentProcess().MainModule.FileName) + @"/res/help/help.chm";
+
             if (!loggedIn)
             {
                 tileNew.Enabled = false;

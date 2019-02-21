@@ -25,7 +25,7 @@
     <DocumentationFile>bin\Debug\ERP.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -33,6 +33,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>bin\Release\ERP.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>tramite.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Control_Calendario">
@@ -215,6 +218,7 @@
     <None Include="res\img\newUser.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="tramite.ico" />
     <None Include="res\img\help.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
