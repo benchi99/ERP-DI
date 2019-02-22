@@ -82,8 +82,68 @@ Section "MAIN" SecDummy
   SetOutPath "$INSTDIR"
   
   ;ARCHIVOS DE INSTALACIÓN
-  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\"
-
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\res\help\help.chm"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\res\pdf\manual.pdf"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\res\img\tramite.ico"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\es\Microsoft.ReportViewer.Common.resources.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\es\Microsoft.ReportViewer.DataVisualization.resources.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\es\Microsoft.ReportViewer.Design.resources.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\es\Microsoft.ReportViewer.WinForms.resources.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\es\Microsoft.VisualStudio.Data.Core.resources.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\es\Microsoft.VisualStudio.Data.Services.resources.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\SqlServerTypes\x86\msvcr120.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\SqlServerTypes\x86\SqlServerSpatial140.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\SqlServerTypes\x64\msvcr120.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\SqlServerTypes\x64\SqlServerSpatial140.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\Microsoft.VisualStudio.ComponentModelHost.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\Microsoft.VisualStudio.Data.Core.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\Microsoft.VisualStudio.Data.Services.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\Microsoft.VisualStudio.Debugger.Interop.11.0.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\Microsoft.VisualStudio.Debugger.InteropA.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\Microsoft.VisualStudio.GraphModel.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\Microsoft.VisualStudio.ManagedInterfaces.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\Microsoft.VisualStudio.OLE.Interop.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\Microsoft.VisualStudio.ProjectAggregator.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\Microsoft.VisualStudio.Shell.Interop.8.0.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\Microsoft.VisualStudio.Shell.Interop.9.0.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\Microsoft.VisualStudio.Shell.Interop.10.0.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\Microsoft.VisualStudio.Shell.Interop.11.0.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\Microsoft.VisualStudio.Shell.Interop.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\Microsoft.VisualStudio.TemplateWizardInterface.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\Microsoft.VisualStudio.TemplateWizardInterface.xml"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\Microsoft.VisualStudio.TextManager.Interop.8.0.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\Microsoft.VisualStudio.TextManager.Interop.10.0.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\Microsoft.VisualStudio.TextManager.Interop.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\Microsoft.VisualStudio.VSHelp.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\AxInterop.AcroPDFLib.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\Control_Calendario.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\Control_Calendario.pdb"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\EnvDTE.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\EnvDTE80.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\ERP.exe"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\ERP.exe.config"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\ERP.pdb"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\ERP.xml"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\Interop.AcroPDFLib.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\MetroFramework.Design.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\MetroFramework.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\MetroFramework.Fonts.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\Microsoft.Build.Framework.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\Microsoft.Build.Tasks.Core.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\Microsoft.Build.Utilities.Core.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\Microsoft.MSXML.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\Microsoft.ReportViewer.Common.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\Microsoft.ReportViewer.DataVisualization.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\Microsoft.ReportViewer.Design.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\Microsoft.ReportViewer.ProcessingObjectModel.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\Microsoft.ReportViewer.WinForms.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\Microsoft.SqlServer.Types.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\stdole.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\System.Threading.Tasks.Dataflow.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\VSLangProj.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\VSLangProj2.dll"
+  File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\VSLangProj80.dll"
+  
   
   ;Store installation folder
   WriteRegStr HKCU "Software\ERP" "" $INSTDIR
@@ -102,17 +162,7 @@ Function .onInit
 
 FunctionEnd
 
-;--------------------------------
-;Descriptions
 
-  ;USE A LANGUAGE STRING IF YOU WANT YOUR DESCRIPTIONS TO BE LANGAUGE SPECIFIC
-
-  ;Assign descriptions to sections
-  !insertmacro MUI_FUNCTION_DESCRIPTION_BEGIN
-    !insertmacro MUI_DESCRIPTION_TEXT ${SecDummy} "A test section."
-  !insertmacro MUI_FUNCTION_DESCRIPTION_END
-
- 
 ;--------------------------------
 ;Uninstaller Section
 
