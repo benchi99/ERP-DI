@@ -23,7 +23,7 @@
   InstallDir "$PROGRAMFILES\ERP\"
 
   ;Request application privileges for Windows Vista
-  RequestExecutionLevel user
+  RequestExecutionLevel admin
 
 ;--------------------------------
 ;Interface Settings
@@ -53,11 +53,7 @@
   
   !insertmacro MUI_UNPAGE_WELCOME
   !insertmacro MUI_UNPAGE_CONFIRM
-  !insertmacro MUI_UNPAGE_LICENSE "nsisRes\LICENSE.txt"
-  !insertmacro MUI_UNPAGE_COMPONENTS
-  !insertmacro MUI_UNPAGE_DIRECTORY
   !insertmacro MUI_UNPAGE_INSTFILES
-  !insertmacro MUI_UNPAGE_FINISH
 
 ;--------------------------------
 ;Languages
@@ -77,10 +73,20 @@
 ;--------------------------------
 ;Installer Sections
 
-Section "MAIN" SecDummy
+Section "ERP"
 
+  SectionIn RO
   SetOutPath "$INSTDIR"
-  
+
+  CreateDirectory "$INSTDIR\res"
+  CreateDirectory "$INSTDIR\res\help\"
+  CreateDirectory "$INSTDIR\res\img\"
+  CreateDirectory "$INSTDIR\res\pdf\"
+  CreateDirectory "$INSTDIR\es"
+  CreateDirectory "$INSTDIR\SqlServerTypes"
+  CreateDirectory "$INSTDIR\SqlServerTypes\x86"
+  CreateDirectory "$INSTDIR\SqlServerTypes\x64"
+
   ;ARCHIVOS DE INSTALACIÓN
   File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\res\help\help.chm"
   File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\res\pdf\manual.pdf"
@@ -144,7 +150,38 @@ Section "MAIN" SecDummy
   File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\VSLangProj2.dll"
   File "D:\INSTITUTO\2DAM\prog\desarrollo-interfaces\ERP\ERP\bin\Release\VSLangProj80.dll"
   
-  
+  CopyFiles "$INSTDIR\*.pdf" "$INSTDIR\res\pdf\"
+  CopyFiles "$INSTDIR\*.chm" "$INSTDIR\res\help\"
+  CopyFiles "$INSTDIR\*.ico" "$INSTDIR\res\img\"
+
+  Delete "$INSTDIR\*.pdf"
+  Delete "$INSTDIR\*.chm"
+  Delete "$INSTDIR\*.ico"
+
+  CopyFiles "$INSTDIR\Microsoft.ReportViewer.Common.resources.dll" "$INSTDIR\es\"
+  CopyFiles "$INSTDIR\Microsoft.ReportViewer.DataVisualization.resources.dll" "$INSTDIR\es\"
+  CopyFiles "$INSTDIR\Microsoft.ReportViewer.Design.resources.dll" "$INSTDIR\es\"
+  CopyFiles "$INSTDIR\Microsfot.ReportViewer.WinForms.dll" "$INSTDIR\es\"
+  CopyFiles "$INSTDIR\Microsoft.VisualStudio.Data.Core.resources.dll" "$INSTDIR\es\"
+  CopyFiles "$INSTDIR\Microsoft.VisualStudio.Data.Services.resources.dll" "$INSTDIR\es\"
+
+  Delete "$INSTDIR\Microsoft.ReportViewer.Common.resources.dll" 
+  Delete "$INSTDIR\Microsoft.ReportViewer.DataVisualization.resources.dll" 
+  Delete "$INSTDIR\Microsoft.ReportViewer.Design.resources.dll" 
+  Delete "$INSTDIR\Microsfot.ReportViewer.WinForms.dll" 
+  Delete "$INSTDIR\Microsoft.VisualStudio.Data.Core.resources.dll" 
+  Delete "$INSTDIR\Microsoft.VisualStudio.Data.Services.resources.dll" 
+
+  CopyFiles "$INSTDIR\msvcr120.dll" "$INSTDIR\SqlServerTypes\x86\"
+  CopyFiles "$INSTDIR\msvcr120.dll" "$INSTDIR\SqlServerTypes\x64\"
+  CopyFiles "$INSTDIR\SqlServerSpatial140.dll" "$INSTDIR\SqlServerTypes\x86\"
+  CopyFiles "$INSTDIR\SqlServerSpatial140.dll" "$INSTDIR\SqlServerTypes\x64\"
+
+  Delete "$INSTDIR\msvcr120.dll" 
+  Delete "$INSTDIR\SqlServerSpatial140.dll" 
+
+  CreateShortCut "$DESKTOP\ERP.lnk" "$INSTDIR\ERP.exe"
+
   ;Store installation folder
   WriteRegStr HKCU "Software\ERP" "" $INSTDIR
   
@@ -168,14 +205,73 @@ FunctionEnd
 
 Section "Uninstall"
 
-  ;ADD YOUR OWN FILES HERE...
+  Delete "$INSTDIR\res\help\help.chm"
+  Delete "$INSTDIR\res\pdf\manual.pdf"
+  Delete "$INSTDIR\res\img\tramite.ico"
+  Delete "$INSTDIR\es\Microsoft.ReportViewer.Common.resources.dll"
+  Delete "$INSTDIR\es\Microsoft.ReportViewer.DataVisualization.resources.dll"
+  Delete "$INSTDIR\es\Microsoft.ReportViewer.Design.resources.dll"
+  Delete "$INSTDIR\es\Microsoft.ReportViewer.WinForms.resources.dll"
+  Delete "$INSTDIR\es\Microsoft.VisualStudio.Data.Core.resources.dll"
+  Delete "$INSTDIR\es\Microsoft.VisualStudio.Data.Services.resources.dll"
+  Delete "$INSTDIR\SqlServerTypes\x86\msvcr120.dll"
+  Delete "$INSTDIR\SqlServerTypes\x86\SqlServerSpatial140.dll"
+  Delete "$INSTDIR\SqlServerTypes\x64\msvcr120.dll"
+  Delete "$INSTDIR\SqlServerTypes\x64\SqlServerSpatial140.dll"
+  Delete "$INSTDIR\Microsoft.VisualStudio.ComponentModelHost.dll"
+  Delete "$INSTDIR\Microsoft.VisualStudio.Data.Core.dll"
+  Delete "$INSTDIR\Microsoft.VisualStudio.Data.Services.dll"
+  Delete "$INSTDIR\Microsoft.VisualStudio.Debugger.Interop.11.0.dll"
+  Delete "$INSTDIR\Microsoft.VisualStudio.Debugger.InteropA.dll"
+  Delete "$INSTDIR\Microsoft.VisualStudio.GraphModel.dll"
+  Delete "$INSTDIR\Microsoft.VisualStudio.ManagedInterfaces.dll"
+  Delete "$INSTDIR\Microsoft.VisualStudio.OLE.Interop.dll"
+  Delete "$INSTDIR\Microsoft.VisualStudio.ProjectAggregator.dll"
+  Delete "$INSTDIR\Microsoft.VisualStudio.Shell.Interop.8.0.dll"
+  Delete "$INSTDIR\Microsoft.VisualStudio.Shell.Interop.9.0.dll"
+  Delete "$INSTDIR\Microsoft.VisualStudio.Shell.Interop.10.0.dll"
+  Delete "$INSTDIR\Microsoft.VisualStudio.Shell.Interop.11.0.dll"
+  Delete "$INSTDIR\Microsoft.VisualStudio.Shell.Interop.dll"
+  Delete "$INSTDIR\Microsoft.VisualStudio.TemplateWizardInterface.dll"
+  Delete "$INSTDIR\Microsoft.VisualStudio.TemplateWizardInterface.xml"
+  Delete "$INSTDIR\Microsoft.VisualStudio.TextManager.Interop.8.0.dll"
+  Delete "$INSTDIR\Microsoft.VisualStudio.TextManager.Interop.10.0.dll"
+  Delete "$INSTDIR\Microsoft.VisualStudio.TextManager.Interop.dll"
+  Delete "$INSTDIR\Microsoft.VisualStudio.VSHelp.dll"
+  Delete "$INSTDIR\AxInterop.AcroPDFLib.dll"
+  Delete "$INSTDIR\Control_Calendario.dll"
+  Delete "$INSTDIR\Control_Calendario.pdb"
+  Delete "$INSTDIR\EnvDTE.dll"
+  Delete "$INSTDIR\EnvDTE80.dll"
+  Delete "$INSTDIR\ERP.exe"
+  Delete "$INSTDIR\ERP.exe.config"
+  Delete "$INSTDIR\ERP.pdb"
+  Delete "$INSTDIR\ERP.xml"
+  Delete "$INSTDIR\Interop.AcroPDFLib.dll"
+  Delete "$INSTDIR\MetroFramework.Design.dll"
+  Delete "$INSTDIR\MetroFramework.dll"
+  Delete "$INSTDIR\MetroFramework.Fonts.dll"
+  Delete "$INSTDIR\Microsoft.Build.Framework.dll"
+  Delete "$INSTDIR\Microsoft.Build.Tasks.Core.dll"
+  Delete "$INSTDIR\Microsoft.Build.Utilities.Core.dll"
+  Delete "$INSTDIR\Microsoft.MSXML.dll"
+  Delete "$INSTDIR\Microsoft.ReportViewer.Common.dll"
+  Delete "$INSTDIR\Microsoft.ReportViewer.DataVisualization.dll"
+  Delete "$INSTDIR\Microsoft.ReportViewer.Design.dll"
+  Delete "$INSTDIR\Microsoft.ReportViewer.ProcessingObjectModel.dll"
+  Delete "$INSTDIR\Microsoft.ReportViewer.WinForms.dll"
+  Delete "$INSTDIR\Microsoft.SqlServer.Types.dll"
+  Delete "$INSTDIR\stdole.dll"
+  Delete "$INSTDIR\System.Threading.Tasks.Dataflow.dll"
+  Delete "$INSTDIR\VSLangProj.dll"
+  Delete "$INSTDIR\VSLangProj2.dll"
+  Delete "$INSTDIR\VSLangProj80.dll"
 
   Delete "$INSTDIR\Uninstall.exe"
 
   RMDir "$INSTDIR"
 
-  DeleteRegKey /ifempty HKCU "Software\Modern UI Test"
-
+  DeleteRegKey /ifempty HKCU "Software\ERP"
 SectionEnd
 
 ;--------------------------------
@@ -185,4 +281,8 @@ Function un.onInit
 
   !insertmacro MUI_UNGETLANGUAGE
   
+FunctionEnd
+
+Function un.onGUIEnd
+    MessageBox MB_OK "La aplicacion se ha desinstalado correctamente, pero es posible que algunos archivos no hayan podido eliminarse y tenga que eliminarlos a mano. Gracias por instalar ERP." 
 FunctionEnd
