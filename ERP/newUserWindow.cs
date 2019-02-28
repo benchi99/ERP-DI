@@ -22,7 +22,7 @@ namespace ERP
 
         string nombre;
         string apellidos;
-        int doc;
+        string doc;
         string sexo;
         int telefonoFijo;
         int telefonoMovil;
@@ -138,11 +138,13 @@ namespace ERP
 
             nombre = nombretb.Text;
             apellidos = apellidostb.Text;
-            doc = int.Parse(document.Text);
+            doc = document.Text;
             telefonoFijo = int.Parse(fijo.Text);
             telefonoMovil = int.Parse(movil.Text);
             fechaNac = new DateTime(int.Parse(fechanac.Value.ToString("yyyy")), int.Parse(fechanac.Value.ToString("MM")), int.Parse(fechanac.Value.ToString("dd")));
             
         }
+
+        
     }
 }
