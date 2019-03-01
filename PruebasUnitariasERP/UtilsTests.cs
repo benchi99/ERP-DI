@@ -14,7 +14,15 @@ namespace ERP.Tests
         [TestMethod()]
         public void esDniValidoTest()
         {
-            Assert.IsTrue(Utils.esDniValido("29622752V"));
+            Assert.IsFalse(Utils.esDniValido("123456789"));
+
+            
+        }
+
+        [TestMethod()]
+        public void sumaTest()
+        {
+            Assert.Equals(Utils.sumar(2, 3), 5);
         }
     }
 }
