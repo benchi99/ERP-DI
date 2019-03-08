@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.InvoicesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Facturas = new ERP.Informes();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
@@ -55,14 +55,14 @@
             this.reportViewer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            reportDataSource1.Name = "Facturas";
-            reportDataSource1.Value = this.InvoicesBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            reportDataSource2.Name = "Facturas";
+            reportDataSource2.Value = this.InvoicesBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "ERP.Facturas.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(18, 98);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(768, 401);
+            this.reportViewer1.Size = new System.Drawing.Size(968, 450);
             this.reportViewer1.TabIndex = 0;
             // 
             // InvoicesTableAdapter
@@ -74,8 +74,8 @@
             this.filterCBX.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.filterCBX.FormattingEnabled = true;
             this.filterCBX.ItemHeight = 23;
-            this.filterCBX.Location = new System.Drawing.Point(694, 64);
-            this.filterCBX.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.filterCBX.Location = new System.Drawing.Point(894, 64);
+            this.filterCBX.Margin = new System.Windows.Forms.Padding(2);
             this.filterCBX.Name = "filterCBX";
             this.filterCBX.Size = new System.Drawing.Size(92, 29);
             this.filterCBX.TabIndex = 3;
@@ -102,7 +102,8 @@
             this.filtrCbx.ItemHeight = 23;
             this.filtrCbx.Items.AddRange(new object[] {
             "ID",
-            "Cliente"});
+            "Cliente",
+            "Fecha"});
             this.filtrCbx.Location = new System.Drawing.Point(91, 63);
             this.filtrCbx.Name = "filtrCbx";
             this.filtrCbx.Size = new System.Drawing.Size(121, 29);
@@ -114,7 +115,7 @@
             // 
             this.factIdLbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.factIdLbl.AutoSize = true;
-            this.factIdLbl.Location = new System.Drawing.Point(573, 69);
+            this.factIdLbl.Location = new System.Drawing.Point(773, 69);
             this.factIdLbl.Name = "factIdLbl";
             this.factIdLbl.Size = new System.Drawing.Size(116, 19);
             this.factIdLbl.TabIndex = 49999;
@@ -125,7 +126,7 @@
             this.cliFiltrCBX.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cliFiltrCBX.FormattingEnabled = true;
             this.cliFiltrCBX.ItemHeight = 23;
-            this.cliFiltrCBX.Location = new System.Drawing.Point(446, 64);
+            this.cliFiltrCBX.Location = new System.Drawing.Point(646, 64);
             this.cliFiltrCBX.Name = "cliFiltrCBX";
             this.cliFiltrCBX.Size = new System.Drawing.Size(121, 29);
             this.cliFiltrCBX.TabIndex = 2;
@@ -136,7 +137,7 @@
             // 
             this.cliLbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cliLbl.AutoSize = true;
-            this.cliLbl.Location = new System.Drawing.Point(329, 69);
+            this.cliLbl.Location = new System.Drawing.Point(529, 69);
             this.cliLbl.Name = "cliLbl";
             this.cliLbl.Size = new System.Drawing.Size(111, 19);
             this.cliLbl.TabIndex = 69999;
@@ -146,7 +147,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(803, 518);
+            this.ClientSize = new System.Drawing.Size(1003, 567);
             this.Controls.Add(this.cliLbl);
             this.Controls.Add(this.cliFiltrCBX);
             this.Controls.Add(this.factIdLbl);

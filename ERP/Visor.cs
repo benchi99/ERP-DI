@@ -214,5 +214,59 @@ namespace ERP
 
             return cliIds;
         }
+
+        private List<string> devolverTodasLasFechas()
+        {
+            List<string> fechas = new List<string>();
+
+            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-OAODKRI\SQLBENCHO;Initial Catalog=Northwind;Integrated Security=True");
+            con.Open();
+            SqlCommand sql = new SqlCommand("SELECT OrderDate FROM dbo.Invoices GROUP BY OrderDate", con);
+            SqlDataReader reader = sql.ExecuteReader();
+
+            while (reader.Read())
+            {
+                fechas.Add(reader[0].ToString().Substring(0, 9));
+            }
+
+            reader.Close();
+            con.Close();
+
+            return fechas;
+        }
+
+        private List<string> devolverFechasDespuesDe(string fecha)
+        {
+            List<string> fechasPosteriores = new List<string>();
+
+            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-OAODKRI\SQLBENCHO;Initial Catalog=Northwind;Integrated Security=True");
+            con.Open();
+            SqlCommand sql = new SqlCommand("SELECT OrderDate FROM dbo.Invoices WHERE CAST(OrderDate AS Date) >= '" + fecha + "' GROUP BY OrderDate", con);
+            SqlDataReader reader = sql.ExecuteReader();
+
+            while (reader.Read())
+            {
+                fechasPosteriores.Add(reader[0].ToString().Substring(0,9));
+            }
+            
+            return fechasPosteriores;
+        }
+
+        private List<int> devolverFacturasComprendidasEntreFecha(string fecha1, string fecha2)
+        {
+            List<int> fechIds = new List<int>();
+
+            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-OAODKRI\SQLBENCHO;Initial Catalog=Northwind;Integrated Security=True");
+            con.Open();
+            SqlCommand sql = new SqlCommand("SELECT OrderID FROM dbo.Invoices WHERE CAST(OrderDate AS Date) >= '" + fecha1 + "' AND CAST(OrderDate AS Date) <= '" + fecha2 + "' GROUP BY OrderID", con);
+            SqlDataReader reader = sql.ExecuteReader();
+
+            while (reader.Read())
+            {
+                fechIds.Add(Convert.ToInt32(reader[0]));
+            }
+
+            return fechIds;
+        }
     }
 }
