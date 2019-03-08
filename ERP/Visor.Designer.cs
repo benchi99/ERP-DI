@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource3 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.InvoicesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Facturas = new ERP.Informes();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
@@ -41,6 +41,10 @@
             this.factIdLbl = new MetroFramework.Controls.MetroLabel();
             this.cliFiltrCBX = new MetroFramework.Controls.MetroComboBox();
             this.cliLbl = new MetroFramework.Controls.MetroLabel();
+            this.hastaFchCbx = new MetroFramework.Controls.MetroComboBox();
+            this.desdeFchCbx = new MetroFramework.Controls.MetroComboBox();
+            this.desdeFchLbl = new MetroFramework.Controls.MetroLabel();
+            this.hastaFchLbl = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.InvoicesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Facturas)).BeginInit();
             this.SuspendLayout();
@@ -55,9 +59,9 @@
             this.reportViewer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            reportDataSource2.Name = "Facturas";
-            reportDataSource2.Value = this.InvoicesBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
+            reportDataSource3.Name = "Facturas";
+            reportDataSource3.Value = this.InvoicesBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource3);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "ERP.Facturas.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(18, 98);
             this.reportViewer1.Name = "reportViewer1";
@@ -143,18 +147,61 @@
             this.cliLbl.TabIndex = 69999;
             this.cliLbl.Text = "Seleccione cliente";
             // 
+            // hastaFchCbx
+            // 
+            this.hastaFchCbx.FormattingEnabled = true;
+            this.hastaFchCbx.ItemHeight = 23;
+            this.hastaFchCbx.Location = new System.Drawing.Point(646, 64);
+            this.hastaFchCbx.Name = "hastaFchCbx";
+            this.hastaFchCbx.Size = new System.Drawing.Size(121, 29);
+            this.hastaFchCbx.TabIndex = 70000;
+            this.hastaFchCbx.UseSelectable = true;
+            this.hastaFchCbx.SelectedIndexChanged += new System.EventHandler(this.hastaFchCbx_SelectedIndexChanged);
+            // 
+            // desdeFchCbx
+            // 
+            this.desdeFchCbx.FormattingEnabled = true;
+            this.desdeFchCbx.ItemHeight = 23;
+            this.desdeFchCbx.Location = new System.Drawing.Point(402, 63);
+            this.desdeFchCbx.Name = "desdeFchCbx";
+            this.desdeFchCbx.Size = new System.Drawing.Size(121, 29);
+            this.desdeFchCbx.TabIndex = 70001;
+            this.desdeFchCbx.UseSelectable = true;
+            // 
+            // desdeFchLbl
+            // 
+            this.desdeFchLbl.AutoSize = true;
+            this.desdeFchLbl.Location = new System.Drawing.Point(285, 68);
+            this.desdeFchLbl.Name = "desdeFchLbl";
+            this.desdeFchLbl.Size = new System.Drawing.Size(45, 19);
+            this.desdeFchLbl.TabIndex = 70002;
+            this.desdeFchLbl.Text = "Desde";
+            // 
+            // hastaFchLbl
+            // 
+            this.hastaFchLbl.AutoSize = true;
+            this.hastaFchLbl.Location = new System.Drawing.Point(529, 69);
+            this.hastaFchLbl.Name = "hastaFchLbl";
+            this.hastaFchLbl.Size = new System.Drawing.Size(41, 19);
+            this.hastaFchLbl.TabIndex = 70003;
+            this.hastaFchLbl.Text = "Hasta";
+            // 
             // Visor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1003, 567);
-            this.Controls.Add(this.cliLbl);
-            this.Controls.Add(this.cliFiltrCBX);
+            this.Controls.Add(this.hastaFchLbl);
+            this.Controls.Add(this.desdeFchLbl);
+            this.Controls.Add(this.desdeFchCbx);
+            this.Controls.Add(this.hastaFchCbx);
             this.Controls.Add(this.factIdLbl);
             this.Controls.Add(this.filtrCbx);
             this.Controls.Add(this.filterLb);
             this.Controls.Add(this.idCBX);
             this.Controls.Add(this.reportViewer1);
+            this.Controls.Add(this.cliFiltrCBX);
+            this.Controls.Add(this.cliLbl);
             this.Name = "Visor";
             this.Padding = new System.Windows.Forms.Padding(15, 60, 15, 16);
             this.Text = "Visor";
@@ -180,5 +227,9 @@
         private MetroFramework.Controls.MetroLabel factIdLbl;
         private MetroFramework.Controls.MetroComboBox cliFiltrCBX;
         private MetroFramework.Controls.MetroLabel cliLbl;
+        private MetroFramework.Controls.MetroComboBox hastaFchCbx;
+        private MetroFramework.Controls.MetroComboBox desdeFchCbx;
+        private MetroFramework.Controls.MetroLabel desdeFchLbl;
+        private MetroFramework.Controls.MetroLabel hastaFchLbl;
     }
 }

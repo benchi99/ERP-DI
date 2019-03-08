@@ -79,6 +79,8 @@ namespace ERP
 
             filterCBX.DataSource = ids;
             cliFiltrCBX.DataSource = nombresCli;
+            desdeFchCbx.DataSource = devolverTodasLasFechas();
+            hastaFchCbx.DataSource = devolverFechasDespuesDe(desdeFchCbx.Text.ToString());
 
             filtrCbx.Text = "ID";
 
@@ -167,6 +169,10 @@ namespace ERP
             {
                 cliLbl.Visible = false;
                 cliFiltrCBX.Visible = false;
+                desdeFchLbl.Visible = false;
+                desdeFchCbx.Visible = false;
+                hastaFchLbl.Visible = false;
+                hastaFchCbx.Visible = false;
                 factIdLbl.Visible = true;
                 filterCBX.Visible = true;
                 filterCBX.DataSource = ids;
@@ -174,9 +180,23 @@ namespace ERP
             {
                 cliLbl.Visible = true;
                 cliFiltrCBX.Visible = true;
+                desdeFchLbl.Visible = false;
+                desdeFchCbx.Visible = false;
+                hastaFchLbl.Visible = false;
+                hastaFchCbx.Visible = false;
                 factIdLbl.Visible = true;
                 filterCBX.Visible = true;
                 filterCBX.DataSource = devolverFactsCli(cliFiltrCBX.Text.ToString());
+            } else if (filtrCbx.Text.ToString() == "Fecha") 
+            {
+                cliLbl.Visible = false;
+                cliFiltrCBX.Visible = false;
+                desdeFchLbl.Visible = true;
+                desdeFchCbx.Visible = true;
+                hastaFchLbl.Visible = true;
+                hastaFchCbx.Visible = true;
+                factIdLbl.Visible = true;
+                filterCBX.Visible = true;
             }
         }
 
@@ -194,7 +214,7 @@ namespace ERP
         /// Devuelve una lista con los IDs de pedido del cliente especificado si existe.
         /// </summary>
         /// <param name="nombre">El nombre del cliente.</param>
-        /// <returns></returns>
+        /// <returns>Lista con todas las facturas del cliente especificado</returns>
         private List<int> devolverFactsCli(string nombre)
         {
             List<int> cliIds = new List<int>();
@@ -215,6 +235,10 @@ namespace ERP
             return cliIds;
         }
 
+        /// <summary>
+        /// Devuelve una lista con todas las fechas de factura de la base de datos.
+        /// </summary>
+        /// <returns>Lista con todas las fechas.</returns>
         private List<string> devolverTodasLasFechas()
         {
             List<string> fechas = new List<string>();
@@ -235,6 +259,11 @@ namespace ERP
             return fechas;
         }
 
+        /// <summary>
+        /// Devuelve una lista con todas las fechas posteriores a la especificada.
+        /// </summary>
+        /// <param name="fecha">Fecha mínima</param>
+        /// <returns>Lista con las fechas que coinciden con el parámetro</returns>
         private List<string> devolverFechasDespuesDe(string fecha)
         {
             List<string> fechasPosteriores = new List<string>();
@@ -252,6 +281,13 @@ namespace ERP
             return fechasPosteriores;
         }
 
+        /// <summary>
+        /// Devuelve IDs de Facturas de pedidos que hayan sido realizados
+        /// comprendidos entre ambas fechas.
+        /// </summary>
+        /// <param name="fecha1"></param>
+        /// <param name="fecha2"></param>
+        /// <returns>IDs de pedidos realizados comprendidos entre estas fechas.</returns>
         private List<int> devolverFacturasComprendidasEntreFecha(string fecha1, string fecha2)
         {
             List<int> fechIds = new List<int>();
@@ -267,6 +303,16 @@ namespace ERP
             }
 
             return fechIds;
+        }
+
+        /// <summary>
+        /// Handler del evento SelectedIndexChanged
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void hastaFchCbx_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            filterCBX.DataSource = devolverFacturasComprendidasEntreFecha(desdeFchCbx.Text.ToString(), hastaFchCbx.Text.ToString());
         }
     }
 }
