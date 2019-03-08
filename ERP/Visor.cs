@@ -79,9 +79,10 @@ namespace ERP
 
             filterCBX.DataSource = ids;
             cliFiltrCBX.DataSource = nombresCli;
+            /*
             desdeFchCbx.DataSource = devolverTodasLasFechas();
             hastaFchCbx.DataSource = devolverFechasDespuesDe(desdeFchCbx.Text.ToString());
-
+            */
             filtrCbx.Text = "ID";
 
             this.InvoicesTableAdapter.Fill(this.Facturas.Invoices, ids[0]);
@@ -187,7 +188,7 @@ namespace ERP
                 factIdLbl.Visible = true;
                 filterCBX.Visible = true;
                 filterCBX.DataSource = devolverFactsCli(cliFiltrCBX.Text.ToString());
-            } else if (filtrCbx.Text.ToString() == "Fecha") 
+            } /*else if (filtrCbx.Text.ToString() == "Fecha") 
             {
                 cliLbl.Visible = false;
                 cliFiltrCBX.Visible = false;
@@ -198,6 +199,7 @@ namespace ERP
                 factIdLbl.Visible = true;
                 filterCBX.Visible = true;
             }
+            */
         }
 
         /// <summary>
@@ -239,13 +241,14 @@ namespace ERP
         /// Devuelve una lista con todas las fechas de factura de la base de datos.
         /// </summary>
         /// <returns>Lista con todas las fechas.</returns>
+        /*
         private List<string> devolverTodasLasFechas()
         {
             List<string> fechas = new List<string>();
 
             SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-OAODKRI\SQLBENCHO;Initial Catalog=Northwind;Integrated Security=True");
             con.Open();
-            SqlCommand sql = new SqlCommand("SELECT OrderDate FROM dbo.Invoices GROUP BY OrderDate", con);
+            SqlCommand sql = new SqlCommand("SELECT OrderDate FROM dbo.Invoices GROUP BY OrderDate ORDER BY OrderDate", con);
             SqlDataReader reader = sql.ExecuteReader();
 
             while (reader.Read())
@@ -258,12 +261,14 @@ namespace ERP
 
             return fechas;
         }
+        */
 
         /// <summary>
         /// Devuelve una lista con todas las fechas posteriores a la especificada.
         /// </summary>
         /// <param name="fecha">Fecha mínima</param>
         /// <returns>Lista con las fechas que coinciden con el parámetro</returns>
+        /*
         private List<string> devolverFechasDespuesDe(string fecha)
         {
             List<string> fechasPosteriores = new List<string>();
@@ -280,6 +285,7 @@ namespace ERP
             
             return fechasPosteriores;
         }
+        */
 
         /// <summary>
         /// Devuelve IDs de Facturas de pedidos que hayan sido realizados
@@ -288,6 +294,7 @@ namespace ERP
         /// <param name="fecha1"></param>
         /// <param name="fecha2"></param>
         /// <returns>IDs de pedidos realizados comprendidos entre estas fechas.</returns>
+        /*
         private List<int> devolverFacturasComprendidasEntreFecha(string fecha1, string fecha2)
         {
             List<int> fechIds = new List<int>();
@@ -304,15 +311,18 @@ namespace ERP
 
             return fechIds;
         }
+        */
 
         /// <summary>
         /// Handler del evento SelectedIndexChanged
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
+        /*
         private void hastaFchCbx_SelectedIndexChanged(object sender, EventArgs e)
         {
             filterCBX.DataSource = devolverFacturasComprendidasEntreFecha(desdeFchCbx.Text.ToString(), hastaFchCbx.Text.ToString());
         }
+        */
     }
 }
