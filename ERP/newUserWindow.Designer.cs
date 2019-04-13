@@ -83,16 +83,14 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.AutoSize = true;
             this.flowLayoutPanel1.Controls.Add(this.metroPanel2);
             this.flowLayoutPanel1.Controls.Add(this.metroPanel3);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(15, 63);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(20, 60);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(676, 403);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(675, 403);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // metroPanel2
@@ -216,7 +214,7 @@
             // 
             this.metroRadioButton3.AutoSize = true;
             this.metroRadioButton3.Location = new System.Drawing.Point(260, 251);
-            this.metroRadioButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.metroRadioButton3.Margin = new System.Windows.Forms.Padding(2);
             this.metroRadioButton3.Name = "metroRadioButton3";
             this.metroRadioButton3.Size = new System.Drawing.Size(47, 15);
             this.metroRadioButton3.TabIndex = 8;
@@ -227,7 +225,7 @@
             // 
             this.metroRadioButton2.AutoSize = true;
             this.metroRadioButton2.Location = new System.Drawing.Point(184, 251);
-            this.metroRadioButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.metroRadioButton2.Margin = new System.Windows.Forms.Padding(2);
             this.metroRadioButton2.Name = "metroRadioButton2";
             this.metroRadioButton2.Size = new System.Drawing.Size(54, 15);
             this.metroRadioButton2.TabIndex = 7;
@@ -238,7 +236,7 @@
             // 
             this.metroRadioButton1.AutoSize = true;
             this.metroRadioButton1.Location = new System.Drawing.Point(96, 251);
-            this.metroRadioButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.metroRadioButton1.Margin = new System.Windows.Forms.Padding(2);
             this.metroRadioButton1.Name = "metroRadioButton1";
             this.metroRadioButton1.Size = new System.Drawing.Size(67, 15);
             this.metroRadioButton1.TabIndex = 6;
@@ -269,9 +267,9 @@
             // 
             // 
             this.emil.CustomButton.Image = null;
-            this.emil.CustomButton.Location = new System.Drawing.Point(142, 1);
+            this.emil.CustomButton.Location = new System.Drawing.Point(189, 1);
             this.emil.CustomButton.Name = "";
-            this.emil.CustomButton.Size = new System.Drawing.Size(16, 17);
+            this.emil.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.emil.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.emil.CustomButton.TabIndex = 1;
             this.emil.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -308,9 +306,9 @@
             // 
             // 
             this.nombretb.CustomButton.Image = null;
-            this.nombretb.CustomButton.Location = new System.Drawing.Point(142, 1);
+            this.nombretb.CustomButton.Location = new System.Drawing.Point(189, 1);
             this.nombretb.CustomButton.Name = "";
-            this.nombretb.CustomButton.Size = new System.Drawing.Size(16, 17);
+            this.nombretb.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.nombretb.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.nombretb.CustomButton.TabIndex = 1;
             this.nombretb.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -339,9 +337,9 @@
             // 
             // 
             this.edad.CustomButton.Image = null;
-            this.edad.CustomButton.Location = new System.Drawing.Point(28, 1);
+            this.edad.CustomButton.Location = new System.Drawing.Point(37, 1);
             this.edad.CustomButton.Name = "";
-            this.edad.CustomButton.Size = new System.Drawing.Size(16, 17);
+            this.edad.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.edad.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.edad.CustomButton.TabIndex = 1;
             this.edad.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -370,9 +368,9 @@
             // 
             // 
             this.apellidostb.CustomButton.Image = null;
-            this.apellidostb.CustomButton.Location = new System.Drawing.Point(142, 1);
+            this.apellidostb.CustomButton.Location = new System.Drawing.Point(189, 1);
             this.apellidostb.CustomButton.Name = "";
-            this.apellidostb.CustomButton.Size = new System.Drawing.Size(16, 17);
+            this.apellidostb.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.apellidostb.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.apellidostb.CustomButton.TabIndex = 1;
             this.apellidostb.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -430,9 +428,9 @@
             "",
             "DNI",
             "C. Conducir"});
-            this.docType.Location = new System.Drawing.Point(122, 215);
+            this.docType.Location = new System.Drawing.Point(96, 215);
             this.docType.Name = "docType";
-            this.docType.Size = new System.Drawing.Size(53, 25);
+            this.docType.Size = new System.Drawing.Size(79, 25);
             this.docType.TabIndex = 4;
             this.docType.UseSelectable = true;
             // 
@@ -442,9 +440,9 @@
             // 
             // 
             this.document.CustomButton.Image = null;
-            this.document.CustomButton.Location = new System.Drawing.Point(76, 1);
+            this.document.CustomButton.Location = new System.Drawing.Point(102, 1);
             this.document.CustomButton.Name = "";
-            this.document.CustomButton.Size = new System.Drawing.Size(16, 17);
+            this.document.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.document.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.document.CustomButton.TabIndex = 1;
             this.document.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -498,9 +496,9 @@
             // 
             // 
             this.movil.CustomButton.Image = null;
-            this.movil.CustomButton.Location = new System.Drawing.Point(142, 1);
+            this.movil.CustomButton.Location = new System.Drawing.Point(189, 1);
             this.movil.CustomButton.Name = "";
-            this.movil.CustomButton.Size = new System.Drawing.Size(16, 17);
+            this.movil.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.movil.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.movil.CustomButton.TabIndex = 1;
             this.movil.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -546,9 +544,9 @@
             // 
             // 
             this.fijo.CustomButton.Image = null;
-            this.fijo.CustomButton.Location = new System.Drawing.Point(142, 1);
+            this.fijo.CustomButton.Location = new System.Drawing.Point(189, 1);
             this.fijo.CustomButton.Name = "";
-            this.fijo.CustomButton.Size = new System.Drawing.Size(16, 17);
+            this.fijo.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.fijo.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.fijo.CustomButton.TabIndex = 1;
             this.fijo.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -599,9 +597,9 @@
             this.groupBox2.Controls.Add(this.confPassUs);
             this.groupBox2.Controls.Add(this.passUs);
             this.groupBox2.Location = new System.Drawing.Point(4, 3);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(338, 344);
             this.groupBox2.TabIndex = 21;
             this.groupBox2.TabStop = false;
@@ -622,9 +620,9 @@
             // 
             // 
             this.nombreUs.CustomButton.Image = null;
-            this.nombreUs.CustomButton.Location = new System.Drawing.Point(103, 1);
+            this.nombreUs.CustomButton.Location = new System.Drawing.Point(137, 1);
             this.nombreUs.CustomButton.Name = "";
-            this.nombreUs.CustomButton.Size = new System.Drawing.Size(16, 17);
+            this.nombreUs.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.nombreUs.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.nombreUs.CustomButton.TabIndex = 1;
             this.nombreUs.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -693,9 +691,9 @@
             // 
             // 
             this.confPassUs.CustomButton.Image = null;
-            this.confPassUs.CustomButton.Location = new System.Drawing.Point(103, 1);
+            this.confPassUs.CustomButton.Location = new System.Drawing.Point(137, 1);
             this.confPassUs.CustomButton.Name = "";
-            this.confPassUs.CustomButton.Size = new System.Drawing.Size(16, 17);
+            this.confPassUs.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.confPassUs.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.confPassUs.CustomButton.TabIndex = 1;
             this.confPassUs.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -723,9 +721,9 @@
             // 
             // 
             this.passUs.CustomButton.Image = null;
-            this.passUs.CustomButton.Location = new System.Drawing.Point(103, 1);
+            this.passUs.CustomButton.Location = new System.Drawing.Point(137, 1);
             this.passUs.CustomButton.Name = "";
-            this.passUs.CustomButton.Size = new System.Drawing.Size(16, 17);
+            this.passUs.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.passUs.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.passUs.CustomButton.TabIndex = 1;
             this.passUs.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -790,7 +788,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(714, 473);
+            this.ClientSize = new System.Drawing.Size(715, 483);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;

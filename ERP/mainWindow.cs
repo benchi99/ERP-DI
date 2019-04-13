@@ -3,7 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,18 +13,39 @@ using System.Windows.Forms;
 
 namespace ERP
 {
+    /// <summary>
+    /// Ventana principal.
+    /// </summary>
+    /// <seealso cref="MetroFramework.Forms.MetroForm" />
     public partial class mainWindow : MetroFramework.Forms.MetroForm
     {
 
-        bool loggedIn = false;
+        /// <summary>
+        /// The logged in
+        /// </summary>
+        bool loggedIn = true;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="mainWindow" /> class.
+        /// </summary>
         public mainWindow()
         {
             InitializeComponent();
+            if (GlobalProperties.getDarkMode() == true)
+                this.Theme = MetroFramework.MetroThemeStyle.Dark;
+            else if (GlobalProperties.getDarkMode() == false)
+                this.Theme = MetroFramework.MetroThemeStyle.Light;
         }
 
+        /// <summary>
+        /// Handles the Load event of the Form1 control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void Form1_Load(object sender, EventArgs e)
         {
+            helpProvider1.HelpNamespace = Path.GetDirectoryName(Process.GetCurrentProcess().MainModule.FileName) + @"/res/help/help.chm";
+
             if (!loggedIn)
             {
                 tileNew.Enabled = false;
@@ -44,6 +67,11 @@ namespace ERP
             }
         }
 
+        /// <summary>
+        /// Handles the Click event of the tileNew control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void tileNew_Click(object sender, EventArgs e)
         {
             Hide();
@@ -52,11 +80,21 @@ namespace ERP
             Show();
         }
 
+        /// <summary>
+        /// Handles the Click event of the tileOpen control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void tileOpen_Click(object sender, EventArgs e)
         {
             ventanaAbrir.ShowDialog();
         }
 
+        /// <summary>
+        /// Handles the Click event of the tileGestionar control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void tileGestionar_Click(object sender, EventArgs e)
         {
             Hide();
@@ -65,6 +103,11 @@ namespace ERP
             Show();
         }
 
+        /// <summary>
+        /// Handles the Click event of the tileOptions control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void tileOptions_Click(object sender, EventArgs e)
         {
             Hide();
@@ -73,6 +116,11 @@ namespace ERP
             Show();
         }
 
+        /// <summary>
+        /// Handles the Click event of the tileLogOff control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void tileLogOff_Click(object sender, EventArgs e)
         {
             if (loggedIn)
@@ -88,6 +136,12 @@ namespace ERP
                 nUs.ShowDialog();
                 Show();
             }
+        }
+
+        private void helpTile_Click(object sender, EventArgs e)
+        {          
+            HelpViewer help = new HelpViewer();
+            help.ShowDialog();
         }
     }
 }

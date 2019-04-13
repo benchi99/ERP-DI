@@ -35,26 +35,31 @@
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.ventanaAbrir = new System.Windows.Forms.OpenFileDialog();
             this.userWelcome = new MetroFramework.Controls.MetroLabel();
+            this.helpTile = new MetroFramework.Controls.MetroTile();
             this.tileGestionar = new MetroFramework.Controls.MetroTile();
             this.tileLogOff = new MetroFramework.Controls.MetroTile();
             this.tileOptions = new MetroFramework.Controls.MetroTile();
             this.tileOpen = new MetroFramework.Controls.MetroTile();
             this.tileNew = new MetroFramework.Controls.MetroTile();
+            this.AYUdAAAAaAA = new System.Windows.Forms.HelpProvider();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.SuspendLayout();
             // 
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(23, 64);
+            this.metroLabel1.Location = new System.Drawing.Point(31, 79);
+            this.metroLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(52, 19);
+            this.metroLabel1.Size = new System.Drawing.Size(56, 20);
             this.metroLabel1.TabIndex = 5;
             this.metroLabel1.Text = "Gestión";
             // 
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(148, 64);
+            this.metroLabel2.Location = new System.Drawing.Point(197, 79);
+            this.metroLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(0, 0);
             this.metroLabel2.TabIndex = 6;
@@ -62,36 +67,57 @@
             // metroLabel3
             // 
             this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(291, 64);
+            this.metroLabel3.Location = new System.Drawing.Point(388, 79);
+            this.metroLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(72, 19);
+            this.metroLabel3.Size = new System.Drawing.Size(78, 20);
             this.metroLabel3.TabIndex = 8;
             this.metroLabel3.Text = "Recientes...";
             // 
             // metroLabel4
             // 
             this.metroLabel4.AutoSize = true;
-            this.metroLabel4.Location = new System.Drawing.Point(148, 64);
+            this.metroLabel4.Location = new System.Drawing.Point(197, 79);
+            this.metroLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel4.Name = "metroLabel4";
-            this.metroLabel4.Size = new System.Drawing.Size(66, 19);
+            this.metroLabel4.Size = new System.Drawing.Size(69, 20);
             this.metroLabel4.TabIndex = 9;
             this.metroLabel4.Text = "Utilidades";
             // 
             // userWelcome
             // 
+            this.userWelcome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.userWelcome.AutoSize = true;
-            this.userWelcome.Location = new System.Drawing.Point(633, 25);
+            this.userWelcome.Location = new System.Drawing.Point(844, 31);
+            this.userWelcome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.userWelcome.Name = "userWelcome";
-            this.userWelcome.Size = new System.Drawing.Size(144, 19);
+            this.userWelcome.Size = new System.Drawing.Size(154, 20);
             this.userWelcome.TabIndex = 12;
             this.userWelcome.Text = "Bienvenido, <usuario>!";
+            // 
+            // helpTile
+            // 
+            this.helpTile.ActiveControl = null;
+            this.helpTile.Location = new System.Drawing.Point(197, 240);
+            this.helpTile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.helpTile.Name = "helpTile";
+            this.helpTile.Size = new System.Drawing.Size(133, 123);
+            this.helpTile.TabIndex = 13;
+            this.helpTile.Text = "Ayuda";
+            this.helpTile.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.helpTile.TileImage = global::ERP.Properties.Resources.help;
+            this.helpTile.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.helpTile.UseSelectable = true;
+            this.helpTile.UseTileImage = true;
+            this.helpTile.Click += new System.EventHandler(this.helpTile_Click);
             // 
             // tileGestionar
             // 
             this.tileGestionar.ActiveControl = null;
-            this.tileGestionar.Location = new System.Drawing.Point(23, 301);
+            this.tileGestionar.Location = new System.Drawing.Point(31, 370);
+            this.tileGestionar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tileGestionar.Name = "tileGestionar";
-            this.tileGestionar.Size = new System.Drawing.Size(100, 100);
+            this.tileGestionar.Size = new System.Drawing.Size(133, 123);
             this.tileGestionar.TabIndex = 7;
             this.tileGestionar.Text = "Gestionar...";
             this.tileGestionar.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -105,9 +131,10 @@
             // tileLogOff
             // 
             this.tileLogOff.ActiveControl = null;
-            this.tileLogOff.Location = new System.Drawing.Point(148, 195);
+            this.tileLogOff.Location = new System.Drawing.Point(197, 370);
+            this.tileLogOff.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tileLogOff.Name = "tileLogOff";
-            this.tileLogOff.Size = new System.Drawing.Size(100, 100);
+            this.tileLogOff.Size = new System.Drawing.Size(133, 123);
             this.tileLogOff.TabIndex = 3;
             this.tileLogOff.Text = "Cerrar sesión...";
             this.tileLogOff.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -122,9 +149,10 @@
             // tileOptions
             // 
             this.tileOptions.ActiveControl = null;
-            this.tileOptions.Location = new System.Drawing.Point(148, 89);
+            this.tileOptions.Location = new System.Drawing.Point(197, 110);
+            this.tileOptions.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tileOptions.Name = "tileOptions";
-            this.tileOptions.Size = new System.Drawing.Size(100, 100);
+            this.tileOptions.Size = new System.Drawing.Size(133, 123);
             this.tileOptions.TabIndex = 2;
             this.tileOptions.Text = "Opciones...";
             this.tileOptions.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -138,9 +166,10 @@
             // tileOpen
             // 
             this.tileOpen.ActiveControl = null;
-            this.tileOpen.Location = new System.Drawing.Point(23, 195);
+            this.tileOpen.Location = new System.Drawing.Point(31, 240);
+            this.tileOpen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tileOpen.Name = "tileOpen";
-            this.tileOpen.Size = new System.Drawing.Size(100, 100);
+            this.tileOpen.Size = new System.Drawing.Size(133, 123);
             this.tileOpen.TabIndex = 1;
             this.tileOpen.Text = "Abrir...";
             this.tileOpen.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -154,9 +183,10 @@
             // tileNew
             // 
             this.tileNew.ActiveControl = null;
-            this.tileNew.Location = new System.Drawing.Point(23, 89);
+            this.tileNew.Location = new System.Drawing.Point(31, 110);
+            this.tileNew.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tileNew.Name = "tileNew";
-            this.tileNew.Size = new System.Drawing.Size(100, 100);
+            this.tileNew.Size = new System.Drawing.Size(133, 123);
             this.tileNew.TabIndex = 0;
             this.tileNew.Text = "Nuevo...";
             this.tileNew.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -169,9 +199,10 @@
             // 
             // mainWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 517);
+            this.Controls.Add(this.helpTile);
             this.Controls.Add(this.userWelcome);
             this.Controls.Add(this.metroLabel4);
             this.Controls.Add(this.metroLabel3);
@@ -182,9 +213,14 @@
             this.Controls.Add(this.tileOptions);
             this.Controls.Add(this.tileOpen);
             this.Controls.Add(this.tileNew);
+            this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(893, 517);
             this.Name = "mainWindow";
+            this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
+            this.AYUdAAAAaAA.SetShowHelp(this, true);
             this.Text = "Gestión Empresa";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -205,6 +241,9 @@
         private MetroFramework.Controls.MetroLabel metroLabel4;
         private System.Windows.Forms.OpenFileDialog ventanaAbrir;
         private MetroFramework.Controls.MetroLabel userWelcome;
+        private MetroFramework.Controls.MetroTile helpTile;
+        private System.Windows.Forms.HelpProvider AYUdAAAAaAA;
+        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }
 

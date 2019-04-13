@@ -35,7 +35,6 @@
             this.eliminarTile = new MetroFramework.Controls.MetroTile();
             this.volverTile = new MetroFramework.Controls.MetroTile();
             this.datosTile = new MetroFramework.Controls.MetroTile();
-            this.tramiteTile = new MetroFramework.Controls.MetroTile();
             this.tabContrlDatGest = new MetroFramework.Controls.MetroTabControl();
             this.ClienteDat = new MetroFramework.Controls.MetroTabPage();
             this.btCli = new MetroFramework.Controls.MetroButton();
@@ -109,6 +108,7 @@
             this.dataGridViewTextBoxColumn46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ordersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.volverMenuPrincTile = new MetroFramework.Controls.MetroTile();
+            this.tramiteTile = new MetroFramework.Controls.MetroTile();
             this.tabContrlDatGest.SuspendLayout();
             this.ClienteDat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.customersDataGridView)).BeginInit();
@@ -198,22 +198,6 @@
             this.datosTile.UseSelectable = true;
             this.datosTile.UseTileImage = true;
             this.datosTile.Click += new System.EventHandler(this.datosTile_Click);
-            // 
-            // tramiteTile
-            // 
-            this.tramiteTile.ActiveControl = null;
-            this.tramiteTile.Location = new System.Drawing.Point(244, 94);
-            this.tramiteTile.Name = "tramiteTile";
-            this.tramiteTile.Size = new System.Drawing.Size(100, 100);
-            this.tramiteTile.TabIndex = 5;
-            this.tramiteTile.Text = "Trámite...";
-            this.tramiteTile.TextAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.tramiteTile.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.tramiteTile.TileImage = global::ERP.Properties.Resources.tramite;
-            this.tramiteTile.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.tramiteTile.UseSelectable = true;
-            this.tramiteTile.UseTileImage = true;
-            this.tramiteTile.Click += new System.EventHandler(this.tramiteTile_Click);
             // 
             // tabContrlDatGest
             // 
@@ -801,6 +785,22 @@
             this.volverMenuPrincTile.UseTileImage = true;
             this.volverMenuPrincTile.Click += new System.EventHandler(this.volverMenuPrincTile_Click);
             // 
+            // tramiteTile
+            // 
+            this.tramiteTile.ActiveControl = null;
+            this.tramiteTile.Location = new System.Drawing.Point(244, 94);
+            this.tramiteTile.Name = "tramiteTile";
+            this.tramiteTile.Size = new System.Drawing.Size(100, 100);
+            this.tramiteTile.TabIndex = 5;
+            this.tramiteTile.Text = "Trámite...";
+            this.tramiteTile.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.tramiteTile.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.tramiteTile.TileImage = global::ERP.Properties.Resources.tramite;
+            this.tramiteTile.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tramiteTile.UseSelectable = true;
+            this.tramiteTile.UseTileImage = true;
+            this.tramiteTile.Click += new System.EventHandler(this.tramiteTile_Click);
+            // 
             // manageWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -813,8 +813,8 @@
             this.Controls.Add(this.eliminarTile);
             this.Controls.Add(this.tabTram);
             this.Controls.Add(this.datosTile);
-            this.Controls.Add(this.volverTile);
             this.Controls.Add(this.modificarTile);
+            this.Controls.Add(this.volverTile);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "manageWindow";
@@ -849,7 +849,6 @@
         private MetroFramework.Controls.MetroTile eliminarTile;
         private MetroFramework.Controls.MetroTile volverTile;
         private MetroFramework.Controls.MetroTile datosTile;
-        private MetroFramework.Controls.MetroTile tramiteTile;
         private MetroFramework.Controls.MetroTabControl tabContrlDatGest;
         private MetroFramework.Controls.MetroTabPage ClienteDat;
         private MetroFramework.Controls.MetroTabPage metroTabPage2;
@@ -923,5 +922,6 @@
         private MetroFramework.Controls.MetroCheckBox metroCheckBox1;
         private MetroFramework.Controls.MetroButton btPed;
         private MetroFramework.Controls.MetroTile volverMenuPrincTile;
+        private MetroFramework.Controls.MetroTile tramiteTile;
     }
 }

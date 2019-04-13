@@ -54,13 +54,8 @@
             System.Windows.Forms.Label quantityPerUnitLabel;
             System.Windows.Forms.Label unitPriceLabel;
             System.Windows.Forms.Label orderIDLabel;
-            System.Windows.Forms.Label customerIDLabel1;
-            System.Windows.Forms.Label employeeIDLabel;
             System.Windows.Forms.Label orderDateLabel;
-            System.Windows.Forms.Label requiredDateLabel;
-            System.Windows.Forms.Label shippedDateLabel;
             System.Windows.Forms.Label shipViaLabel;
-            System.Windows.Forms.Label freightLabel;
             System.Windows.Forms.Label shipNameLabel;
             System.Windows.Forms.Label shipAddressLabel;
             System.Windows.Forms.Label shipCityLabel;
@@ -140,13 +135,8 @@
             this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.orderIDTextBox = new System.Windows.Forms.TextBox();
             this.ordersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.customerIDTextBox1 = new System.Windows.Forms.TextBox();
-            this.employeeIDTextBox = new System.Windows.Forms.TextBox();
             this.orderDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.requiredDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.shippedDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.shipViaTextBox = new System.Windows.Forms.TextBox();
-            this.freightTextBox = new System.Windows.Forms.TextBox();
             this.shipNameTextBox = new System.Windows.Forms.TextBox();
             this.shipAddressTextBox = new System.Windows.Forms.TextBox();
             this.shipCityTextBox = new System.Windows.Forms.TextBox();
@@ -155,6 +145,7 @@
             this.shipCountryTextBox = new System.Windows.Forms.TextBox();
             this.ordersTableAdapter = new ERP.NorthwindDataSetTableAdapters.OrdersTableAdapter();
             this.tileAñadDatos = new MetroFramework.Controls.MetroTile();
+            this.ayUDItAAMICOMPUu = new System.Windows.Forms.HelpProvider();
             customerIDLabel = new System.Windows.Forms.Label();
             contactNameLabel = new System.Windows.Forms.Label();
             addressLabel = new System.Windows.Forms.Label();
@@ -180,13 +171,8 @@
             quantityPerUnitLabel = new System.Windows.Forms.Label();
             unitPriceLabel = new System.Windows.Forms.Label();
             orderIDLabel = new System.Windows.Forms.Label();
-            customerIDLabel1 = new System.Windows.Forms.Label();
-            employeeIDLabel = new System.Windows.Forms.Label();
             orderDateLabel = new System.Windows.Forms.Label();
-            requiredDateLabel = new System.Windows.Forms.Label();
-            shippedDateLabel = new System.Windows.Forms.Label();
             shipViaLabel = new System.Windows.Forms.Label();
-            freightLabel = new System.Windows.Forms.Label();
             shipNameLabel = new System.Windows.Forms.Label();
             shipAddressLabel = new System.Windows.Forms.Label();
             shipCityLabel = new System.Windows.Forms.Label();
@@ -459,126 +445,81 @@
             orderIDLabel.AutoSize = true;
             orderIDLabel.Location = new System.Drawing.Point(3, 11);
             orderIDLabel.Name = "orderIDLabel";
-            orderIDLabel.Size = new System.Drawing.Size(50, 13);
+            orderIDLabel.Size = new System.Drawing.Size(74, 13);
             orderIDLabel.TabIndex = 2;
-            orderIDLabel.Text = "Order ID:";
-            // 
-            // customerIDLabel1
-            // 
-            customerIDLabel1.AutoSize = true;
-            customerIDLabel1.Location = new System.Drawing.Point(3, 37);
-            customerIDLabel1.Name = "customerIDLabel1";
-            customerIDLabel1.Size = new System.Drawing.Size(68, 13);
-            customerIDLabel1.TabIndex = 4;
-            customerIDLabel1.Text = "Customer ID:";
-            // 
-            // employeeIDLabel
-            // 
-            employeeIDLabel.AutoSize = true;
-            employeeIDLabel.Location = new System.Drawing.Point(3, 63);
-            employeeIDLabel.Name = "employeeIDLabel";
-            employeeIDLabel.Size = new System.Drawing.Size(70, 13);
-            employeeIDLabel.TabIndex = 6;
-            employeeIDLabel.Text = "Employee ID:";
+            orderIDLabel.Text = "ID del Pedido:";
             // 
             // orderDateLabel
             // 
             orderDateLabel.AutoSize = true;
-            orderDateLabel.Location = new System.Drawing.Point(3, 90);
+            orderDateLabel.Location = new System.Drawing.Point(3, 37);
             orderDateLabel.Name = "orderDateLabel";
-            orderDateLabel.Size = new System.Drawing.Size(62, 13);
+            orderDateLabel.Size = new System.Drawing.Size(40, 13);
             orderDateLabel.TabIndex = 8;
-            orderDateLabel.Text = "Order Date:";
-            // 
-            // requiredDateLabel
-            // 
-            requiredDateLabel.AutoSize = true;
-            requiredDateLabel.Location = new System.Drawing.Point(3, 116);
-            requiredDateLabel.Name = "requiredDateLabel";
-            requiredDateLabel.Size = new System.Drawing.Size(79, 13);
-            requiredDateLabel.TabIndex = 10;
-            requiredDateLabel.Text = "Required Date:";
-            // 
-            // shippedDateLabel
-            // 
-            shippedDateLabel.AutoSize = true;
-            shippedDateLabel.Location = new System.Drawing.Point(3, 142);
-            shippedDateLabel.Name = "shippedDateLabel";
-            shippedDateLabel.Size = new System.Drawing.Size(75, 13);
-            shippedDateLabel.TabIndex = 12;
-            shippedDateLabel.Text = "Shipped Date:";
+            orderDateLabel.Text = "Fecha:";
             // 
             // shipViaLabel
             // 
             shipViaLabel.AutoSize = true;
-            shipViaLabel.Location = new System.Drawing.Point(3, 167);
+            shipViaLabel.Location = new System.Drawing.Point(3, 63);
             shipViaLabel.Name = "shipViaLabel";
-            shipViaLabel.Size = new System.Drawing.Size(49, 13);
+            shipViaLabel.Size = new System.Drawing.Size(59, 13);
             shipViaLabel.TabIndex = 14;
-            shipViaLabel.Text = "Ship Via:";
-            // 
-            // freightLabel
-            // 
-            freightLabel.AutoSize = true;
-            freightLabel.Location = new System.Drawing.Point(3, 193);
-            freightLabel.Name = "freightLabel";
-            freightLabel.Size = new System.Drawing.Size(42, 13);
-            freightLabel.TabIndex = 16;
-            freightLabel.Text = "Freight:";
+            shipViaLabel.Text = "Enviar vía:";
             // 
             // shipNameLabel
             // 
             shipNameLabel.AutoSize = true;
-            shipNameLabel.Location = new System.Drawing.Point(3, 219);
+            shipNameLabel.Location = new System.Drawing.Point(3, 91);
             shipNameLabel.Name = "shipNameLabel";
-            shipNameLabel.Size = new System.Drawing.Size(62, 13);
+            shipNameLabel.Size = new System.Drawing.Size(102, 13);
             shipNameLabel.TabIndex = 18;
-            shipNameLabel.Text = "Ship Name:";
+            shipNameLabel.Text = "Enviar a nombre de:";
             // 
             // shipAddressLabel
             // 
             shipAddressLabel.AutoSize = true;
-            shipAddressLabel.Location = new System.Drawing.Point(3, 245);
+            shipAddressLabel.Location = new System.Drawing.Point(3, 117);
             shipAddressLabel.Name = "shipAddressLabel";
-            shipAddressLabel.Size = new System.Drawing.Size(72, 13);
+            shipAddressLabel.Size = new System.Drawing.Size(99, 13);
             shipAddressLabel.TabIndex = 20;
-            shipAddressLabel.Text = "Ship Address:";
+            shipAddressLabel.Text = "Dirección de envio:";
             // 
             // shipCityLabel
             // 
             shipCityLabel.AutoSize = true;
-            shipCityLabel.Location = new System.Drawing.Point(3, 272);
+            shipCityLabel.Location = new System.Drawing.Point(3, 144);
             shipCityLabel.Name = "shipCityLabel";
-            shipCityLabel.Size = new System.Drawing.Size(51, 13);
+            shipCityLabel.Size = new System.Drawing.Size(43, 13);
             shipCityLabel.TabIndex = 22;
-            shipCityLabel.Text = "Ship City:";
+            shipCityLabel.Text = "Ciudad:";
             // 
             // shipRegionLabel
             // 
             shipRegionLabel.AutoSize = true;
-            shipRegionLabel.Location = new System.Drawing.Point(3, 298);
+            shipRegionLabel.Location = new System.Drawing.Point(3, 170);
             shipRegionLabel.Name = "shipRegionLabel";
-            shipRegionLabel.Size = new System.Drawing.Size(68, 13);
+            shipRegionLabel.Size = new System.Drawing.Size(54, 13);
             shipRegionLabel.TabIndex = 24;
-            shipRegionLabel.Text = "Ship Region:";
+            shipRegionLabel.Text = "Provincia:";
             // 
             // shipPostalCodeLabel
             // 
             shipPostalCodeLabel.AutoSize = true;
-            shipPostalCodeLabel.Location = new System.Drawing.Point(306, 11);
+            shipPostalCodeLabel.Location = new System.Drawing.Point(3, 196);
             shipPostalCodeLabel.Name = "shipPostalCodeLabel";
-            shipPostalCodeLabel.Size = new System.Drawing.Size(91, 13);
+            shipPostalCodeLabel.Size = new System.Drawing.Size(74, 13);
             shipPostalCodeLabel.TabIndex = 26;
-            shipPostalCodeLabel.Text = "Ship Postal Code:";
+            shipPostalCodeLabel.Text = "Código postal:";
             // 
             // shipCountryLabel
             // 
             shipCountryLabel.AutoSize = true;
-            shipCountryLabel.Location = new System.Drawing.Point(306, 37);
+            shipCountryLabel.Location = new System.Drawing.Point(3, 222);
             shipCountryLabel.Name = "shipCountryLabel";
-            shipCountryLabel.Size = new System.Drawing.Size(70, 13);
+            shipCountryLabel.Size = new System.Drawing.Size(32, 13);
             shipCountryLabel.TabIndex = 28;
-            shipCountryLabel.Text = "Ship Country:";
+            shipCountryLabel.Text = "País:";
             // 
             // label1
             // 
@@ -592,12 +533,15 @@
             // 
             // dataTabCtrl
             // 
+            this.dataTabCtrl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataTabCtrl.Controls.Add(this.metroTabPage1);
             this.dataTabCtrl.Controls.Add(this.Proveedor);
             this.dataTabCtrl.Controls.Add(this.metroTabPage3);
-            this.dataTabCtrl.Location = new System.Drawing.Point(23, 188);
+            this.dataTabCtrl.Location = new System.Drawing.Point(23, 144);
             this.dataTabCtrl.Name = "dataTabCtrl";
-            this.dataTabCtrl.SelectedIndex = 0;
+            this.dataTabCtrl.SelectedIndex = 2;
             this.dataTabCtrl.Size = new System.Drawing.Size(970, 378);
             this.dataTabCtrl.TabIndex = 0;
             this.dataTabCtrl.UseSelectable = true;
@@ -969,9 +913,11 @@
             // 
             this.productIDTextBox.BackColor = System.Drawing.SystemColors.Window;
             this.productIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productsBindingSource, "ProductID", true));
+            this.ayUDItAAMICOMPUu.SetHelpString(this.productIDTextBox, "Es el identificador del producto. Se autocompletará.");
             this.productIDTextBox.Location = new System.Drawing.Point(99, 12);
             this.productIDTextBox.Name = "productIDTextBox";
-            this.productIDTextBox.Size = new System.Drawing.Size(383, 20);
+            this.ayUDItAAMICOMPUu.SetShowHelp(this.productIDTextBox, true);
+            this.productIDTextBox.Size = new System.Drawing.Size(356, 20);
             this.productIDTextBox.TabIndex = 3;
             // 
             // productsBindingSource
@@ -983,51 +929,61 @@
             // 
             this.productNameTextBox.BackColor = System.Drawing.SystemColors.Window;
             this.productNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productsBindingSource, "ProductName", true));
+            this.ayUDItAAMICOMPUu.SetHelpString(this.productNameTextBox, "Aquí se debe poner el nombre del artículo a añadir.");
             this.productNameTextBox.Location = new System.Drawing.Point(99, 38);
             this.productNameTextBox.Name = "productNameTextBox";
-            this.productNameTextBox.Size = new System.Drawing.Size(383, 20);
+            this.ayUDItAAMICOMPUu.SetShowHelp(this.productNameTextBox, true);
+            this.productNameTextBox.Size = new System.Drawing.Size(356, 20);
             this.productNameTextBox.TabIndex = 5;
             // 
             // supplierIDTextBox1
             // 
             this.supplierIDTextBox1.BackColor = System.Drawing.SystemColors.Window;
             this.supplierIDTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productsBindingSource, "SupplierID", true));
+            this.ayUDItAAMICOMPUu.SetHelpString(this.supplierIDTextBox1, "Aquí introduces el ID del proveedor que va a proveer el artículo.");
             this.supplierIDTextBox1.Location = new System.Drawing.Point(99, 64);
             this.supplierIDTextBox1.Name = "supplierIDTextBox1";
-            this.supplierIDTextBox1.Size = new System.Drawing.Size(383, 20);
+            this.ayUDItAAMICOMPUu.SetShowHelp(this.supplierIDTextBox1, true);
+            this.supplierIDTextBox1.Size = new System.Drawing.Size(356, 20);
             this.supplierIDTextBox1.TabIndex = 7;
             // 
             // categoryIDTextBox
             // 
             this.categoryIDTextBox.BackColor = System.Drawing.SystemColors.Window;
             this.categoryIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productsBindingSource, "CategoryID", true));
-            this.categoryIDTextBox.Location = new System.Drawing.Point(584, 12);
+            this.ayUDItAAMICOMPUu.SetHelpString(this.categoryIDTextBox, "Introduzca aquí el identificador de la categoría del artículo");
+            this.categoryIDTextBox.Location = new System.Drawing.Point(563, 13);
             this.categoryIDTextBox.Name = "categoryIDTextBox";
-            this.categoryIDTextBox.Size = new System.Drawing.Size(375, 20);
+            this.ayUDItAAMICOMPUu.SetShowHelp(this.categoryIDTextBox, true);
+            this.categoryIDTextBox.Size = new System.Drawing.Size(396, 20);
             this.categoryIDTextBox.TabIndex = 9;
             // 
             // quantityPerUnitTextBox
             // 
             this.quantityPerUnitTextBox.BackColor = System.Drawing.SystemColors.Window;
             this.quantityPerUnitTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productsBindingSource, "QuantityPerUnit", true));
-            this.quantityPerUnitTextBox.Location = new System.Drawing.Point(584, 38);
+            this.ayUDItAAMICOMPUu.SetHelpString(this.quantityPerUnitTextBox, "Introduzca aquí la cantidad de productos que se van a insertar.");
+            this.quantityPerUnitTextBox.Location = new System.Drawing.Point(563, 39);
             this.quantityPerUnitTextBox.Name = "quantityPerUnitTextBox";
-            this.quantityPerUnitTextBox.Size = new System.Drawing.Size(375, 20);
+            this.ayUDItAAMICOMPUu.SetShowHelp(this.quantityPerUnitTextBox, true);
+            this.quantityPerUnitTextBox.Size = new System.Drawing.Size(396, 20);
             this.quantityPerUnitTextBox.TabIndex = 11;
             // 
             // unitPriceTextBox
             // 
             this.unitPriceTextBox.BackColor = System.Drawing.SystemColors.Window;
             this.unitPriceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productsBindingSource, "UnitPrice", true));
-            this.unitPriceTextBox.Location = new System.Drawing.Point(584, 64);
+            this.ayUDItAAMICOMPUu.SetHelpString(this.unitPriceTextBox, "Introduzca aquí el precio del producto por unidad.");
+            this.unitPriceTextBox.Location = new System.Drawing.Point(563, 65);
             this.unitPriceTextBox.Name = "unitPriceTextBox";
-            this.unitPriceTextBox.Size = new System.Drawing.Size(375, 20);
+            this.ayUDItAAMICOMPUu.SetShowHelp(this.unitPriceTextBox, true);
+            this.unitPriceTextBox.Size = new System.Drawing.Size(396, 20);
             this.unitPriceTextBox.TabIndex = 13;
             // 
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(23, 60);
+            this.metroLabel1.Location = new System.Drawing.Point(23, 13);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(120, 19);
             this.metroLabel1.TabIndex = 0;
@@ -1036,8 +992,11 @@
             // tramiteTile
             // 
             this.tramiteTile.ActiveControl = null;
-            this.tramiteTile.Location = new System.Drawing.Point(129, 82);
+            this.ayUDItAAMICOMPUu.SetHelpKeyword(this.tramiteTile, "Tramite");
+            this.ayUDItAAMICOMPUu.SetHelpString(this.tramiteTile, "Inicia un nuevo trámite, como un pedido ó un presupuesto.");
+            this.tramiteTile.Location = new System.Drawing.Point(129, 35);
             this.tramiteTile.Name = "tramiteTile";
+            this.ayUDItAAMICOMPUu.SetShowHelp(this.tramiteTile, true);
             this.tramiteTile.Size = new System.Drawing.Size(100, 100);
             this.tramiteTile.TabIndex = 2;
             this.tramiteTile.Text = "Nuevo trámite...";
@@ -1083,8 +1042,12 @@
             // volverTile
             // 
             this.volverTile.ActiveControl = null;
-            this.volverTile.Location = new System.Drawing.Point(893, 82);
+            this.volverTile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.volverTile.AutoSize = true;
+            this.ayUDItAAMICOMPUu.SetHelpString(this.volverTile, "Vuelve al menú principal.");
+            this.volverTile.Location = new System.Drawing.Point(893, 35);
             this.volverTile.Name = "volverTile";
+            this.ayUDItAAMICOMPUu.SetShowHelp(this.volverTile, true);
             this.volverTile.Size = new System.Drawing.Size(100, 100);
             this.volverTile.TabIndex = 3;
             this.volverTile.Text = "Volver";
@@ -1099,11 +1062,14 @@
             // 
             // tramiteCtrl
             // 
+            this.tramiteCtrl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tramiteCtrl.Controls.Add(this.orderTab);
-            this.tramiteCtrl.Location = new System.Drawing.Point(23, 188);
+            this.tramiteCtrl.Location = new System.Drawing.Point(20, 141);
             this.tramiteCtrl.Name = "tramiteCtrl";
             this.tramiteCtrl.SelectedIndex = 0;
-            this.tramiteCtrl.Size = new System.Drawing.Size(970, 378);
+            this.tramiteCtrl.Size = new System.Drawing.Size(976, 379);
             this.tramiteCtrl.TabIndex = 4;
             this.tramiteCtrl.UseSelectable = true;
             // 
@@ -1121,20 +1087,10 @@
             this.orderTab.Controls.Add(this.productsDataGridView);
             this.orderTab.Controls.Add(orderIDLabel);
             this.orderTab.Controls.Add(this.orderIDTextBox);
-            this.orderTab.Controls.Add(customerIDLabel1);
-            this.orderTab.Controls.Add(this.customerIDTextBox1);
-            this.orderTab.Controls.Add(employeeIDLabel);
-            this.orderTab.Controls.Add(this.employeeIDTextBox);
             this.orderTab.Controls.Add(orderDateLabel);
             this.orderTab.Controls.Add(this.orderDateDateTimePicker);
-            this.orderTab.Controls.Add(requiredDateLabel);
-            this.orderTab.Controls.Add(this.requiredDateDateTimePicker);
-            this.orderTab.Controls.Add(shippedDateLabel);
-            this.orderTab.Controls.Add(this.shippedDateDateTimePicker);
             this.orderTab.Controls.Add(shipViaLabel);
             this.orderTab.Controls.Add(this.shipViaTextBox);
-            this.orderTab.Controls.Add(freightLabel);
-            this.orderTab.Controls.Add(this.freightTextBox);
             this.orderTab.Controls.Add(shipNameLabel);
             this.orderTab.Controls.Add(this.shipNameTextBox);
             this.orderTab.Controls.Add(shipAddressLabel);
@@ -1147,13 +1103,16 @@
             this.orderTab.Controls.Add(this.shipPostalCodeTextBox);
             this.orderTab.Controls.Add(shipCountryLabel);
             this.orderTab.Controls.Add(this.shipCountryTextBox);
+            this.ayUDItAAMICOMPUu.SetHelpKeyword(this.orderTab, "Trámite");
+            this.ayUDItAAMICOMPUu.SetHelpString(this.orderTab, "Sección que le permite crear un nuevo trámite.");
             this.orderTab.HorizontalScrollbar = true;
             this.orderTab.HorizontalScrollbarBarColor = true;
             this.orderTab.HorizontalScrollbarHighlightOnWheel = false;
             this.orderTab.HorizontalScrollbarSize = 10;
             this.orderTab.Location = new System.Drawing.Point(4, 38);
             this.orderTab.Name = "orderTab";
-            this.orderTab.Size = new System.Drawing.Size(962, 336);
+            this.ayUDItAAMICOMPUu.SetShowHelp(this.orderTab, true);
+            this.orderTab.Size = new System.Drawing.Size(968, 337);
             this.orderTab.TabIndex = 0;
             this.orderTab.Text = "Pedidos";
             this.orderTab.VerticalScrollbar = true;
@@ -1164,8 +1123,10 @@
             // Presupuesto
             // 
             this.Presupuesto.AutoSize = true;
+            this.ayUDItAAMICOMPUu.SetHelpString(this.Presupuesto, "Indica si este pedido es un presupuesto ó no.");
             this.Presupuesto.Location = new System.Drawing.Point(505, 219);
             this.Presupuesto.Name = "Presupuesto";
+            this.ayUDItAAMICOMPUu.SetShowHelp(this.Presupuesto, true);
             this.Presupuesto.Size = new System.Drawing.Size(98, 15);
             this.Presupuesto.TabIndex = 37;
             this.Presupuesto.Text = "¿Presupuesto?";
@@ -1194,6 +1155,7 @@
             this.totalPrecio.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.totalPrecio.CustomButton.UseSelectable = true;
             this.totalPrecio.CustomButton.Visible = false;
+            this.ayUDItAAMICOMPUu.SetHelpString(this.totalPrecio, "Total de la suma de los productos añadidos en la lista.");
             this.totalPrecio.Lines = new string[] {
         "0"};
             this.totalPrecio.Location = new System.Drawing.Point(488, 240);
@@ -1205,6 +1167,7 @@
             this.totalPrecio.SelectionLength = 0;
             this.totalPrecio.SelectionStart = 0;
             this.totalPrecio.ShortcutsEnabled = true;
+            this.ayUDItAAMICOMPUu.SetShowHelp(this.totalPrecio, true);
             this.totalPrecio.Size = new System.Drawing.Size(115, 23);
             this.totalPrecio.TabIndex = 35;
             this.totalPrecio.Text = "0";
@@ -1214,8 +1177,10 @@
             // 
             // btCancelTram
             // 
+            this.ayUDItAAMICOMPUu.SetHelpString(this.btCancelTram, "Cancela el pedido");
             this.btCancelTram.Location = new System.Drawing.Point(803, 313);
             this.btCancelTram.Name = "btCancelTram";
+            this.ayUDItAAMICOMPUu.SetShowHelp(this.btCancelTram, true);
             this.btCancelTram.Size = new System.Drawing.Size(75, 23);
             this.btCancelTram.TabIndex = 34;
             this.btCancelTram.Text = "Cancelar";
@@ -1224,8 +1189,10 @@
             // 
             // btAceptTram
             // 
+            this.ayUDItAAMICOMPUu.SetHelpString(this.btAceptTram, "Crea el pedido.");
             this.btAceptTram.Location = new System.Drawing.Point(884, 313);
             this.btAceptTram.Name = "btAceptTram";
+            this.ayUDItAAMICOMPUu.SetShowHelp(this.btAceptTram, true);
             this.btAceptTram.Size = new System.Drawing.Size(75, 23);
             this.btAceptTram.TabIndex = 33;
             this.btAceptTram.Text = "Aceptar";
@@ -1233,8 +1200,10 @@
             // 
             // btElimTram
             // 
+            this.ayUDItAAMICOMPUu.SetHelpString(this.btElimTram, "Elimina un artículo de la lista.");
             this.btElimTram.Location = new System.Drawing.Point(803, 268);
             this.btElimTram.Name = "btElimTram";
+            this.ayUDItAAMICOMPUu.SetShowHelp(this.btElimTram, true);
             this.btElimTram.Size = new System.Drawing.Size(75, 23);
             this.btElimTram.TabIndex = 32;
             this.btElimTram.Text = "Eliminar...";
@@ -1242,8 +1211,10 @@
             // 
             // btAñadProd
             // 
+            this.ayUDItAAMICOMPUu.SetHelpString(this.btAñadProd, "Añade un nuevo artículo a la lista");
             this.btAñadProd.Location = new System.Drawing.Point(884, 268);
             this.btAñadProd.Name = "btAñadProd";
+            this.ayUDItAAMICOMPUu.SetShowHelp(this.btAñadProd, true);
             this.btAñadProd.Size = new System.Drawing.Size(75, 23);
             this.btAñadProd.TabIndex = 31;
             this.btAñadProd.Text = "Añadir...";
@@ -1265,8 +1236,10 @@
             this.dataGridViewTextBoxColumn9,
             this.dataGridViewCheckBoxColumn1});
             this.productsDataGridView.DataSource = this.productsBindingSource;
+            this.ayUDItAAMICOMPUu.SetHelpString(this.productsDataGridView, "Esta tabla añade ítems al pedido realizado.");
             this.productsDataGridView.Location = new System.Drawing.Point(609, 8);
             this.productsDataGridView.Name = "productsDataGridView";
+            this.ayUDItAAMICOMPUu.SetShowHelp(this.productsDataGridView, true);
             this.productsDataGridView.Size = new System.Drawing.Size(350, 254);
             this.productsDataGridView.TabIndex = 30;
             // 
@@ -1334,8 +1307,10 @@
             // orderIDTextBox
             // 
             this.orderIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "OrderID", true));
-            this.orderIDTextBox.Location = new System.Drawing.Point(100, 8);
+            this.ayUDItAAMICOMPUu.SetHelpString(this.orderIDTextBox, "Indica el identificador de pedido.");
+            this.orderIDTextBox.Location = new System.Drawing.Point(112, 8);
             this.orderIDTextBox.Name = "orderIDTextBox";
+            this.ayUDItAAMICOMPUu.SetShowHelp(this.orderIDTextBox, true);
             this.orderIDTextBox.Size = new System.Drawing.Size(200, 20);
             this.orderIDTextBox.TabIndex = 3;
             // 
@@ -1344,107 +1319,83 @@
             this.ordersBindingSource.DataMember = "Orders";
             this.ordersBindingSource.DataSource = this.northwindDataSet;
             // 
-            // customerIDTextBox1
-            // 
-            this.customerIDTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "CustomerID", true));
-            this.customerIDTextBox1.Location = new System.Drawing.Point(100, 34);
-            this.customerIDTextBox1.Name = "customerIDTextBox1";
-            this.customerIDTextBox1.Size = new System.Drawing.Size(200, 20);
-            this.customerIDTextBox1.TabIndex = 5;
-            // 
-            // employeeIDTextBox
-            // 
-            this.employeeIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "EmployeeID", true));
-            this.employeeIDTextBox.Location = new System.Drawing.Point(100, 60);
-            this.employeeIDTextBox.Name = "employeeIDTextBox";
-            this.employeeIDTextBox.Size = new System.Drawing.Size(200, 20);
-            this.employeeIDTextBox.TabIndex = 7;
-            // 
             // orderDateDateTimePicker
             // 
             this.orderDateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.ordersBindingSource, "OrderDate", true));
-            this.orderDateDateTimePicker.Location = new System.Drawing.Point(100, 86);
+            this.ayUDItAAMICOMPUu.SetHelpString(this.orderDateDateTimePicker, "Indica la fecha en la que se ha realizado un pedido.");
+            this.orderDateDateTimePicker.Location = new System.Drawing.Point(112, 33);
             this.orderDateDateTimePicker.Name = "orderDateDateTimePicker";
+            this.ayUDItAAMICOMPUu.SetShowHelp(this.orderDateDateTimePicker, true);
             this.orderDateDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.orderDateDateTimePicker.TabIndex = 9;
-            // 
-            // requiredDateDateTimePicker
-            // 
-            this.requiredDateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.ordersBindingSource, "RequiredDate", true));
-            this.requiredDateDateTimePicker.Location = new System.Drawing.Point(100, 112);
-            this.requiredDateDateTimePicker.Name = "requiredDateDateTimePicker";
-            this.requiredDateDateTimePicker.Size = new System.Drawing.Size(200, 20);
-            this.requiredDateDateTimePicker.TabIndex = 11;
-            // 
-            // shippedDateDateTimePicker
-            // 
-            this.shippedDateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.ordersBindingSource, "ShippedDate", true));
-            this.shippedDateDateTimePicker.Location = new System.Drawing.Point(100, 138);
-            this.shippedDateDateTimePicker.Name = "shippedDateDateTimePicker";
-            this.shippedDateDateTimePicker.Size = new System.Drawing.Size(200, 20);
-            this.shippedDateDateTimePicker.TabIndex = 13;
             // 
             // shipViaTextBox
             // 
             this.shipViaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "ShipVia", true));
-            this.shipViaTextBox.Location = new System.Drawing.Point(100, 164);
+            this.ayUDItAAMICOMPUu.SetHelpString(this.shipViaTextBox, "Indica la forma en la que se va a enviar el pedido.");
+            this.shipViaTextBox.Location = new System.Drawing.Point(112, 60);
             this.shipViaTextBox.Name = "shipViaTextBox";
+            this.ayUDItAAMICOMPUu.SetShowHelp(this.shipViaTextBox, true);
             this.shipViaTextBox.Size = new System.Drawing.Size(200, 20);
             this.shipViaTextBox.TabIndex = 15;
-            // 
-            // freightTextBox
-            // 
-            this.freightTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "Freight", true));
-            this.freightTextBox.Location = new System.Drawing.Point(100, 190);
-            this.freightTextBox.Name = "freightTextBox";
-            this.freightTextBox.Size = new System.Drawing.Size(200, 20);
-            this.freightTextBox.TabIndex = 17;
             // 
             // shipNameTextBox
             // 
             this.shipNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "ShipName", true));
-            this.shipNameTextBox.Location = new System.Drawing.Point(100, 216);
+            this.ayUDItAAMICOMPUu.SetHelpString(this.shipNameTextBox, "Indica a nombre de quién se va a enviar el pedido.");
+            this.shipNameTextBox.Location = new System.Drawing.Point(112, 88);
             this.shipNameTextBox.Name = "shipNameTextBox";
+            this.ayUDItAAMICOMPUu.SetShowHelp(this.shipNameTextBox, true);
             this.shipNameTextBox.Size = new System.Drawing.Size(200, 20);
             this.shipNameTextBox.TabIndex = 19;
             // 
             // shipAddressTextBox
             // 
             this.shipAddressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "ShipAddress", true));
-            this.shipAddressTextBox.Location = new System.Drawing.Point(100, 242);
+            this.ayUDItAAMICOMPUu.SetHelpString(this.shipAddressTextBox, "Indica la dirección a la que se va a enviar el pedido.");
+            this.shipAddressTextBox.Location = new System.Drawing.Point(112, 114);
             this.shipAddressTextBox.Name = "shipAddressTextBox";
+            this.ayUDItAAMICOMPUu.SetShowHelp(this.shipAddressTextBox, true);
             this.shipAddressTextBox.Size = new System.Drawing.Size(200, 20);
             this.shipAddressTextBox.TabIndex = 21;
             // 
             // shipCityTextBox
             // 
             this.shipCityTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "ShipCity", true));
-            this.shipCityTextBox.Location = new System.Drawing.Point(100, 269);
+            this.ayUDItAAMICOMPUu.SetHelpString(this.shipCityTextBox, "Indica la ciudad a la que se va a enviar el pedido.");
+            this.shipCityTextBox.Location = new System.Drawing.Point(112, 141);
             this.shipCityTextBox.Name = "shipCityTextBox";
+            this.ayUDItAAMICOMPUu.SetShowHelp(this.shipCityTextBox, true);
             this.shipCityTextBox.Size = new System.Drawing.Size(200, 20);
             this.shipCityTextBox.TabIndex = 23;
             // 
             // shipRegionTextBox
             // 
             this.shipRegionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "ShipRegion", true));
-            this.shipRegionTextBox.Location = new System.Drawing.Point(100, 295);
+            this.ayUDItAAMICOMPUu.SetHelpString(this.shipRegionTextBox, "Indica la provincia a la que se va a enviar el pedido.");
+            this.shipRegionTextBox.Location = new System.Drawing.Point(112, 167);
             this.shipRegionTextBox.Name = "shipRegionTextBox";
+            this.ayUDItAAMICOMPUu.SetShowHelp(this.shipRegionTextBox, true);
             this.shipRegionTextBox.Size = new System.Drawing.Size(200, 20);
             this.shipRegionTextBox.TabIndex = 25;
             // 
             // shipPostalCodeTextBox
             // 
             this.shipPostalCodeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "ShipPostalCode", true));
-            this.shipPostalCodeTextBox.Location = new System.Drawing.Point(403, 8);
+            this.ayUDItAAMICOMPUu.SetHelpString(this.shipPostalCodeTextBox, "Indica el codigo postal del pedido.");
+            this.shipPostalCodeTextBox.Location = new System.Drawing.Point(112, 193);
             this.shipPostalCodeTextBox.Name = "shipPostalCodeTextBox";
+            this.ayUDItAAMICOMPUu.SetShowHelp(this.shipPostalCodeTextBox, true);
             this.shipPostalCodeTextBox.Size = new System.Drawing.Size(200, 20);
             this.shipPostalCodeTextBox.TabIndex = 27;
             // 
             // shipCountryTextBox
             // 
             this.shipCountryTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "ShipCountry", true));
-            this.shipCountryTextBox.Location = new System.Drawing.Point(403, 34);
+            this.ayUDItAAMICOMPUu.SetHelpString(this.shipCountryTextBox, "Indica el país al que se va a enviar el pedido.");
+            this.shipCountryTextBox.Location = new System.Drawing.Point(112, 219);
             this.shipCountryTextBox.Name = "shipCountryTextBox";
+            this.ayUDItAAMICOMPUu.SetShowHelp(this.shipCountryTextBox, true);
             this.shipCountryTextBox.Size = new System.Drawing.Size(200, 20);
             this.shipCountryTextBox.TabIndex = 29;
             // 
@@ -1455,8 +1406,11 @@
             // tileAñadDatos
             // 
             this.tileAñadDatos.ActiveControl = null;
-            this.tileAñadDatos.Location = new System.Drawing.Point(23, 82);
+            this.ayUDItAAMICOMPUu.SetHelpKeyword(this.tileAñadDatos, "Añade Datos");
+            this.ayUDItAAMICOMPUu.SetHelpString(this.tileAñadDatos, "Permite añadir datos a la base de datos.");
+            this.tileAñadDatos.Location = new System.Drawing.Point(23, 35);
             this.tileAñadDatos.Name = "tileAñadDatos";
+            this.ayUDItAAMICOMPUu.SetShowHelp(this.tileAñadDatos, true);
             this.tileAñadDatos.Size = new System.Drawing.Size(100, 100);
             this.tileAñadDatos.TabIndex = 1;
             this.tileAñadDatos.Text = "Añadir datos...";
@@ -1469,20 +1423,29 @@
             this.tileAñadDatos.UseTileImage = true;
             this.tileAñadDatos.Click += new System.EventHandler(this.tileAñadDatos_Click);
             // 
+            // ayUDItAAMICOMPUu
+            // 
+            this.ayUDItAAMICOMPUu.HelpNamespace = "D:\\INSTITUTO\\2DAM\\desarrollo interfaces\\T6\\Help\\Documentación ERP.chm";
+            // 
             // newWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1016, 589);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1016, 540);
             this.Controls.Add(this.volverTile);
             this.Controls.Add(this.tramiteTile);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.tileAñadDatos);
-            this.Controls.Add(this.tramiteCtrl);
             this.Controls.Add(this.dataTabCtrl);
+            this.Controls.Add(this.tramiteCtrl);
+            this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(1032, 579);
             this.Name = "newWindow";
+            this.Padding = new System.Windows.Forms.Padding(20, 60, 20, 20);
             this.Text = "Nuevo...";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.newWindow_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -1576,13 +1539,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
         private System.Windows.Forms.TextBox orderIDTextBox;
-        private System.Windows.Forms.TextBox customerIDTextBox1;
-        private System.Windows.Forms.TextBox employeeIDTextBox;
         private System.Windows.Forms.DateTimePicker orderDateDateTimePicker;
-        private System.Windows.Forms.DateTimePicker requiredDateDateTimePicker;
-        private System.Windows.Forms.DateTimePicker shippedDateDateTimePicker;
         private System.Windows.Forms.TextBox shipViaTextBox;
-        private System.Windows.Forms.TextBox freightTextBox;
         private System.Windows.Forms.TextBox shipNameTextBox;
         private System.Windows.Forms.TextBox shipAddressTextBox;
         private System.Windows.Forms.TextBox shipCityTextBox;
@@ -1595,5 +1553,6 @@
         private MetroFramework.Controls.MetroButton btAceptTram;
         private MetroFramework.Controls.MetroCheckBox Presupuesto;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.HelpProvider ayUDItAAMICOMPUu;
     }
 }

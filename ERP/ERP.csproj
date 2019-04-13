@@ -22,15 +22,20 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\ERP.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\ERP.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>tramite.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Control_Calendario">
@@ -68,10 +73,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Informes.xsd</DependentUpon>
     </Compile>
-=======
->>>>>>> parent of 0e128e7... Visor de Informes añadido, informe de facturas implementado.
-=======
->>>>>>> parent of 0e128e7... Visor de Informes añadido, informe de facturas implementado.
+    <Compile Include="GlobalProperties.cs" />
+    <Compile Include="HelpViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpViewer.Designer.cs">
+      <DependentUpon>HelpViewer.cs</DependentUpon>
+    </Compile>
     <Compile Include="newUserWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +117,19 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="Visor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visor.Designer.cs">
+      <DependentUpon>Visor.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Facturas.rdlc" />
+    <EmbeddedResource Include="FacturaSubinf.rdlc" />
+    <EmbeddedResource Include="HelpViewer.resx">
+      <DependentUpon>HelpViewer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="manageWindow.resx">
       <DependentUpon>manageWindow.cs</DependentUpon>
     </EmbeddedResource>
@@ -134,6 +155,8 @@
     <EmbeddedResource Include="settingsWindow.resx">
       <DependentUpon>settingsWindow.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SubinfFact.rdlc" />
+    <EmbeddedResource Include="Ventas.rdlc" />
 <<<<<<< HEAD
 <<<<<<< HEAD
     <EmbeddedResource Include="Ventas Totales.rdlc" />
@@ -195,6 +218,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="res\img\newUser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="tramite.ico" />
+    <None Include="res\img\help.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
