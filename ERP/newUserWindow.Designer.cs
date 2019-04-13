@@ -428,9 +428,9 @@
             "",
             "DNI",
             "C. Conducir"});
-            this.docType.Location = new System.Drawing.Point(122, 215);
+            this.docType.Location = new System.Drawing.Point(96, 215);
             this.docType.Name = "docType";
-            this.docType.Size = new System.Drawing.Size(53, 25);
+            this.docType.Size = new System.Drawing.Size(79, 25);
             this.docType.TabIndex = 4;
             this.docType.UseSelectable = true;
             // 

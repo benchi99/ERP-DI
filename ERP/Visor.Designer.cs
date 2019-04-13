@@ -156,7 +156,6 @@
             this.hastaFchCbx.Size = new System.Drawing.Size(121, 29);
             this.hastaFchCbx.TabIndex = 70000;
             this.hastaFchCbx.UseSelectable = true;
-            this.hastaFchCbx.SelectedIndexChanged += new System.EventHandler(this.hastaFchCbx_SelectedIndexChanged);
             // 
             // desdeFchCbx
             // 

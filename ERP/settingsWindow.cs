@@ -23,6 +23,10 @@ namespace ERP
         public settingsWindow()
         {
             InitializeComponent();
+            if (GlobalProperties.getDarkMode() == true)
+                this.Theme = MetroFramework.MetroThemeStyle.Dark;
+            else if (GlobalProperties.getDarkMode() == false)
+                this.Theme = MetroFramework.MetroThemeStyle.Light;
         }
 
         /// <summary>
@@ -44,8 +48,11 @@ namespace ERP
         /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void metroToggle1_CheckedChanged(object sender, EventArgs e)
         {
-            //Aquí iría el código para cambiar el tema a oscuro para no
-            //quemar retinas.
+            GlobalProperties.setDarkMode(metroToggle1.Checked);
+            if (GlobalProperties.getDarkMode() == true)
+                this.Theme = MetroFramework.MetroThemeStyle.Dark;
+            else if (GlobalProperties.getDarkMode() == false)
+                this.Theme = MetroFramework.MetroThemeStyle.Light;
         }
 
         /// <summary>

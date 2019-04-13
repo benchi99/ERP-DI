@@ -40,6 +40,10 @@ namespace ERP
         public newUserWindow()
         {
             InitializeComponent();
+            if (GlobalProperties.getDarkMode() == true)
+                this.Theme = MetroFramework.MetroThemeStyle.Dark;
+            else if (GlobalProperties.getDarkMode() == false)
+                this.Theme = MetroFramework.MetroThemeStyle.Light;
         }
 
         /// <summary>

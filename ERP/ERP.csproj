@@ -73,6 +73,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Informes.xsd</DependentUpon>
     </Compile>
+    <Compile Include="GlobalProperties.cs" />
     <Compile Include="HelpViewer.cs">
       <SubType>Form</SubType>
     </Compile>
